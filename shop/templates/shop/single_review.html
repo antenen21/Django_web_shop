@@ -1,0 +1,17 @@
+{% load static %}
+
+
+<link rel="stylesheet" href="{% static 'shop/single_review.css' %}">
+
+    
+<article class="rating">
+    <a href="{{review.get_absolute_url}}">
+        
+        <div class="review__content">
+            <h1>Nom d'utilisateur: {{reviews.user_name}}</h1>
+            <p>Commentaire: {{reviews.comment}}</p>
+            <p>Note: {{reviews.rating}}</p>
+            
+        </div>
+    </a>
+</article>

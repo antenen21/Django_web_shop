@@ -1,0 +1,583 @@
+@media (min-width: 0px) and (max-width: 560px) {
+    .login_menu {
+    
+        filter: invert(1);
+    }
+
+    /* inverts only the dropdown again back */
+    .login_menu .dropdown-menu{
+        filter: invert(1);
+    }
+
+
+    .toggle_icon img {
+        filter: invert(1);
+    }
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-search {
+        padding: 15px 0px;
+    }
+}
+
+
+
+
+
+/*------------------------------------------------------------------- 599px x 280px ---------------------------------------------------------------------*/
+
+
+/*  IPAD MINI CUT DISPLAY */
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+    
+    .banner_bg_main {
+        background-size: 100%;
+    }
+
+    .login_menu {
+        margin-top: 5rem;
+    }
+
+    .banner_taital {
+        color:black;
+    }
+
+    .header_section_top {
+        display: none;
+    }
+    .containt_main {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .toggle_icon {
+        cursor: pointer;
+        order: 2;
+    }
+    .main {
+        margin: 0px 0px 0px 0px;
+    }
+    .input-group {
+        width: auto;
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+    .header_box {
+        order: 1;
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+    .dropdown {
+        display: none;
+    }
+    .login_menu li {
+        float: left;
+        font-size: 14px;
+    }
+    .nav-link {
+        padding: .4rem 0px;
+        color: #070707;
+    }
+    .lang_box {
+        background-color: transparent;
+        margin-top: 5rem;
+        
+    }
+    .banner_taital {
+        font-size: 24px;
+    }
+    #my_slider a.carousel-control-prev {
+        top: 100px;
+    }
+    #my_slider a.carousel-control-next {
+        top: 100px;
+    }
+    .fashion_taital {
+        font-size: 24px;
+    }
+    .fashion_section {
+        padding-bottom: 100px;
+    }
+    .electronic_img {
+        margin: 20px 0px;
+        min-height: 0;
+    }
+    .tshirt_img {
+        margin: 20px 0px;
+        min-height: 0;
+    }
+    .jewellery_img {
+        margin: 20px 0px;
+        min-height: 0;
+    }
+    #jewellery_main_slider a.carousel-control-prev {
+        left: 15px;
+        top: 86%;
+    }
+    #jewellery_main_slider a.carousel-control-next {
+        right: 15px;
+        top: 86%;
+    }
+    #main_slider a.carousel-control-prev {
+        left: 15px;
+        top: 101%;
+    }
+    #main_slider a.carousel-control-next {
+        right: 15px;
+        top: 101%;
+    }
+    #electronic_main_slider a.carousel-control-prev {
+        left: 15px;
+        top: 101%;
+    }
+    #electronic_main_slider a.carousel-control-next {
+        right: 15px;
+        top: 101%;
+    }
+    .input_bt {
+        width: 100%;
+    }
+    .mail_bt {
+        width: 70%;
+    }
+    .footer_menu li {
+        float: none;
+        padding: 10px 10px 0px 10px;
+    }
+
+    .social {
+        transform: scale(0.5);
+        padding-bottom: 1rem;
+    }
+
+    .location_main {
+        padding: 30px 0px 30px 0px;
+    }
+
+}
+
+
+/*    ipad 9,7"    */
+@media (min-width: 992px) and (max-width: 1400px) {
+    .banner_bg_main {
+        background-size: 100%;
+    }
+
+    .banner_taital{
+        font-size: xx-large;
+    }
+    .tshirt_img {
+        margin: 20px 0px;
+        min-height: 360px;
+    }
+    #main_slider a.carousel-control-next {
+        right: 40px;
+        top: 120%;
+    }
+    #main_slider a.carousel-control-prev {
+        left: 40px;
+        top: 120%;
+    }
+    .electronic_img {
+        margin: 20px 0px;
+        min-height: 280px;
+    }
+    #electronic_main_slider a.carousel-control-next {
+        right: 40px;
+        top: 110%;
+    }
+    #electronic_main_slider a.carousel-control-prev {
+        left: 40px;
+        top: 110%;
+    }
+    .jewellery_img {
+        margin: 20px 0px;
+        min-height: 0;
+    }
+    #jewellery_main_slider a.carousel-control-prev {
+        left: 40px;
+        top: 70%;
+    }
+    #jewellery_main_slider a.carousel-control-next {
+        right: 40px;
+        top: 70%;
+    }
+    .input_bt {
+        width: 80%;
+    }
+
+    .buynow_bt {
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 760px) and (max-width: 991px) {
+    .banner_bg_main {
+        background-size: 100%;
+    }
+
+    .banner_taital {
+        margin-top: 5rem;
+        color: black;
+    }
+    .dropdown {
+        display: none;
+    }
+    .tshirt_img {
+        margin: 20px 0px;
+        min-height: 320px;
+    }
+    .banner_taital {
+        margin-top: 20px;
+        font-size: x-large;
+        color: white;
+    }
+
+    .buynow_bt {
+        margin-top: 1rem;
+    }
+
+    .electronic_img {
+        margin: 20px 0px;
+        min-height: 190px;
+    }
+    #electronic_main_slider a.carousel-control-next {
+        right: 40px;
+        top: 110%;
+    }
+    #electronic_main_slider a.carousel-control-prev {
+        left: 40px;
+        top: 110%;
+    }
+    .jewellery_img {
+        margin: 20px 0px;
+        min-height: 0;
+    }
+    #jewellery_main_slider a.carousel-control-prev {
+        left: 40px;
+        top: 70%;
+    }
+    #jewellery_main_slider a.carousel-control-next {
+        right: 40px;
+        top: 70%;
+    }
+    .input_bt {
+        width: 100%;
+    }
+}
+
+
+
+        /* HEEEEERRRRRRRREEEEEEEEEEE */
+
+        /* IPAD mini 7.9" and IPHONE 8 HORIZONTAL */
+@media (min-width: 560px) and (max-width: 770px) {
+    .banner_bg_main {
+        background-size: 140%;
+        left: -10rem;
+    }
+
+    .header_section_top {
+        display: none;
+    }
+    .containt_main {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .toggle_icon {
+        cursor: pointer;
+        order: 2;
+    }
+    .main {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .input-group {
+        width: auto;
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+    .header_box {
+        order: 1;
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+    .dropdown {
+        display: none;
+    }
+
+    .nav-link {
+        padding: .4rem 0px;
+        color: #fff;
+    }
+    .lang_box {
+        background-color: transparent;
+    }
+    .banner_taital {
+        font-size: xx-large;
+    }
+
+    .buynow_bt {
+        margin-top: 3rem;
+    }
+
+    #my_slider a.carousel-control-prev {
+        top: 20px;
+    }
+    #my_slider a.carousel-control-next {
+        top: 20px;
+    }
+    .fashion_taital {
+        font-size: 24px;
+    }
+    .fashion_section {
+        padding-bottom: 100px;
+    }
+    .electronic_img {
+        margin: 20px 0px;
+        min-height: 145px;
+    }
+    .tshirt_img {
+        margin: 20px 0px;
+        min-height: 246px;
+    }
+    .jewellery_img {
+        margin: 20px 0px;
+        min-height: 0;
+    }
+    .shirt_text {
+        font-size: 14px;
+    }
+    .price_text {
+        font-size: 14px
+    }
+    .buy_bt a {
+        font-size: 12px;
+    }
+    .seemore_bt a {
+        font-size: 12px;
+    }
+    .box_main {
+        padding: 20px 10px;
+    }
+    #jewellery_main_slider a.carousel-control-prev {
+        left: 35px;
+        top: 65%;
+    }
+    #jewellery_main_slider a.carousel-control-next {
+        right: 35px;
+        top: 65%;
+    }
+    #main_slider a.carousel-control-prev {
+        left: 33px;
+        top: 101%;
+    }
+    #main_slider a.carousel-control-next {
+        right: 33px;
+        top: 101%;
+    }
+    #electronic_main_slider a.carousel-control-prev {
+        left: 33px;
+        top: 101%;
+    }
+    #electronic_main_slider a.carousel-control-next {
+        right: 33px;
+        top: 101%;
+    }
+    .input_bt {
+        width: 100%;
+    }
+    .mail_bt {
+        width: 70%;
+    }
+    .footer_menu li {
+        float: none;
+        padding: 10px 10px 0px 10px;
+    }
+    .location_main {
+        padding: 30px 0px 30px 0px;
+    }
+}
+
+
+
+/* IPHONE SE ONLY */
+@media (min-width:0px) and (max-width: 420px) {
+    .login_menu {
+        margin-top: 2rem;
+        }
+    }
+
+
+/* IPHONE SE HORIZONTAL ONLY */
+@media (min-width: 560px) and (max-width: 570px) {
+    .banner_taital {
+        font-size: xx-large;
+        margin-top: 5rem;
+        color: black;
+    }  
+    #my_slider a.carousel-control-prev {
+        top: 200px;
+    }
+
+    #my_slider a.carousel-control-next {
+        top: 200px;
+    }
+
+    .header_box {
+        margin-top: -3rem;
+    }
+
+
+}
+
+/* IPHONE SE ONLY */
+@media (max-width: 390px) {
+  .logo img {
+    padding: 1rem;
+  }
+}
+
+/* IPHONE 8 PLUS HORIZONTAL ONLY*/
+@media (min-width: 720px) and (max-width: 750px) {
+    .banner_taital {
+        font-size: xx-large;
+    }
+}
+
+
+/* IPHONE SE   and IPHONE 8 */
+@media (max-width: 415px) {
+    .banner_bg_main {
+        background-size: 100%;
+    }
+
+    .banner_taital {
+        color:black;
+    }
+
+    .header_section_top {
+        display: none;
+    }
+    .containt_main {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .toggle_icon {
+        cursor: pointer;
+        order: 2;
+    }
+    .main {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .input-group {
+        width: auto;
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+    .header_box {
+        order: 1;
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+    .dropdown {
+        display: none;
+    }
+    .login_menu li {
+        float: left;
+        font-size: 14px;
+    }
+    .nav-link {
+        padding: .4rem 0px;
+        color: #070707;
+    }
+    .lang_box {
+        background-color: transparent;
+        margin-top: 2rem;
+        
+    }
+    .banner_taital {
+        font-size: 24px;
+    }
+    #my_slider a.carousel-control-prev {
+        top: 100px;
+    }
+    #my_slider a.carousel-control-next {
+        top: 100px;
+    }
+    .fashion_taital {
+        font-size: 24px;
+    }
+    .fashion_section {
+        padding-bottom: 100px;
+    }
+    .electronic_img {
+        margin: 20px 0px;
+        min-height: 0;
+    }
+    .tshirt_img {
+        margin: 20px 0px;
+        min-height: 0;
+    }
+    .jewellery_img {
+        margin: 20px 0px;
+        min-height: 0;
+    }
+    #jewellery_main_slider a.carousel-control-prev {
+        left: 15px;
+        top: 86%;
+    }
+    #jewellery_main_slider a.carousel-control-next {
+        right: 15px;
+        top: 86%;
+    }
+    #main_slider a.carousel-control-prev {
+        left: 15px;
+        top: 101%;
+    }
+    #main_slider a.carousel-control-next {
+        right: 15px;
+        top: 101%;
+    }
+    #electronic_main_slider a.carousel-control-prev {
+        left: 15px;
+        top: 101%;
+    }
+    #electronic_main_slider a.carousel-control-next {
+        right: 15px;
+        top: 101%;
+    }
+    .input_bt {
+        width: 100%;
+    }
+    .mail_bt {
+        width: 70%;
+    }
+    .footer_menu li {
+        float: none;
+        padding: 10px 10px 0px 10px;
+    }
+
+    .social {
+        transform: scale(0.5);
+        padding-bottom: 1rem;
+    }
+
+    .location_main {
+        padding: 30px 0px 30px 0px;
+    }
+
+}

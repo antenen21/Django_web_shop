@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Register{% endblock title %}
+
+
+
+ 
+    {% block css_files %}
+    <link rel="stylesheet" href="{% static 'contact/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% endblock css_files %}
+
+
+{% block content %}
+    {% block js_files %}
+    <script src="{% static '/js/bootstrap.min.js' %}"></script>
+    <script src="{% static '/js/jquery.min.js' %}"></script>
+    <script src="//code.jquery.com/"></script>
+    {% endblock js_files %}
+
+<div class="container animated fadeIn outer" style="display: grid;">
+    <div class="row">
+        <div class="col-lg-12">
+        
+       
+                <div class="col-lg-12">
+                    <div class="row">
+                        <h1 class="header-title"> Contact </h1>
+                        <hr>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    {% comment %} Map {% endcomment %}
+                    <div class="col-md-6">
+                        <iframe width="100%" height="320px;" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d870.223641781489!2d7.053490578780671!3d47.173732794261724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sch!4v1688234257567!5m2!1sen!2sch" allowfullscreen></iframe>
+                    </div>
+
+                    {% comment %} Forms {% endcomment %}
+                    <div class="col-md-6 ">
+                        <form class="contact-form" method="post">
+                            {% csrf_token %}
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Nom" required="" autofocus="">
+                            </div>
+                        
+                        
+                            <div class="form-group form_left">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required="">
+                            </div>
+                        
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="Tel" name="phone" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10" placeholder="Mobile No." required="">
+                            </div>
+
+                            <div class="form-group">
+                            <textarea class="form-control textarea-contact" rows="5" id="Message" name="content" placeholder="Type Your Message/Feedback here..." required=""></textarea>
+                            <br>
+                            <button class="btn btn-default btn-send" action="" type="submit"> <span class="glyphicon glyphicon-send"></span> Send </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>    
+                    
+                  
+                        <div class="container second-portion">
+                            <div class="row">
+                            <!-- Boxes de Acoes -->
+                                <div class="col-xs-12 col-sm-4 col-lg-4">
+                                    <div class="box">							
+                                        <div class="icon">
+                                            <div class="image"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                                            <div class="info">
+                                                <h3 class="title">MAIL & WEBSITE</h3>
+                                                <p>
+                                                    <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp info@swiss-heating.com
+                                                    <br>
+                                                    <br>
+                                                    <i class="fa fa-globe" aria-hidden="true"></i> &nbsp www.swiss-heating.ch
+                                                </p>
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="space"></div>
+                                    </div> 
+                                </div>
+                                
+                                <div class="col-xs-12 col-sm-4 col-lg-4">
+                                    <div class="box">							
+                                        <div class="icon">
+                                            <div class="image"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+                                            <div class="info">
+                                                <h3 class="title">CONTACT</h3>
+                                                <p>
+                                                    <i class="fa fa-mobile" aria-hidden="true"></i> &nbsp (+41)-77 485 41 34
+                                                    <br>
+                                                    <br>
+                                                    <i class="fa fa-mobile" aria-hidden="true"></i> &nbsp  (+41)-77 485 41 34
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="space"></div>
+                                    </div> 
+                                </div>
+                                
+                                <div class="col-xs-12 col-sm-4 col-lg-4">
+                                    <div class="box">							
+                                        <div class="icon">
+                                            <div class="image"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                                            <div class="info">
+                                                <h3 class="title">ADDRESS</h3>
+                                                <p>
+                                                    <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp Route Principale 32 
+                                                    , 2612 Cormoret BE.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="space"></div>
+                                    </div> 
+                                </div>		    
+                                <!-- /Boxes de Acoes -->
+                            </div>
+                        </div>     
+                          
+     
+                      
+        </div>
+    </div>
+</div>  
+                 
+
+{% endblock content %}
+
+
+
+

@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Results{% endblock title %}
+
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'shop/search-results.css' %}">
+{% endblock css_files %}
+
+
+{% block content %}
+
+    <div class="container results">
+        <div class="row">
+            {% if no_result %}
+            <div class="no_result_img col-12">
+                <img src="{% static 'shop/images/result.png' %}" alt="">
+            </div>
+            <div class="no_result_text">Désolé, nous n'avons trouvé aucun résultat correspondant à votre recherche de: <span class="only_searched_data_span">{{searched_data}}</span>.
+                <br>
+                <br>
+                Nous mettons tout en œuvre pour proposer une large sélection de produits, mais il semble que votre requête n'ait pas abouti cette fois-ci.
+                <br>
+                <br>
+                Veuillez vérifier l'orthographe de votre recherche ou essayez de l'élargir en utilisant des termes plus généraux. 
+                <br>
+                <br>
+                Vous pouvez également parcourir nos catégories populaires pour découvrir d'autres produits intéressants. 
+                <br>
+                <br>
+                Si vous avez des questions ou besoin d'une assistance supplémentaire, n'hésitez pas à nous contacter. 
+                <br>
+                <br>
+                Nous sommes là pour vous aider dans votre recherche et trouver le produit idéal.
+            </div>
+            {% endif %}
+
+            {% for pump in matched_data %}
+                <div class="col-lg-6 col-sm-6 col-xl-6 mg-5 mt-5">
+                {% include 'shop/single_pump.html' %}
+                </div>
+            {% endfor %}
+
+            {% for puffer in matched_data_2 %}
+                <div class="col-lg-6 col-sm-6 col-xl-6 mg-5 mt-5">
+                {% include 'shop/single_puffer.html' %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+{% endblock content %}

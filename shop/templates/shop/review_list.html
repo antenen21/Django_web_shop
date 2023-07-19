@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Nos avis clients{% endblock title %}
+
+
+
+{% block css_files %}<link rel="stylesheet" href="{% static 'shop/review_list.css' %}">{% endblock css_files %}
+
+
+{% block content %}
+
+        <div id="all-reviews">
+            {% for reviews in fetched_data  %}
+                {% include 'shop/single_review.html' %}
+            {% endfor %}
+            <a href="{% url 'make-review-path' %}"><button id="give-review">Donner un avis</button></a>
+        </div>
+            
+                
+            
+{% endblock content %}
+

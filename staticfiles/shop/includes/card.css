@@ -1,0 +1,96 @@
+.main_card {
+    height: 100vh;
+    width: 100vw;
+    max-height: 800px;
+    max-width: 1280px;
+    min-height: 600px;
+    min-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+.border {
+    height: 369px;
+    width: 290px;
+    
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+}
+
+.border:hover {
+    border: 1px solid rgb(10, 9, 9);
+}
+
+h2 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: rgb(230, 20, 20);
+    margin: 20px;
+    
+}
+
+.card {
+    height: 379px;
+    width: 300px;
+    background: grey;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    background: rgb(229, 224, 224);
+    box-shadow: 0 70px 63px -60px #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+  
+.card0 {    
+    background: url('/static/shop/images/pump11.png') center center no-repeat;
+    background-size: 600px;
+}
+ 
+.card0:hover {
+    background: url('/static/shop/images/pump11.png') right center no-repeat;
+    background-size: 300px;
+    h2  {
+        color: blue;
+    }
+}  
+
+
+
+.card1 {
+    background: url('/static/shop/images/pump11.png') center center no-repeat;
+    background-size: 600px;
+}
+.card1:hover {
+    background: url('/static/shop/images/pump11.png') left center no-repeat;
+    background-size: 300px;
+} 
+
+ 
+
+.card2 {
+    background: url('/media/products/Einzeln_NIBE_S2125.thumb_large_eKh7ppc.png') center top no-repeat;
+    background-size: 600px;
+
+}
+
+.card2:hover {
+    background: url('/media/products/Einzeln_NIBE_S2125.thumb_large_eKh7ppc.png') right center no-repeat;
+    background-size: 300px;
+
+}  
+
+
+  
+
+  
+
+
+

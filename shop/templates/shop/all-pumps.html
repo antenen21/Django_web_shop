@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Toutes notre collection{% endblock title %}
+
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'shop/all-pumps.css' %}">
+{% endblock css_files %}
+
+
+{% block content %}
+<div class="container">
+    <div class="container all_pumps">
+        <div class="row"> 
+                {% for pump in all_pumps  %}
+                    <div class="col-lg-6 col-sm-6 col-xl-6 mg-5 mt-5">
+                    {% include 'shop/single_pump.html' %}
+                    </div>
+                {% endfor %} 
+        </div>
+    </div>
+</div>  
+{% endblock content %}
+

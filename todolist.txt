@@ -1,0 +1,34 @@
+
+
+
+M""""""""M MMP"""""YMM    M""""""'YMM MMP"""""YMM    M""MMMMMMMM M""M MP""""""`MM M""""""""M    
+Mmmm  mmmM M' .mmm. `M    M  mmmm. `M M' .mmm. `M    M  MMMMMMMM M  M M  mmmmm..M Mmmm  mmmM    
+MMMM  MMMM M  MMMMM  M    M  MMMMM  M M  MMMMM  M    M  MMMMMMMM M  M M.      `YM MMMM  MMMM    
+MMMM  MMMM M  MMMMM  M    M  MMMMM  M M  MMMMM  M    M  MMMMMMMM M  M MMMMMMM.  M MMMM  MMMM    
+MMMM  MMMM M. `MMM' .M    M  MMMM' .M M. `MMM' .M    M  MMMMMMMM M  M M. .MMM'  M MMMM  MMMM    
+MMMM  MMMM MMb     dMM    M       .MM MMb     dMM    M         M M  M Mb.     .dM MMMM  MMMM    
+MMMMMMMMMM MMMMMMMMMMM    MMMMMMMMMMM MMMMMMMMMMM    MMMMMMMMMMM MMMM MMMMMMMMMMM MMMMMMMMMM 
+
+▄███▓▒░ SHIFT + CMD + P   - ASCII Decorator    ░▒▓█████▓▒░ ░▒▓████████████████▄                                     
+ ██                                                                          ██
+ ██                                                                          ██
+ ▓█                                                                          █▓
+ ▓▓                                                                          ▓▓
+ ▒▒                                                                          ▒▒
+ ░░                                                                          ░░
+ ░                                                                            ░
+
+   1. product prize models. min_value <-----
+   2. create new form with products
+   3. language changes
+   4. shopping cart
+   5. docker products
+   6. logout page CSS
+   7. top NAV lniks (sellers ...)
+
+
+
+
+└─────────────────────────────────────────────────────────────────────────────┘
+
+

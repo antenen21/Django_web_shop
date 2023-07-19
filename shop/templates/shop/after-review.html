@@ -1,0 +1,34 @@
+
+
+
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}Thank You!!{% endblock title %}
+
+{% block css_files %}<link rel="stylesheet" href="{% static 'shop/after-review.css' %}">{% endblock css_files %}
+
+
+{% block content %}
+
+<div id="container">
+
+
+   
+    <img src="{% static 'shop/images/logo.png' %}" alt="">
+    
+
+    <p>Thank you very much for your comment and rating, this will help us to improve our solutions and help other customers to make their choices</p>
+
+
+    <a href="{% url 'index-path' %}"><button>Retour à la page Principale</button></a>
+
+    
+    </div>
+
+    
+</form>
+</div>
+
+{% endblock content %}

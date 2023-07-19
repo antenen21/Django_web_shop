@@ -1,0 +1,13 @@
+
+#all-reviews {
+    margin-left: 10%;
+    padding: 1rem;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+#all-reviews button {
+    padding: 1rem;
+    color: green;
+}

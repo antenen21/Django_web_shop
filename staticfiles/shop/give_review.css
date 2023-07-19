@@ -1,0 +1,49 @@
+
+#container {
+    margin-top: 1rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 15%;
+    padding: 2rem;
+    border: 2px solid black;
+    box-shadow: 0px 2px 8px black;
+    border-radius: 6px;
+    background-color: rgba(246, 241, 241, 0.43);
+    
+}
+
+.form {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif black;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form input {
+    background-color: rgb(250, 255, 255);
+}
+
+#give-review button {
+    margin-top: 3rem;
+    margin-left: 5%;
+    padding: 1rem;
+    border-radius: 8px;
+    color: rgb(6, 5, 5) ;
+    border-color: black;
+    background-color: rgb(218, 211, 211);
+}
+
+.errorlist {
+    list-style: none;
+    color: black;
+}
+
+.errors input {
+    border-color: red;
+}
+
+
+
+
+

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block css_files %}<link rel="stylesheet" href="{% static 'members/logout.css' %}">{% endblock css_files %}
+
+{% block content %}
+
+
+<div class="container"  >
+    <div class="row">
+        <div class="card">
+            <div class="container" style="display: grid; place-items: center;">
+                    <div class="col-12">
+                        <p class="">
+                            Merci d'avoir visité notre boutique en ligne ! Nous vous remercions de votre confiance et espérons que votre expérience d'achat a été agréable. Si vous avez des questions supplémentaires, n'hésitez pas à nous contacter. Au plaisir de vous revoir bientôt !
+                        </p>
+                    </div>
+            
+                    <div class="col-12">
+                        <div class="border-top pt-3"  style="min-height:65vh;">
+                            <small class="text-muted">
+                                <a href="{% url 'login-path' %}"><button type="button" class="btn btn-info">Connectez-vous à nouveau.</button></a>
+                            </small>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>    
+{% endblock content %}

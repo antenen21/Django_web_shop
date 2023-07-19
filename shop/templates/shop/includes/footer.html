@@ -1,0 +1,101 @@
+{% load static %}
+
+
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <title>Document</title>
+   </head>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"> 
+<link rel="stylesheet" href="{% static 'shop/includes/footer.css' %}">
+
+
+
+<body>
+  
+ <!-- footer section start -->
+ <div class="footer_section padding_layout">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="social-footer">
+                     {% include 'shop/includes/social-media.html' %}
+                  </div>
+               </div>
+            </div>
+         </div>
+
+  <div class="container">
+
+      {% comment %} clé en main  {% endcomment %}
+     <div class="footer_logo">
+        <a href="{% url 'index-path' %}"><img src="{% static 'shop/images/swiss heating french(1000 × 1000 px).png' %}"></a>
+        <a href="{% url 'index-path' %}"><button type="button" class="btn btn-danger" style="color: white; background-color: red;">Contactez Nous</button></a>
+     </div>
+
+
+     {% comment %} contact email {% endcomment %}
+      <div class="container">
+         <div class="row text-center justify-content-center">
+            <div class="col-12">
+               <div class="input-group-lg input-group  mt-2 mb-2 ">
+                  <input type="text" class="form-control bg-dark color-white" style="min-width:150px;" placeholder="e-mail..." aria-label="Recipient's email" aria-describedby="button-addon2">
+                     <div class="input-group-append">
+                        <button class="btn btn-success" type="button" id="button-addon2"> <b>Submit</b></button>
+                     </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      
+      <div class="footer_menu">
+         <ul>
+            <li><a href="#">Les plus vendus</a></li>
+            <li><a href="#">En Action</a></li>
+            <li><a href="#">Set Complets</a></li>
+            <li><a href="#">Nos Services</a></li>
+            <li><a href="#">Service Clientele</a></li>
+         </ul>
+      </div>
+      <div class="location_main">Chat avec un de nos employées sur WhatsApp pour toutes questions : <a href="#">+41 77 485 41 34</a></div>
+   </div>
+</div>
+<!-- footer section end -->
+<!-- copyright section start -->
+   <div class="copyright_section">
+      <div class="container-fluid">
+         <p class="copyright_text">© 2023 All Rights Reserved. Design by 
+            <br>
+            <a href="http://antenen21.pythonanywhere.com">░░░░░░░░ ANTENEN   SOFTWARE  SOLUTIONS ░░░░░░░░</a></p>
+         <p></p>
+      </div>   
+   </div>         
+
+<!-- copyright section end -->
+
+
+<!-- Javascript files-->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+<script src="{% static 'js/plugin.js' %}"></script>
+<!-- sidebar -->
+<script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+<script>
+   function openNav() {
+     document.getElementById("mySidenav").style.width = "250px";
+   }
+   
+   function closeNav() {
+     document.getElementById("mySidenav").style.width = "0";
+   }
+</script>
+</body>
+</html>

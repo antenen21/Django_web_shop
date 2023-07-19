@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+
+{% block title %}Register{% endblock title %}   
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static '/members/register.css' %}">
+<link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
+{% endblock css_files %}
+
+
+{% block content %}
+    {% block js_files %}
+    <script src="{% static '/js/bootstrap.bundle.min.js' %}"></script>
+    {% endblock js_files %}
+
+<div class="container">
+    <div class="row" >
+        <div class="wrapper">
+            <div class="form-left">
+                <h2 class="text-uppercase">information</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam ab maiores nulla totam at? Perspiciatis, ipsam, sunt ad laboriosam nesciunt deleniti labore velit error cum saepe quibusdam, facilis quod.
+                    </p>
+                    <p class="text"><span>Sub Head:</span>blabla2</p>
+
+                <div class="form-field">
+                    <input type="submit" class="account" value="Have an Account?">
+                </div>
+                {% csrf_token %}
+            </div>
+
+
+            <form class="form-right" method="POST">
+                {% csrf_token %}
+                    <h2 class="text-uppercase">Registration form</h2>
+                    <div class="row">
+                        {% csrf_token %}
+                        {{form}}
+
+                        <div class="mb-3">
+                            <label class="option">I agree to the <a href="#">Terms and Conditions</a>
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="form-field">
+                            <input type="submit" value="Register" class="register" name="register">
+                        </div>
+                    </div>    
+            </form>
+
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+
+
+

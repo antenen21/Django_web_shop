@@ -1,0 +1,40 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}Thank You!!{% endblock title %}
+
+{% block css_files %}<link rel="stylesheet" href="{% static 'members/after-registration.css' %}">{% endblock css_files %}
+
+
+{% block content %}
+
+<div class="wrapper">
+
+    <h2>Bonjour {{user.username}},</h2>
+    <br>
+    <br>
+    <br>
+    <h1>Bienvenue chez </h1>
+    <img src="{% static 'shop/images/logo.png' %}" alt="">
+    
+
+    <p> 
+        Notre équipe de professionnels expérimentés est là pour vous aider à trouver la meilleure solution pour vos besoins en matière de chauffage et de climatisation. Nous sommes fiers de notre expertise et de notre engagement envers l'excellence du service clientèle.
+        <br>
+        <br>
+        Chez Swiss-Heating, nous croyons en la durabilité et l'efficacité énergétique, ce qui est pourquoi nous nous engageons à offrir des produits écologiques et à faible consommation d'énergie. Nous sommes convaincus que notre approche responsable et notre engagement envers nos clients nous ont permis de bâtir une solide réputation dans l'industrie.
+        <br>
+        <br>
+        Nous sommes impatients de vous aider à trouver la pompe à chaleur qui convient le mieux à vos besoins. Contactez-nous dès maintenant pour en savoir plus sur nos produits et services, et laissez-nous vous aider à créer un environnement confortable et efficace sur le plan énergétique pour votre maison ou votre entreprise.
+    </p>
+
+
+    <a href="{% url 'index-path' %}"><button>Retour à la page Principale</button></a>
+
+    
+    
+</div>
+
+{% endblock content %}
