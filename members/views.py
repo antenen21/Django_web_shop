@@ -24,9 +24,6 @@ class LoginView(View):
 
         username = request.POST['username']
         password = request.POST['password2']
-        print(f"\n {{{{{{{{INFO}}}}}}}} - Username input: {username}")
-        print(f" {{{{{{{{INFO}}}}}}}} - Password input: {password}")
-
         user = authenticate(request, username=username, password=password)
         if user is None:
             print("\n {{{{{{{{INFO}}}}}}}} - Login failed \n")
@@ -35,9 +32,6 @@ class LoginView(View):
 
         print("\n{{{{{{{{INFO}}}}}}}} - User was logged in \n \n")
 
-
-
-        
         login(request, user)
         return redirect('index-path')
 
