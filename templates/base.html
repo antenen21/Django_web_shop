@@ -17,7 +17,6 @@
 <meta name="author" content="">
 
 
-
    <!-- Bootstrap - Card and Social Media Buttons Icons-->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"> 
    <!-- Bootstrap 5 CSS -->
@@ -33,22 +32,34 @@
    <!-- Static CSS -->
    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
 
-{% block css_files %}<!-- INJECTS -->{% endblock css_files %}
+   <!-- CSS files -->
+{% block css_files %}{% endblock css_files %}
 </head>
 
 
   
   
-<body>
-   
-   {% include 'shop/includes/navbar.html' %}
-   
-{% block content %}{% endblock content %}
+<body> 
+   <!-- ======= Wrapper ======= -->
+   <div class="wrapper no-gutters">
 
-   {% block js_files %}{% endblock js_files %}
-   
 
-    <!-- ======= Scripts at the end of the body ======= -->
+            <!-- ======= Navbar ======= -->
+         {% include 'shop/includes/navbar.html' %}
+
+            <!-- ======= Content ======= -->
+         {% block content %}{% endblock content %}
+
+
+   </div> <!--  End of Wrapper -->
+
+   <!-- ======= Footer (not wrapped) ======= -->
+{% include 'shop/includes/footer.html' %}
+
+
+   <!-- ======= Scripts at the end of the body ======= -->
+{% block js_files %}{% endblock js_files %}
+    
       <!-- Bootstrap 5 JS cdn -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
       <!-- Jquery 3.x minified-->
@@ -60,17 +71,11 @@
       <!-- SweetAlert (!!! works ONLY in Frontend here !!!)-->
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       <!-- Static JS -->
-
+      <script src="{% static 'js/script.js' %}"></script>
       <!-- Static JS about-us contact-->
-      
       <script src="{% static 'js/about-us/soft-design-system.min.js' %}"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.0/countUp.min.js"></script>
 
 
-
-
-      
-   
 </body>
-   {% include 'shop/includes/footer.html' %}
 </html>
