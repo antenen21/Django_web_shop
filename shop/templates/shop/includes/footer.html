@@ -1,29 +1,26 @@
 {% load static %}
 
 
-   <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-      <title>Document</title>
-   </head>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"> 
+<link rel="stylesheet" href="{% static 'shop/includes/social-media.css' %}">
 <link rel="stylesheet" href="{% static 'shop/includes/footer.css' %}">
+   <!-- Bootstrap - Card and Social Media Buttons Icons-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-
-
-<body>
-  
  <!-- footer section start -->
+<footer>
+
  <div class="footer_section padding_layout">
          <div class="container">
             <div class="row">
                <div class="col-12">
-                  <div class="social-footer">
-                     {% include 'shop/includes/social-media.html' %}
+                  <div class="container social social-footer">
+                     <ul>
+                        <li><a href="#"><i class="fa fa-facebook" style="" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                     </ul>
                   </div>
                </div>
             </div>
@@ -66,6 +63,8 @@
    </div>
 </div>
 <!-- footer section end -->
+
+
 <!-- copyright section start -->
    <div class="copyright_section">
       <div class="container-fluid">
@@ -97,5 +96,4 @@
      document.getElementById("mySidenav").style.width = "0";
    }
 </script>
-</body>
-</html>
+</footer>
