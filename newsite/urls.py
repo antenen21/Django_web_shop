@@ -29,7 +29,7 @@ urlpatterns = [
     path('', include('cart.urls')),
     path('', include('members.urls')),
     path('', include('shop.urls')),
-    path('', include('email_management.urls')),
+    
     
 
     path('', include('django.contrib.auth.urls')), # to use all urls that comes with django from auth
