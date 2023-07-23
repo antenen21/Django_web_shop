@@ -22,6 +22,118 @@ html, body {
     font-family: 'Poppins', sans-serif;
 }    
 
+/*------------------------------------*
+# DECORATIONS SETTINGS 
+-------------------------------------*/
+
+a,
+.btn {
+    color: #1f1f1f;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+ul,
+li,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+ :focus {
+    outline: 0;
+}
+
+
+
+/*------------------------------------*
+# TRANSITIONS 
+-------------------------------------*/
+
+a,
+.btn {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; 
+}
+
+/*------------------------------------*
+# TEXT AND FONT SETTINGS 
+-------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0;
+    font-weight: normal;
+    position: relative;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    line-height: normal;
+    color: #111111;
+    margin: 0
+}
+
+h1 {
+    font-size: 24px
+}
+
+h2 {
+    font-size: 22px
+}
+
+h3 {
+    font-size: 18px
+}
+
+h4 {
+    font-size: 16px
+}
+
+h5 {
+    font-size: 14px
+}
+
+h6 {
+    font-size: 13px
+}
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: #212121;
+    text-decoration: none!important;
+    opacity: 1
+}
+
+p {
+    margin: 20px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.paddind_bottom_0 {
+    padding-bottom: 0 !important;
+}
+
 
 
 /*------------------------------------*
