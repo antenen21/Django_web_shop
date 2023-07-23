@@ -104,45 +104,5 @@
 /* electronic section end */
 
 
-/* jewellery section start */
-.jewellery_section {
-    width: 100%;
-    float: left;
-    padding-bottom: 50px;
-}
 
-.jewellery_img {
-    width: 100%;
-    text-align: center;
-    margin: 50px 0px;
-    min-height: 293px;
-}
 
-#jewellery_main_slider a.carousel-control-next {
-    right: 615px;
-    top: 75%;
-}
-
-#jewellery_main_slider a.carousel-control-prev {
-    left: 615px;
-    top: 75%;
-}
-
-#jewellery_main_slider .carousel-control-next,
-#jewellery_main_slider .carousel-control-prev {
-    width: 55px;
-    height: 55px;
-    background-color: #30302e;
-    opacity: 1;
-    font-size: 30px;
-    color: #ffffff;
-}
-
-#jewellery_main_slider .carousel-control-next:focus,
-#jewellery_main_slider .carousel-control-next:hover,
-#jewellery_main_slider .carousel-control-prev:focus,
-#jewellery_main_slider .carousel-control-prev:hover {
-    color: #fff;
-    background-color: #f26522;
-}
-/* jewellery section end */
