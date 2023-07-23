@@ -94,6 +94,14 @@
     .fashion_section {
         padding-bottom: 100px;
     }
+    .electronic_img {
+        margin: 20px 0px;
+        min-height: 0;
+    }
+    .tshirt_img {
+        margin: 20px 0px;
+        min-height: 0;
+    }
 
     #main_slider a.carousel-control-prev {
         left: 15px;
@@ -165,7 +173,7 @@
         left: 40px;
         top: 110%;
     }
- 
+
     .input_bt {
         width: 80%;
     }
@@ -428,6 +436,15 @@
     .fashion_section {
         padding-bottom: 100px;
     }
+    .electronic_img {
+        margin: 20px 0px;
+        min-height: 0;
+    }
+    .tshirt_img {
+        margin: 20px 0px;
+        min-height: 0;
+    }
+
 
     #main_slider a.carousel-control-prev {
         left: 15px;
