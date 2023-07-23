@@ -42,9 +42,6 @@
         margin-top: 5rem;
     }
 
-    .banner_taital {
-        color:black;
-    }
 
     .header_section_top {
         display: none;
@@ -89,9 +86,7 @@
         margin-top: 5rem;
         
     }
-    .banner_taital {
-        font-size: 24px;
-    }
+
     #my_slider a.carousel-control-prev {
         top: 100px;
     }
@@ -169,9 +164,7 @@
         background-size: 100%;
     }
 
-    .banner_taital{
-        font-size: xx-large;
-    }
+
     .tshirt_img {
         margin: 20px 0px;
         min-height: 360px;
@@ -222,10 +215,7 @@
         background-size: 100%;
     }
 
-    .banner_taital {
-        margin-top: 5rem;
-        color: black;
-    }
+
     .dropdown {
         display: none;
     }
@@ -233,11 +223,7 @@
         margin: 20px 0px;
         min-height: 320px;
     }
-    .banner_taital {
-        margin-top: 20px;
-        font-size: x-large;
-        color: white;
-    }
+
 
     .buynow_bt {
         margin-top: 1rem;
@@ -420,11 +406,7 @@
 
 /* IPHONE SE HORIZONTAL ONLY */
 @media (min-width: 560px) and (max-width: 570px) {
-    .banner_taital {
-        font-size: xx-large;
-        margin-top: 5rem;
-        color: black;
-    }  
+
     #my_slider a.carousel-control-prev {
         top: 200px;
     }
@@ -449,9 +431,7 @@
 
 /* IPHONE 8 PLUS HORIZONTAL ONLY*/
 @media (min-width: 720px) and (max-width: 750px) {
-    .banner_taital {
-        font-size: xx-large;
-    }
+
 }
 
 
@@ -461,9 +441,6 @@
         background-size: 100%;
     }
 
-    .banner_taital {
-        color:black;
-    }
 
     .header_section_top {
         display: none;
@@ -509,9 +486,7 @@
         margin-top: 2rem;
         
     }
-    .banner_taital {
-        font-size: 24px;
-    }
+ 
     #my_slider a.carousel-control-prev {
         top: 100px;
     }
