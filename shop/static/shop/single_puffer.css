@@ -50,7 +50,7 @@
 
 .puffer_img img{
 	height: auto;
-    width: 100%;
+    width: auto;
     text-align: center;
     margin: 50px 0px;
 	min-height: 250px;
@@ -72,7 +72,7 @@
   }
 
 
- .cart_btn {
+ .card_cart_btn {
 	position: relative;
 	list-style: none;
 	height: 60px;
@@ -89,7 +89,7 @@
 	transition: .5s;
   }
   
-  .cart_btn:hover {
+  .card_cart_btn:hover {
 	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 	text-decoration:none;
 	transform: scale(0.9);
