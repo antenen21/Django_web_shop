@@ -78,5 +78,23 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.0/countUp.min.js"></script>
 
 
+      <!-- Typed effect control from navbar.html-->
+      {% block Typed %}
+      <script>
+         var typed = new Typed('#element', {
+            strings: [
+            'Les meilleurs prixs de toute la ',
+            'Nos services de qualité ',
+            'Des pompes à chaleur pour les ',
+            'Quand sa chauffe, on est fière de notre ',
+            ],
+            typeSpeed: 5,
+            backSpeed: 25,
+            backDelay: 2500,
+            loop: true
+         });
+      </script>
+      {% endblock Typed %}
+
 </body>
 </html>
