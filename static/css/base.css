@@ -5,19 +5,9 @@
 
 
 
-html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}
 
-body {      
-    color: #666666;
-    font-size: 14px;
-    line-height: 1.80857;
-    font-weight: normal;
-    overflow-x: hidden;
-    font-family: 'Poppins', sans-serif;
-}
+
+
 
 
 a {
