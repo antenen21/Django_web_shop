@@ -2,14 +2,17 @@
 # START CONFIGURATIONS
 -------------------------------------*/
 
-html, body {
-    box-sizing: border-box !important; 
-    height: 100%;
+* {
+    box-sizing: border-box !important;
+    transition: ease all 0.5s;
     margin: 0;
     padding: 0;
-    max-width: 100%;
-    overflow: hidden; /* Hide scrollbar */
-    
+}
+
+
+html, body {
+    height: 100%;
+    max-width: 100%; 
 }    
 
 
