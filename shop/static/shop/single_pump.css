@@ -54,6 +54,7 @@
     margin: 50px 0px;
 	min-height: 250px;
 	max-height: 270px;
+	max-width: 270px;
 	flex-grow: 1;
 }
 
@@ -72,7 +73,7 @@
 
 
  .card_cart_btn {
-	position: relative;
+	
 	list-style: none;
 	height: 60px;
 	position: absolute;
