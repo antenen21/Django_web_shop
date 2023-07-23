@@ -12,28 +12,10 @@
         <div class="text" style="flex-grow: 1;">
         <h4 class="shirt_text" style="flex-grow: 1;">{{puffer.model}}</h4>  
         </div>   
-        <div class="puffer_img">
+        <div class="puffer_img img-fluid">
             <a href="{{puffer.get_absolute_url}}"><img src="{{puffer.img.url}}" alt="{{puffer.model}}">
         </div>
         <p class="price_text">Prix:  <span style="color: #262626;">{{puffer.price}} CHF</span></p>
-
-
-
-
-
-                {% comment %}         <div class="btn_main container">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="cart_btn"><a href="#"><i class="bi bi-cart-plus-fill"></i></a></div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="detail_btn"><a href="#"><i class="bi bi-arrow-up-right-circle-fill"></i></a></div> 
-                                </div>
-                            </div> 
-                        </div>    {% endcomment %}
-
-
-
 
         <div class="grid-container">
             <div class="cart_btn"><a href="{{puffer.get_absolute_url}}"><i class="bi bi-cart-plus-fill"></i></a></div>
