@@ -87,12 +87,7 @@
         
     }
 
-    #my_slider a.carousel-control-prev {
-        top: 100px;
-    }
-    #my_slider a.carousel-control-next {
-        top: 100px;
-    }
+
     .fashion_taital {
         font-size: 24px;
     }
@@ -316,12 +311,7 @@
         margin-top: 3rem;
     }
 
-    #my_slider a.carousel-control-prev {
-        top: 20px;
-    }
-    #my_slider a.carousel-control-next {
-        top: 20px;
-    }
+
     .fashion_taital {
         font-size: 24px;
     }
@@ -407,13 +397,7 @@
 /* IPHONE SE HORIZONTAL ONLY */
 @media (min-width: 560px) and (max-width: 570px) {
 
-    #my_slider a.carousel-control-prev {
-        top: 200px;
-    }
 
-    #my_slider a.carousel-control-next {
-        top: 200px;
-    }
 
     .header_box {
         margin-top: -3rem;
@@ -486,13 +470,7 @@
         margin-top: 2rem;
         
     }
- 
-    #my_slider a.carousel-control-prev {
-        top: 100px;
-    }
-    #my_slider a.carousel-control-next {
-        top: 100px;
-    }
+
     .fashion_taital {
         font-size: 24px;
     }
