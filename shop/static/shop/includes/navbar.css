@@ -3,20 +3,13 @@ BANNER MAIN SECTION
 ------------------*/
 
 .banner_bg_main {
- 
   width: 100%;
   float: left;
-  
   background-image: url('/static/shop/images/background_house.png');
-  
-  
   background-size: 100%;
-  
   background-repeat: no-repeat;
   margin-bottom: 5rem;
 }
-
-
 
 
 /* ------------------------
