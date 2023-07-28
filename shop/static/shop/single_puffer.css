@@ -1,7 +1,7 @@
 
 
 .box_main {
-	align-items: center;
+	
 	height: 100%;
 	width: 100%;
     flex-grow: 1;
@@ -11,6 +11,7 @@
     margin-bottom: 30px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	flex-grow: 1;
 }
 
 .box_main:hover {
@@ -74,9 +75,10 @@
 
  .card_cart_btn {
 	
+	place-items: start;
 	list-style: none;
 	height: 60px;
-	position: absolute;
+	position: relative;
 	width:60px;
 	height:60px;
 	padding: 6px;
