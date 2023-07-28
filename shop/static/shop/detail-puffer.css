@@ -279,10 +279,11 @@ body{
   margin:auto;
   }
   
+  /* Main image */
   .Product_tumbnail img{
-  max-width:100%;
-  margin:auto;
-  }
+    max-width:30%;
+    margin:auto;
+    }
   
   .details{
   width:100%;

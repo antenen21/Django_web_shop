@@ -279,8 +279,9 @@ body{
     margin:auto;
     }
     
+    /* Main image */
     .Product_tumbnail img{
-    max-width:100%;
+    max-width:30%;
     margin:auto;
     }
     
