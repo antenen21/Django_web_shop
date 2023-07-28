@@ -39,22 +39,12 @@
     border: 2px solid black;
 }
 
-.electronic_img {
-    width: 100%;
-    text-align: center;
-    margin: 20px 0px;
-	height: auto;
-	max-height: 350px;
-}
 
-.electronic_img img{
-	height: auto;
-    width: 100%;
-    text-align: center;
-    margin: 50px 0px;
-	min-height: 250px;
-	max-height: 270px;
-	max-width: 270px;
+
+.electronic-img img{
+	height: 200px;
+    width: 150px;
+	object-fit: fill;
 	flex-grow: 1;
 }
 
