@@ -71,11 +71,11 @@
   }
 
 
- .card_cart_btn {
-	
+  .card_cart_btn {
+	place-items: start;
 	list-style: none;
 	height: 60px;
-	position: absolute;
+	position: relative;
 	width:60px;
 	height:60px;
 	padding: 6px;
