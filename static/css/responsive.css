@@ -42,9 +42,13 @@
         margin-top: 5rem;
     }
 
-    .electronic_img {
-        margin: 20px 0px;
-        min-height: 0;
+    .electronic-img img {
+        
+        justify-content: center;
+        max-width: 220px;
+        max-height: 220px;
+        object-fit: fill;
+           
     }
 
 
@@ -234,9 +238,9 @@
         /* HEEEEERRRRRRRREEEEEEEEEEE */
 
         /* IPAD mini 7.9" and IPHONE 8 HORIZONTAL */
-@media (min-width: 560px) and (max-width: 770px) {
+@media (min-width: 560px) and (max-width: 768px) {
     .banner_bg_main {
-        background-size: 140%;
+        background-size: 140%;  
         left: -10rem;
     }
 
@@ -294,9 +298,13 @@
     .fashion_section {
         padding-bottom: 100px;
     }
-    .electronic_img {
-        margin: 20px 0px;
-        min-height: 145px;
+    
+    .electronic-img img {
+        height: 150px;
+        width: 150px;
+        object-fit: fill;
+    }
+    
     }
     .tshirt_img {
         margin: 20px 0px;

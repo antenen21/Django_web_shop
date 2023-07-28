@@ -1,7 +1,7 @@
 
 
 .box_main {
-	align-items: center;
+	align-items: end;
 	height: 100%;
 	width: 100%;
     flex-grow: 1;
@@ -39,6 +39,15 @@
     border: 2px solid black;
 }
 
+
+.electronic-img {
+	width: 100%;
+	text-align: center;
+	margin: 20px 0px;
+	height: auto;
+	max-height: 350px;
+	flex-grow: 1;
+}
 
 
 .electronic-img img{
