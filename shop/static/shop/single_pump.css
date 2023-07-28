@@ -42,8 +42,8 @@
 
 
 .electronic-img img{
-	height: 200px;
-    width: 150px;
+	height: 270px;
+    width: 270px;
 	object-fit: fill;
 	flex-grow: 1;
 }
