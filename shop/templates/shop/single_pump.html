@@ -13,7 +13,7 @@
                 <h4 class="shirt_text">{{pump.brand}} {{pump.model}}</h4>
             </div>
             <div class="electronic-img img-fluid" style="display:grid; place-items: center;">
-                <a href="{{pump.get_absolute_url}}"><img src="{{pump.img.url}}" alt="{{pump.model}}">
+                <a href="{{pump.get_absolute_url}}"><img src="{{pump.img.url}}" alt="{{pump.model}}"></a>
             </div> 
             <div>
                 <p class="price_text">Prix:  <span style="color: #262626;">{{pump.price}}</span></p>
@@ -21,8 +21,9 @@
 
 
             <div class="grid-container">
-                <div class="card_cart_btn"><a href="{{pump.get_absolute_url}}"><i class="bi bi-cart-plus-fill"></i></a></div>
-                <div class="detail_btn"><a href="{{pump.get_absolute_url}}"><i class="bi bi-arrow-up-right-circle-fill"></i></a></div> 
+                
+                <a class="card_cart_btn" href="{{pump.get_absolute_url}}"><i class="bi bi-cart-plus-fill"></i></a>
+                <a class="detail_btn" href="{{pump.get_absolute_url}}"><i class="bi bi-arrow-up-right-circle-fill"></i></a> 
             </div>        
     </div>  
 </div>

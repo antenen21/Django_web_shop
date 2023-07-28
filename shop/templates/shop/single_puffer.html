@@ -7,20 +7,24 @@
 
     
 
-<div class="container" style="display: flex; flex-direction: column; height:100%">
+<div class="container" style="display: flex; flex-direction: column; height:100%;">
     <div class="box_main">
-        <div class="text" style="flex-grow: 1;">
-        <h4 class="shirt_text" style="flex-grow: 1;">{{puffer.model}}</h4>  
-        </div>   
-        <div class="puffer_img img-fluid">
-            <a href="{{puffer.get_absolute_url}}"><img src="{{puffer.img.url}}" alt="{{puffer.model}}">
+        <div class="text" style="">
+            <h4 class="shirt_text">{{puffer.model}}</h4>  
         </div>
-        <p class="price_text">Prix:  <span style="color: #262626;">{{puffer.price}} CHF</span></p>
 
-        <div class="grid-container">
-            <div class="card_cart_btn"><a href="{{puffer.get_absolute_url}}"><i class="bi bi-cart-plus-fill"></i></a></div>
-            <div class="detail_btn"><a href="{{puffer.get_absolute_url}}"><i class="bi bi-arrow-up-right-circle-fill"></i></a></div>
-        </div>        
+        <div class="" style="">
+            <div class="puffer_img img-fluid">
+                <a href="{{puffer.get_absolute_url}}"><img src="{{puffer.img.url}}" alt="{{puffer.model}}"></a>
+            </div>
+            <p class="price_text">Prix:  <span style="color: #262626;">{{puffer.price}} CHF</span></p>
+
+            <div class="grid-container" style="flex-grow: 1;">
+                <a class="card_cart_btn" href="{{puffer.get_absolute_url}}"><i class="bi bi-cart-plus-fill"></i></a>
+                <a class="detail_btn" href="{{puffer.get_absolute_url}}"><i class="bi bi-arrow-up-right-circle-fill"></i></a>
+            </div>  
+        </div>
+        
     </div>  
 </div>
                
