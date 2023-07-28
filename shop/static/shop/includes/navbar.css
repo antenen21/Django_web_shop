@@ -1,3 +1,28 @@
+/* ----------------
+BANNER MAIN SECTION 
+------------------*/
+
+.banner_bg_main {
+ 
+  width: 100%;
+  float: left;
+  
+  background-image: url('/static/shop/images/background_house.png');
+  
+  
+  background-size: 100%;
+  
+  background-repeat: no-repeat;
+  margin-bottom: 5rem;
+}
+
+
+
+
+/* ------------------------
+FORM CONTROLS FOR SEARCHBAR 
+--------------------------*/
+
 .form-control:focus {
   border-color: #ffffff !important;
   border: 3px solid white;
@@ -288,22 +313,7 @@ a:hover {
 
 
 
-/* banner bg main start */
 
-.banner_bg_main {
- 
-  width: 100%;
-  float: left;
-  
-  background-image: url('/static/shop/images/background_house.png');
-  
-  
-  background-size: 100%;
-  
-  background-repeat: no-repeat;
-}
-/* banner bg main end */
-/* banner bg main end */
 
 
 
