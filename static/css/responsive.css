@@ -390,6 +390,10 @@
         background-size: 100%;
     }
 
+    .typedjs-first-text {
+        filter: invert(1);
+    }
+
 
     .header_section_top {
         display: none;
@@ -426,7 +430,9 @@
         float: left;
         font-size: 14px;
     }
+
     .nav-link {
+        margin-top: 20px;
         padding: .4rem 0px;
         color: #070707;
     }
