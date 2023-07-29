@@ -1,17 +1,14 @@
 
 
 .box_main {
-	
 	height: 100%;
 	width: 100%;
-    flex-grow: 1;
     background-color: rgb(255, 255, 255);
     padding: 20px;
     box-shadow: 0px 0 30px 10px #f0f0f0;
     margin-bottom: 30px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-	flex-grow: 1;
 }
 
 .box_main:hover {
@@ -30,7 +27,6 @@
 }
 
 .price_text {
-	flex-grow: 1;
     width: 100%;
     font-size: 16px;
     color: #f26522;
@@ -41,22 +37,21 @@
     border: 2px solid black;
 }
 
+
 .puffer_img {
-    width: 100%;
-    text-align: center;
-    margin: 20px 0px;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
 	height: auto;
 	max-height: 350px;
+
 }
 
+
 .puffer_img img{
-	height: auto;
-    width: auto;
-    text-align: center;
-    margin: 50px 0px;
-	min-height: 250px;
-	max-height: 270px;
-	flex-grow: 1;
+	height: 270px;
+    width: 270px;
+
 }
 
 /* <----BUTTONS----> */
@@ -73,8 +68,7 @@
   }
 
 
- .card_cart_btn {
-	
+  .card_cart_btn {
 	place-items: start;
 	list-style: none;
 	height: 60px;
@@ -112,11 +106,6 @@
    li:nth-child(1) a:hover .bi {
 	color: #f30808;
   }
-
-  
-
-
-
 
 
   .detail_btn {
@@ -159,13 +148,3 @@
 	a:hover .bi {
 		color: #f30808;
   }
- 
-
-
-
-
-
-
-
-  
-  
