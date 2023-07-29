@@ -47,7 +47,7 @@
         background-size: 100%;
     }
 
-    .electronic-img img,
+    .pump_img img,
     .puffer_img img {
         max-width: 220px;
         max-height: 220px;
@@ -269,7 +269,7 @@
         padding-bottom: 100px;
     }
     
-    .electronic-img img,
+    .pump_img img,
     .puffer_img img {
         height: 150px;
         width: 150px;
