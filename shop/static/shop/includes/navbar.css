@@ -46,17 +46,6 @@ TYPED JS TEXT ANIMATION
   word-spacing: 6.5px;
 }
 
-/* static text "  +   " */
-.typed-js-text-cruz {
-  z-index: 1;
-  color: #ffffff;
-  line-clamp: 1;
-  font-size: 60px;
-  text-shadow: 3px 1px 1px rgba(8, 8, 8, 0.79), 1.5px 1.5px 1.5px rgb(255, 254, 254),1px 3px 17px rgba(255, 0, 0, 1), 4px 3px 36px rgba(255, 30, 30, 0.4), -6px 4px 8px rgba(0, 0, 0, 0.78), -5px 5px 35px rgba(255, 255, 255, 1);
-  font-weight: 1000;
-  letter-spacing: 0px;
-}
-
 /* static text before "SWISS" */
 .typed-js-text-second {
   z-index: 2;
@@ -76,9 +65,6 @@ TYPED JS TEXT ANIMATION
   }
   .typed-js-text-second {
     font-size: 60px;
-  }
-  .typed-js-text-cruz {
-    font-size: 80px;
   }
 }
 
