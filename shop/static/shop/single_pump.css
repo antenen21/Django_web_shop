@@ -1,14 +1,13 @@
 
 
 .box_main {
-	align-items: end;
 	height: 100%;
 	width: 100%;
-    flex-grow: 1;
     background-color: rgb(255, 255, 255);
     padding: 20px;
     box-shadow: 0px 0 30px 10px #f0f0f0;
     margin-bottom: 30px;
+	margin-top: 30px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -43,7 +42,7 @@
 .electronic-img {
 	width: 100%;
 	text-align: center;
-	margin: 20px 0px;
+	margin: 0px 0px;
 	height: auto;
 	max-height: 350px;
 	flex-grow: 1;
@@ -51,10 +50,9 @@
 
 
 .electronic-img img{
+	place-items: center;
 	height: 270px;
     width: 270px;
-	object-fit: fill;
-	flex-grow: 1;
 }
 
 /* <----BUTTONS----> */
@@ -109,11 +107,6 @@
    li:nth-child(1) a:hover .bi {
 	color: #f30808;
   }
-
-  
-
-
-
 
 
   .detail_btn {
