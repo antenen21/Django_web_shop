@@ -1,7 +1,16 @@
 @media (min-width: 0px) and (max-width: 560px) {
+
+    .banner_bg_main {
+        
+        padding-right: 5%;
+    }
     .login_menu {
     
-        filter: invert(1);
+        filter: invert(0);
+    }
+
+    .lang_box {
+        color: #fff;
     }
 
     /* inverts only the dropdown again back */
@@ -38,16 +47,11 @@
         background-size: 100%;
     }
 
-    .login_menu {
-        margin-top: 5rem;
-    }
-
-    .electronic-img img {
-        
-        justify-content: center;
+    .electronic-img img,
+    .puffer_img img {
         max-width: 220px;
         max-height: 220px;
-        object-fit: fill;
+        
            
     }
 
@@ -92,7 +96,7 @@
     }
     .lang_box {
         background-color: transparent;
-        margin-top: 5rem;
+        margin-top: 0rem;
         
     }
 
@@ -103,10 +107,7 @@
     .fashion_section {
         padding-bottom: 100px;
     }
-    .electronic_img {
-        margin: 20px 0px;
-        min-height: 0;
-    }
+
     .tshirt_img {
         margin: 20px 0px;
         min-height: 0;
@@ -164,31 +165,24 @@
     }
     #main_slider a.carousel-control-next {
         right: 40px;
-        top: 120%;
+        top: 100%;
     }
     #main_slider a.carousel-control-prev {
         left: 40px;
-        top: 120%;
+        top: 100%;
     }
-    .electronic_img {
-        margin: 20px 0px;
-        min-height: 280px;
-    }
+
     #electronic_main_slider a.carousel-control-next {
         right: 40px;
-        top: 110%;
+        top: 100%;
     }
     #electronic_main_slider a.carousel-control-prev {
         left: 40px;
-        top: 110%;
+        top: 100%;
     }
 
     .input_bt {
         width: 80%;
-    }
-
-    .buynow_bt {
-        margin-top: 2rem;
     }
 }
 
@@ -201,20 +195,7 @@
     .dropdown {
         display: none;
     }
-    .tshirt_img {
-        margin: 20px 0px;
-        min-height: 320px;
-    }
 
-
-    .buynow_bt {
-        margin-top: 1rem;
-    }
-
-    .electronic_img {
-        margin: 20px 0px;
-        min-height: 190px;
-    }
     #electronic_main_slider a.carousel-control-next {
         right: 40px;
         top: 110%;
@@ -222,10 +203,6 @@
     #electronic_main_slider a.carousel-control-prev {
         left: 40px;
         top: 110%;
-    }
-    .jewellery_img {
-        margin: 20px 0px;
-        min-height: 0;
     }
 
     .input_bt {
@@ -238,7 +215,7 @@
         /* HEEEEERRRRRRRREEEEEEEEEEE */
 
         /* IPAD mini 7.9" and IPHONE 8 HORIZONTAL */
-@media (min-width: 560px) and (max-width: 768px) {
+@media (min-width: 560px) and (max-width: 770px) {
     .banner_bg_main {
         background-size: 140%;  
         left: -10rem;
@@ -292,33 +269,22 @@
         padding-bottom: 100px;
     }
     
-    .electronic-img img {
+    .electronic-img img,
+    .puffer_img img {
         height: 150px;
         width: 150px;
-        object-fit: fill;
+       
     }
     
-    }
-    .tshirt_img {
-        margin: 20px 0px;
-        min-height: 246px;
-    }
-    .jewellery_img {
-        margin: 20px 0px;
-        min-height: 0;
-    }
+    
+
     .shirt_text {
         font-size: 14px;
     }
     .price_text {
         font-size: 14px
     }
-    .buy_bt a {
-        font-size: 12px;
-    }
-    .seemore_bt a {
-        font-size: 12px;
-    }
+
     .box_main {
         padding: 20px 10px;
     }
@@ -356,12 +322,6 @@
 
 
 
-/* IPHONE SE ONLY */
-@media (min-width:0px) and (max-width: 420px) {
-    .login_menu {
-        margin-top: 2rem;
-        }
-    }
 
 
 /* IPHONE SE HORIZONTAL ONLY */
@@ -373,9 +333,11 @@
 
 /* IPHONE SE ONLY */
 @media (max-width: 390px) {
-  .logo img {
-    padding: 1rem;
-  }
+    .logo img {
+        height: auto;
+        width: 90%;
+        padding: 1rem;
+      }
 }
 
 /* IPHONE 8 PLUS HORIZONTAL ONLY*/
@@ -390,10 +352,11 @@
         background-size: 100%;
     }
 
-    .typedjs-first-text {
-        filter: invert(1);
-    }
-
+    .logo img {
+        height: 95%;
+        width: 95%;
+        padding: 1rem;
+      }
 
     .header_section_top {
         display: none;
@@ -431,14 +394,9 @@
         font-size: 14px;
     }
 
-    .nav-link {
-        margin-top: 20px;
-        padding: .4rem 0px;
-        color: #070707;
-    }
     .lang_box {
         background-color: transparent;
-        margin-top: 2rem;
+        
         
     }
 
@@ -448,16 +406,12 @@
     .fashion_section {
         padding-bottom: 100px;
     }
-    .electronic_img {
+    
+    .puffer_img {
         margin: 20px 0px;
         min-height: 0;
     }
-    .tshirt_img {
-        margin: 20px 0px;
-        min-height: 0;
-    }
-
-
+ 
     #main_slider a.carousel-control-prev {
         left: 15px;
         top: 101%;
@@ -493,5 +447,10 @@
     .location_main {
         padding: 30px 0px 30px 0px;
     }
+
+}
+
+
+@media (min-width: 989px) and (max-width: 1226px) {
 
 }
