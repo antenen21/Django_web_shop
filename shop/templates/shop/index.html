@@ -16,46 +16,50 @@
       <div class="col-12">
 
          <div class="fashion_section">
-         <div id="main_slider" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-               <!--First part-->
-               <div class="carousel-item active">
-                  <div class="container">
-                     <h1 class="fashion_taital">Nos pompes à chaleurs</h1>
-                        <div class="fashion_section_2">
-                           <div class="row">
-                              {% for pump in pump_block_1 %}
-                                 <div class="col-12 col-sm-12 col-lg-6 col-xl-4">
-                                    {% include 'shop/single_pump.html' %}
-                                 </div>
-                              {% endfor %}
-                           </div> 
-                        </div>    
-                  </div>
-               </div>
-               <!--Second part-->
-               <div class="carousel-item">
-                  <div class="container">
-                     <h1 class="fashion_taital">Nos pompes à chaleurs</h1>
-                        <div class="fashion_section_2">
-                           <div class="row">
-                              {% for pump in pump_block_2 %}
-                                 <div class="col-12 col-sm-12 col-lg-6  col-xl-4">
-                                    {% include 'shop/single_pump.html' %}
-                                 </div>
-                              {% endfor %}
-                           </div> 
-                        </div>    
-                  </div>
-               </div>
-            </div> 
-            <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-            <i class="fa fa-angle-left"></i>
-            </a>
-            <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-            <i class="fa fa-angle-right"></i>
-            </a>
-         </div>
+            <div id="main_slider" class="carousel slide" data-ride="carousel">
+
+                  <div class="carousel-inner">
+                     <!--First part-->
+                     <div class="carousel-item active">
+                        <div class="container">
+                        <h1 class="fashion_taital">Nos pompes à chaleurs</h1>
+                           <div class="fashion_section_2">
+                              <div class="row">
+                                 {% for pump in pump_block_1 %}
+                                    <div class="col-12 col-sm-12 col-lg-6 col-xl-4">
+                                       {% include 'shop/single_pump.html' %}
+                                    </div>
+                                 {% endfor %}
+                              </div> 
+                           </div>    
+                        </div>
+                     </div>
+                     <!--Second part-->
+                     <div class="carousel-item">
+                        <div class="container">
+                        <h1 class="fashion_taital">Nos pompes à chaleurs</h1>
+                           <div class="fashion_section_2">
+                              <div class="row">
+                                 {% for pump in pump_block_2 %}
+                                    <div class="col-12 col-sm-12 col-lg-6  col-xl-4">
+                                       {% include 'shop/single_pump.html' %}
+                                    </div>
+                                 {% endfor %}
+                              </div> 
+                           </div>    
+                        </div>
+                     </div>
+                  </div>  
+
+
+               <!-- slider buttons -->
+               <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+                  <i class="fa fa-angle-left"></i>
+               </a>
+               <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+                  <i class="fa fa-angle-right"></i>
+               </a>
+            </div>              
          </div>
 
       </div>
@@ -63,50 +67,61 @@
 </div>
 
 
+<div class="container">
+   <div class="row">
+      <div class="col-12">
 
-<div class="fashion_section">
-   <div id="electronic_main_slider" class="carousel slide" data-ride="carousel">
-     <div class="carousel-inner">
-      
-      <!--First part-->
-        <div class="carousel-item active">
-           <div class="container">
-              <h1 class="fashion_taital">Nos Accumulateurs pour votre système</h1>
-                 <div class="fashion_section_2">
-                    <div class="row">
-                       {% for puffer in puffer_block_1 %}
-                          <div class="col-12 col-sm-12 col-lg-6  col-xl-4">
-                             {% include 'shop/single_puffer.html' %}
-                          </div>
-                       {% endfor %}
-                    </div> 
-                 </div>    
-           </div>
-        </div>
-        <!--Second part-->
-        <div class="carousel-item">
-           <div class="container">
-              <h1 class="fashion_taital">Nos Accumulateurs pour votre système</h1>
-                 <div class="fashion_section_2" style="">
-                    <div class="row">
-                       {% for puffer in puffer_block_2 %}
-                          <div class="col-12 col-lg-12 col-sm-6 col-xl-4">
-                             {% include 'shop/single_puffer.html' %}
-                          </div>
-                       {% endfor %}
-                    </div> 
-                 </div>    
-           </div>
-        </div>
-     </div> 
-     <a class="carousel-control-prev" href="#electronic_main_slider" role="button" data-slide="prev">
-      <i class="fa fa-angle-left"></i>
-     </a>
-     <a class="carousel-control-next" href="#electronic_main_slider" role="button" data-slide="next">
-      <i class="fa fa-angle-right"></i>
-     </a>
+         <div class="fashion_section">
+            <div id="electronic_main_slider" class="carousel slide" data-ride="carousel">
+
+               <div class="carousel-inner">
+                  <!--First part-->
+                  <div class="carousel-item active">
+                     <div class="container">
+                        <h1 class="fashion_taital">Nos Accumulateurs pour votre système</h1>
+                           <div class="fashion_section_2">
+                              <div class="row">
+                                 {% for puffer in puffer_block_1 %}
+                                    <div class="col-12 col-sm-12 col-lg-6  col-xl-4">
+                                       {% include 'shop/single_puffer.html' %}
+                                    </div>
+                                 {% endfor %}
+                              </div> 
+                           </div>    
+                     </div>
+                  </div>
+                  <!--Second part-->
+                  <div class="carousel-item">
+                     <div class="container">
+                        <h1 class="fashion_taital">Nos Accumulateurs pour votre système</h1>
+                           <div class="fashion_section_2" style="">
+                              <div class="row">
+                                 {% for puffer in puffer_block_2 %}
+                                    <div class="col-12 col-lg-12 col-sm-6 col-xl-4">
+                                       {% include 'shop/single_puffer.html' %}
+                                    </div>
+                                 {% endfor %}
+                              </div> 
+                           </div>    
+                     </div>
+                  </div>
+               </div>
+
+
+               <!-- slider buttons -->
+               <a class="carousel-control-prev my-custom-buttons" href="#electronic_main_slider" role="button" data-slide="prev">
+                  <i class="bi bi-shift-fill bi-icon" style="transform: rotate(-90deg);"></i>
+               </a>
+               <a class="carousel-control-next my-custom-buttons" href="#electronic_main_slider" role="button" data-slide="next">
+                  <i class="bi bi-shift-fill bi-icon" style="transform: rotate(90deg);"></i>
+               </a>
+            </div>
+         </div>
+
+      </div>
    </div>
-  </div>
+</div>
+
 
 {% endblock content %}
 
