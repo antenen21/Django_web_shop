@@ -31,11 +31,67 @@ FORM CONTROLS FOR SEARCHBAR
 }
 
 
+/* ------------------------
+TYPED JS TEXT ANIMATION  
+--------------------------*/
+
+/* animated text */
+.typed-js-text-first {
+  align-items: center;
+  color: #ffffff;
+  font-size: bigger;
+  text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.4), 4px 3px 6px rgba(0, 0, 0, 0.4), -6px 4px 22px rgba(0, 0, 0, 0.69);
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  word-spacing: 6.5px;
+}
+
+/* static text "  +   " */
+.typed-js-text-cruz {
+  z-index: 1;
+  color: #ffffff;
+  line-clamp: 1;
+  font-size: 60px;
+  text-shadow: 3px 1px 1px rgba(8, 8, 8, 0.79), 1.5px 1.5px 1.5px rgb(255, 254, 254),1px 3px 17px rgba(255, 0, 0, 1), 4px 3px 36px rgba(255, 30, 30, 0.4), -6px 4px 8px rgba(0, 0, 0, 0.78), -5px 5px 35px rgba(255, 255, 255, 1);
+  font-weight: 1000;
+  letter-spacing: 0px;
+}
+
+/* static text before "SWISS" */
+.typed-js-text-second {
+  z-index: 2;
+  align-items: center;
+  color: #fc2e2e;
+  line-clamp: 1;
+  font-size: 40px;
+  text-shadow: 0.5px 0.5px 0.5px rgba(255, 254, 254, 0.864), 2px 2px 2px rgba(12, 11, 11, 0.745), 4px 3px 6px rgba(0, 0, 0, 0.4), -6px 4px 8px rgba(0, 0, 0, 0.69);
+  font-weight: 1000;
+  margin-left: -10px;
+}
+
+
+@media  (min-width: 900px) {
+  .typed-js-text-first {
+    font-size: 50px;
+  }
+  .typed-js-text-second {
+    font-size: 60px;
+  }
+  .typed-js-text-cruz {
+    font-size: 80px;
+  }
+}
+
+
+
+
+
+
 /* header top section start */
 .header_section_top {
   width: 100%;
   float: left;
-  background-color: #2b2a29;
+  background-color: #1c1c1b;
   clip-path: polygon(0 0, 100% 0, 96% 100%, 3% 100%);
   height: auto;
   padding: 10px 0px;
@@ -228,10 +284,16 @@ transform: rotateY(20deg);
   pointer-events: none;
   color: #aaa;
 }
+/* Styles for wrapping the search box end */
 
 
-/* Styles for wrapping the search box end */
-/* Styles for wrapping the search box end */
+
+
+
+/*----------------------------
+ LOGIN MENU
+-----------------------------*/
+
 .login_menu {
   display: flex;
   text-align: right;
@@ -275,8 +337,9 @@ transform: rotateY(20deg);
 }
 
 
-/* flage css start */
-/* flage css start */
+/*----------------------------
+ LANGUAGE BOX
+-----------------------------*/
 .lang_box {
   display: flex;
   float: right;
@@ -284,6 +347,11 @@ transform: rotateY(20deg);
   border-radius: 5px;
   margin-right: 20px;
 }
+
+
+
+
+
 
 .nav-link {
   display: block;
@@ -295,11 +363,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* flage css end */
-/* flage css end */
 
-/* header section end */
-/* header section end */
 
 
 
