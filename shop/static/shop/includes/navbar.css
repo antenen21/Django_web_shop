@@ -36,33 +36,34 @@ TYPED JS TEXT ANIMATION
 --------------------------*/
 
 /* animated text */
-.typed-js-text-first {
+.typed-js-text-first,
+.text-light {
   align-items: center;
   color: #ffffff;
   font-size: bigger;
   text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.4), 4px 3px 6px rgba(0, 0, 0, 0.4), -6px 4px 22px rgba(0, 0, 0, 0.69);
-  font-weight: bold;
+  font-weight: 1000;
   letter-spacing: 1.5px;
   word-spacing: 6.5px;
 }
 
 /* static text before "SWISS" */
 .typed-js-text-second {
-  z-index: 2;
   align-items: center;
-  color: #fc2e2e;
-  line-clamp: 1;
-  font-size: 40px;
-  text-shadow: 0.5px 0.5px 0.5px rgba(255, 254, 254, 0.864), 2px 2px 2px rgba(12, 11, 11, 0.745), 4px 3px 6px rgba(0, 0, 0, 0.4), -6px 4px 8px rgba(0, 0, 0, 0.69);
+  color: rgb(251, 0, 0);
+  font-size: 35px;
+  text-shadow: 1px 0.5px 0.5px rgba(0, 0, 0, 0.864), 2px 2px 2px rgb(255, 255, 255), 4px 3px 6px rgba(0, 0, 0, 0.4), -6px 4px 8px rgba(0, 0, 0, 0.69);
   font-weight: 1000;
-  margin-left: -10px;
+
 }
 
 
 @media  (min-width: 900px) {
-  .typed-js-text-first {
+  .typed-js-text-first,
+  .text-light {
     font-size: 50px;
   }
+
   .typed-js-text-second {
     font-size: 60px;
   }
