@@ -50,9 +50,9 @@ TYPED JS TEXT ANIMATION
 /* static text before "SWISS" */
 .typed-js-text-second {
   align-items: center;
-  color: rgb(251, 0, 0);
+  color: #ff0000;
   font-size: 35px;
-  text-shadow: 1px 0.5px 0.5px rgba(0, 0, 0, 0.864), 2px 2px 2px rgb(255, 255, 255), 4px 3px 6px rgba(0, 0, 0, 0.4), -6px 4px 8px rgba(0, 0, 0, 0.69);
+  text-shadow: 5px 2px 4px rgba(0, 0, 0, 1), 4px 3px 4px rgba(255, 255, 255, 1), -6px 4px 8px rgba(144, 45, 45, 0.58), 1px 1.7px 8px rgba(255, 179, 179, 0.6), 1px 1.7px 8px rgba(255, 255, 255, 1);
   font-weight: 1000;
 
 }
