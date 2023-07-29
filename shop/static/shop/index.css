@@ -9,6 +9,7 @@
 .fashion_section {
     width: 100%;
     padding-bottom: 150px;
+    margin-bottom: 150px;
 }
 
 .fashion_taital {
@@ -29,12 +30,10 @@
 
 
 #main_slider a.carousel-control-next {
-    right: 615px;
     top: 105%;
 }
 
 #main_slider a.carousel-control-prev {
-    left: 615px;
     top: 105%;
 }
 
@@ -60,25 +59,13 @@
 
  
 
-/* puffer section start */
-/* puffer section start */
-.electronic_img {
-    width: 100%;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 50px;
-    min-height: 295px;
-}
-
-
-
 #electronic_main_slider a.carousel-control-next {
-    right: 615px;
+    
     top: 105%;
 }
 
 #electronic_main_slider a.carousel-control-prev {
-    left: 615px;
+    
     top: 105%;
 }
 
