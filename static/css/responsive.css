@@ -93,17 +93,8 @@
         
     }
 
-
     .pump_title {
         font-size: 24px;
-    }
-    .pump_section {
-        padding-bottom: 100px;
-    }
-
-    .tshirt_img {
-        margin: 20px 0px;
-        min-height: 0;
     }
 
     #main_slider a.carousel-control-prev {
@@ -245,7 +236,6 @@
     .dropdown {
         display: none;
     }
-
     .nav-link {
         padding: .4rem 0px;
         color: #fff;
@@ -253,29 +243,14 @@
     .lang_box {
         background-color: transparent;
     }
- 
-
     .pump_title {
         font-size: 24px;
     }
-    .pump_section {
-        padding-bottom: 100px;
-    }
-    
- 
-    
-    
-
     .product_text {
         font-size: 14px;
     }
     .price_text {
         font-size: 14px
-    }
-
-    .pump_box_main,
-    .box_main {
-        padding: 20px 10px;
     }
 
     #main_slider a.carousel-control-prev {
@@ -384,23 +359,12 @@
     }
 
     .lang_box {
-        background-color: transparent;
-        
-        
+        background-color: transparent; 
     }
-
     .pump_title {
         font-size: 24px;
     }
-    .pump_section {
-        padding-bottom: 100px;
-    }
-    
-    .puffer_img {
-        margin: 20px 0px;
-        min-height: 0;
-    }
- 
+
     #main_slider a.carousel-control-prev {
         left: 15px;
         top: 101%;
