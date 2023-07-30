@@ -1,8 +1,10 @@
 
 
-.box_main {
-	display: flex; 
+.pump_box_main {
+	box-sizing: border-box;
+	display: flex;
 	flex-direction: column;
+	columns: 1;
 	height: 600px;
 	width: 100%;
     background-color: rgb(255, 255, 255);
@@ -14,7 +16,7 @@
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.box_main:hover {
+.pump_box_main:hover {
     transform: scale(1.02);
 }
 
@@ -29,6 +31,27 @@
     padding-bottom: 5px;
 }
 
+
+.pump_img_container {
+	display: flex;
+	place-items: center;
+	justify-content: center;
+	text-align: center;
+	min-width: 270px;
+	max-width: 270px;
+	margin:0;
+	min-height: 270px;
+	max-height: 270px;
+	
+}
+
+.pump_img_container img{
+	justify-content: center;
+	height: 270px;
+    width: 270px;
+}
+
+
 .price_text {
     width: 100%;
     font-size: 16px;
@@ -41,21 +64,7 @@
 }
 
 
-.pump_img {
-	width: 100%;
-	text-align: center;
-	margin: 0px 0px;
-	height: auto;
-	max-height: 350px;
-	flex-grow: 1;
-}
 
-
-.pump_img img{
-	place-items: center;
-	height: 270px;
-    width: 270px;
-}
 
 /* <----BUTTONS----> */
 .grid-container {
