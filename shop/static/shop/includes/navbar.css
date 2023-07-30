@@ -47,13 +47,19 @@ TYPED JS TEXT ANIMATION
   word-spacing: 6.5px;
 }
 
+/* container for animated text -> don't push arround other stuff */
+.typed-container {
+  height: 140px;
+  width: 100%;
+}
+
 /* static text before "SWISS" */
 .typed-js-text-second {
   align-items: center;
   color: #ff0000;
   font-size: 35px;
   text-shadow: 5px 2px 4px rgba(0, 0, 0, 1), 4px 3px 4px rgba(255, 255, 255, 1), -6px 4px 8px rgba(144, 45, 45, 0.58), 1px 1.7px 8px rgba(255, 179, 179, 0.6), 1px 1.7px 8px rgba(255, 255, 255, 1);
-  font-weight: 1000;
+  font-weight: xxx-large;
 
 }
 
