@@ -4,7 +4,8 @@
 
 .carousel-container {
   overflow-x: hidden;
-	background-color: grey;
+  border-radius: 20px;
+	background-color: rgb(233, 231, 231);
   position: relative;
   display: flex;
   width: auto;
@@ -13,8 +14,6 @@
 	margin-bottom: 80px; 
 	
 }
-
-
 
 .shopSlider-controls {
 	position: relative;
