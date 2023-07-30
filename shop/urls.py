@@ -26,4 +26,7 @@ urlpatterns = [
 
     # Pages
     path('about-us/', views.about_us, name='about-us-path'),
+
+    # Testing
+    path('test/', views.TestView.as_view(), name='test-path'),
 ]   
