@@ -25,37 +25,33 @@
 <div class="container"  >
    <div class="row">
       
-      
+                     
+      <div class="carousel-container owl-carousel" id="shopSlider" style="display: flex;">
+        
+         {% for pump in pumps %}
+            <div class="item">
+               {% include 'shop/single_pump.html' %}
+            </div>
+         {% endfor %}
 
-                              
-       <div class="carousel-container owl-carousel" id="shopSlider" style="display: flex;">
-         
-            
-            {% for pump in pumps %}
-               <div class="item">
-                  {% include 'shop/single_pump.html' %}
-               </div>
-            {% endfor %}
-         </div>
-      </div>           
+      </div>
 
+   </div>
+</div>
 
-                  <div class="container">
-                     <div class="shopSlider-controls">
-                        <div id="shopSliderLeft" class="shopSlider-arrow shopSlider-arrow--left">
-                           <img src="https://res.cloudinary.com/dqdxca8sz/image/upload/v1577204832/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%BB%D0%B0%D0%B9%D0%B4%D0%B5%D1%80%D0%B0%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20owlcarousel2%20%D0%B4%D0%BB%D1%8F%20codepen%20%D0%B8%D0%B7%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%B0%20freelancetesting/boards-left_zhyxah.svg" alt="Prew">
-                        </div>
-                        <div id="shopSliderRight" class="shopSlider-arrow shopSlider-arrow--right">
-                           <img src="https://res.cloudinary.com/dqdxca8sz/image/upload/v1577204832/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%BB%D0%B0%D0%B9%D0%B4%D0%B5%D1%80%D0%B0%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20owlcarousel2%20%D0%B4%D0%BB%D1%8F%20codepen%20%D0%B8%D0%B7%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%B0%20freelancetesting/boards-right_k0jkam.svg" alt="Next">
-                        </div>
-                     </div>
-                  </div>
-
-
-
+<div class="container">
+   <div class="shopSlider-controls">
+      <div id="shopSliderLeft" class="shopSlider-arrow shopSlider-arrow--left">
+         <img src="https://res.cloudinary.com/dqdxca8sz/image/upload/v1577204832/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%BB%D0%B0%D0%B9%D0%B4%D0%B5%D1%80%D0%B0%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20owlcarousel2%20%D0%B4%D0%BB%D1%8F%20codepen%20%D0%B8%D0%B7%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%B0%20freelancetesting/boards-left_zhyxah.svg" alt="Prew">
+      </div>
+      <div id="shopSliderRight" class="shopSlider-arrow shopSlider-arrow--right">
+         <img src="https://res.cloudinary.com/dqdxca8sz/image/upload/v1577204832/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%BB%D0%B0%D0%B9%D0%B4%D0%B5%D1%80%D0%B0%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20owlcarousel2%20%D0%B4%D0%BB%D1%8F%20codepen%20%D0%B8%D0%B7%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%B0%20freelancetesting/boards-right_k0jkam.svg" alt="Next">
       </div>
    </div>
 </div>
+
+   
+
 
 
 {% endblock content %} 
