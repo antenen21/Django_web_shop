@@ -8,10 +8,11 @@
 	background-color: rgb(233, 231, 231);
   position: relative;
   display: flex;
-  width: auto;
+  width: 90%;
 	height: 110%;
 	margin-top: 50px;
-	margin-bottom: 80px; 
+	margin-bottom: 80px;
+	
 	
 }
 
