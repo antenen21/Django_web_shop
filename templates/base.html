@@ -63,6 +63,25 @@
 
    <!-- ======= Scripts at the end of the body ======= -->
 {% block js_files %}{% endblock js_files %}
+
+
+
+      <!-- ======== TESTING ======== -->
+            <!--  The reason sometime html executed inline script before external script loaded perfectly. 
+                  I get solution by this way . I just added defer attribute to my owl.carousel source calling like ..
+               
+                  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+                  Documentation about defer attribute  https://www.w3schools.com/tags/att_script_defer.asp -->
+                     
+            
+            <!-- jquery -->
+               <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+               <!-- owl carousel -->
+               <script defer src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+      <!-- ======== TESTING ======== -->
+
+
     
       <!-- Bootstrap 5 JS cdn -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
