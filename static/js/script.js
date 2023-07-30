@@ -21,12 +21,12 @@
       
       $(document).ready(function() {
    
-         const shopSlider = $('#shopSlider');
+         const pumpSlider = $('#pumpSlider');
      
-         shopSlider.owlCarousel({
+         pumpSlider.owlCarousel({
              loop: true,
              dots: false,
-             margin: 2,
+             margin: 1,
              smartSpeed: 500,
              responsive: {
                  // breakpoint from 0 up
@@ -36,25 +36,25 @@
 
                 // breakpoint from 2 up
                  859: {
-                    items: 2,
+                    items: 1,
                 },
     
                  // breakpoint from 3 up
                  1254: {
-                     items: 3,
+                     items: 1,
                  }
              }
      
          });
      
-         $('#shopSliderLeft').click(function() {
+         $('#pumpSliderLeft').click(function() {
              console.log('Left');
-             shopSlider.trigger('prev.owl.carousel');
+             pumpSlider.trigger('prev.owl.carousel');
          });
      
-         $('#shopSliderRight').click(function() {
+         $('#pumpSliderRight').click(function() {
              console.log('Right');
-             shopSlider.trigger('next.owl.carousel');
+             pumpSlider.trigger('next.owl.carousel');
          });
      
      });
@@ -96,4 +96,25 @@ $(document).ready(function() {
           shopSlider.trigger('next.owl.carousel');
       });
   
+  });
+
+
+
+
+
+
+ /*----------------------------------------------
+|           TYPED JS - NAVBAR                   |
+-----------------------------------------------*/ 
+  var typed = new Typed('#element', {
+     strings: [
+     'LES MEILLEURS PRIX DE TOUTE LA ',
+     'NOS SERVICES DE QUALITÉ ',
+     'LES POMPES À CHALEUR POUR LES ',
+     'ON EST FIERS DE NOTRE',
+     ],
+     typeSpeed: 8,
+     backSpeed: 15,
+     backDelay: 3000,
+     loop: true
   });
