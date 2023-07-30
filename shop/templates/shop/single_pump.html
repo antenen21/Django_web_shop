@@ -7,29 +7,28 @@
     
               
  
-    <div class="box_main">
+    <div class="pump_box_main">
         
             <div class="text" style="flex-grow: 1;"> 
                 <h4 class="product_text">{{pump.brand}} {{pump.model}}</h4>
             </div>
-            <div class=" container pump_img img-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <a href="{{pump.get_absolute_url}}"><img src="{{pump.img.url}}" alt="{{pump.model}}"></a>
-                    </div>
+
+            <div class="container">
+                <div class="pump_img_container">
+                    <a href="{{pump.get_absolute_url}}"><img src="{{pump.img.url}}" alt="{{pump.model}}"></a>
                 </div>
-            </div> 
-            <div>
+            
+
                 <p class="price_text">Prix:  <span style="color: #262626;">{{pump.price}}</span></p>
-            </div>
+            
 
             <div class="grid-container">
                 <a class="card_cart_btn" href="{{pump.get_absolute_url}}"><i class="bi bi-cart-plus-fill"></i></a>
                 <a class="detail_btn" href="{{pump.get_absolute_url}}"><i class="bi bi-three-dots"></i></a> 
             </div>        
-    </div>  
+        </div>  
 
- 
+    </div>
   
                
 
