@@ -25,6 +25,7 @@ MMMMMMMMMM MMMMMMMMMMM    MMMMMMMMMMM MMMMMMMMMMM    MMMMMMMMMMM MMMM MMMMMMMMMM
    5. docker products
    6. logout page CSS
    7. top NAV lniks (sellers ...)
+   8. typed JS is moving body
 
 
 
