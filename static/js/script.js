@@ -33,6 +33,12 @@
                  0: {
                      items: 1,
                  },
+
+                // breakpoint from 2 up
+                 859: {
+                    items: 2,
+                },
+    
                  // breakpoint from 3 up
                  1254: {
                      items: 3,
@@ -60,7 +66,7 @@
       
 $(document).ready(function() {
    
-      const shopSlider = $('#main_slider');
+      const shopSlider = $('#d');
   
       shopSlider.owlCarousel({
           loop: true,
