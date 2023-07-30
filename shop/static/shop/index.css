@@ -1,14 +1,79 @@
-/*--------------------------
- PUMP SLIDER SECTION 
- --------------------------*/
+/*--------------------------------------------------
+CAROUSEL CONTAINER WHICH WRAPS THE ITEMS - COMMON
+ --------------------------------------------------*/
+.carousel-container {
+    overflow-x: hidden;
+    border-radius: 20px;
+      background-color: rgb(233, 231, 231);
+    position: relative;
+    display: flex;
+    width: 90%;
+      height: 110%;
+      margin-top: 50px;
+      margin-bottom: 80px; 
+  }
+  
 
-.pump_section {
-    width: 100%;
-    
-    margin-bottom: 150px;
-}
 
-.pump_title {
+
+
+/*-----------------------------------
+ PUMP CONTROL BUTTONS 
+ -----------------------------------*/
+  .pumpSlider-controls {
+      position: relative;
+  }
+  
+  .pumpSlider-arrow {
+      width: 40px;
+      height: 48px;
+      padding: 15px;
+      bottom: 120px;
+      background-color: red;
+      position: absolute;
+      bottom: 230px;
+      z-index: 9;
+      cursor: pointer;
+  
+      @media (min-width: 650px) {   
+          bottom: calc(120px + 80px); 
+      }
+      img {
+          vertical-align: top;
+      }
+  }
+  
+  .pumpSlider-arrow--left {
+      left: -15px; 
+      @media (min-width: 650px) {  
+          transform: translate(100%, 0);
+          left: 0px;
+      }
+      @media (min-width: 1334px) {   
+          right: 0px;
+          transform: translate(-100%, 0%);
+      }
+  }
+  
+  
+  .pumpSlider-arrow--right {
+      right: -15px;
+      @media (min-width: 650px) {  
+          transform: translate(-100%, 0);
+          right: px;
+      }
+      @media (min-width: 1334px) {   
+          right: 0px;
+          transform: translate(100%, 0%);
+      }
+  }
+  
+
+/*-----------------------------
+ COMMON PUMP AND PUFFER TITLES 
+ -----------------------------*/
+.pump_title,
+.puffer_title {
     padding: 1rem;
     width: 100%;
     font-size: 50px;
@@ -17,15 +82,21 @@
     font-weight: bolder;
 }
 
-.pump_section_2 {
-    width: 100%;
-}
-
-.carousel-inner {
-    overflow: visible!important; /*override BS to see the bottom*/
-}
 
 
+
+
+
+
+
+
+
+
+
+
+/*--------------------------
+ CUSTOM MAIN SLIDER BUTTONS 
+ --------------------------*/
 #main_slider a.carousel-control-next {
     margin-top: 2rem;
     top: 105%;
@@ -76,15 +147,9 @@
 
  
 
-
-
-
-
-
-
-/*--------------------------
- PUFFER BUTTONS FOR SLIDER 
- --------------------------*/
+/*-------------------------------------------
+|CUSTOM PUFFER BUTTONS                       
+--------------------------------------------*/
 
 /* position */
 #puffer_main_slider a.carousel-control-next {
