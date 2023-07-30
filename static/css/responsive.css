@@ -47,13 +47,6 @@
         background-size: 100%;
     }
 
-    .pump_img img,
-    .puffer_img img {
-        max-width: 220px;
-        max-height: 220px;
-        
-           
-    }
 
 
     .header_section_top {
@@ -269,12 +262,7 @@
         padding-bottom: 100px;
     }
     
-    .pump_img img,
-    .puffer_img img {
-        height: 150px;
-        width: 150px;
-       
-    }
+ 
     
     
 
@@ -285,6 +273,7 @@
         font-size: 14px
     }
 
+    .pump_box_main,
     .box_main {
         padding: 20px 10px;
     }
