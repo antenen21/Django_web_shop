@@ -12,12 +12,15 @@ from django.core.mail import send_mail
 from django.conf import settings
 
 
-# Search
-""" only called bi the search bar under action """
 
+
+#############################################
+# SEARCH BAR                                #
+#############################################
 
 class SearchResultView(View):
     def get(self, request):
+        """ only called bi the search bar under action """
         return render(request, "shop/search-results.html")
 
     def post(self, request):
@@ -45,7 +48,9 @@ class NoResultView(TemplateView):
     template_name = "shop/no-search-results.html"
 
 
-# Index
+#############################################
+# INDEX                                     #
+#############################################
 
 class IndexView(View):
 
@@ -53,6 +58,7 @@ class IndexView(View):
         pumps = Pump.objects.all().order_by("-price")
         pump_block_1 = pumps[:3]
         pump_block_2 = pumps[3:6]
+
 
         puffers = Puffer.objects.all().order_by("-price")
         puffer_block_1 = puffers[:3]
@@ -68,7 +74,9 @@ class IndexView(View):
         })
 
 
-# Products
+#############################################
+# PRODUCTS                                  #
+#############################################
 
 class AllPumpsView(View):
 
@@ -111,8 +119,10 @@ def detail_puffer(request, slug):
     })
 
 
-# Ratings
 
+#############################################
+# RATINGS                                   #
+#############################################
 class ReviewListView(TemplateView):
     template_name = 'shop/review_list.html'
 
@@ -151,6 +161,35 @@ class ThankYouRatingView(TemplateView):
         return context
 
 
-# Pages
+#############################################
+# ABOUT US                                  #
+#############################################
 def about_us(request):
     return render(request, 'shop/pages/page-about-us.html')
+
+
+
+
+#############################################
+# ONLY FOR TESTING PURPOSES                 #
+#############################################
+class TestView(View):
+
+    def get(self, request):
+        pumps = Pump.objects.all().order_by("-price")
+        pump_block_1 = pumps[:3]
+        pump_block_2 = pumps[3:6]
+
+
+        puffers = Puffer.objects.all().order_by("-price")
+        puffer_block_1 = puffers[:3]
+        puffer_block_2 = puffers[3:]
+        return render(request, 'shop/test.html', {
+            "pumps": pumps,
+            "pump_block_1": pump_block_1,
+            "pump_block_2": pump_block_2,
+            "puffers": puffers,
+            "puffer_block_1": puffer_block_1,
+            "puffer_block_2": puffer_block_2,
+
+        })
