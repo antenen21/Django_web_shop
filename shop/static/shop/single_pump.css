@@ -54,6 +54,18 @@
     width: 270px;
 }
 
+
+/* the image are to big otherwise */
+@media (max-width: 310px) {
+	.pump_img_container {
+		height: 180px;
+    	width: 180px;
+	}
+	.pump_img_container img{
+		height: 180px;
+		width:180px;
+	}
+}
 /* the image are to big otherwise */
 @media (max-width: 414px) {
 	.pump_img_container {
