@@ -7,27 +7,26 @@
 
     
 
-<div class="container" style="height:100%;">
-    <div class="box_main" style="display: flex; flex-direction: column;">
-
-        <div class="text" style="flex-grow: 1;">
-            <h4 class="product_text">{{puffer.model}}</h4>  
-        </div>
-
-        <div class="container">
-            <div class="puffer_img img-fluid">
-                <a href="{{puffer.get_absolute_url}}"><img src="{{puffer.img.url}}" alt="{{puffer.model}}"></a>
-            </div>
-            
-            <p class="price_text">Prix:  <span style="color: #262626;">{{puffer.price}} CHF</span></p>
-
-            <div class="grid-container" style="flex-grow: 1;">
-                <a class="card_cart_btn" href="{{puffer.get_absolute_url}}"><i class="bi bi-cart-plus-fill"></i></a>
-                <a class="detail_btn" href="{{puffer.get_absolute_url}}"><i class="bi bi-three-dots"></i></a>
-            </div>  
-        </div>
+<div class="puffer_box_main">
         
-    </div>  
+    <div class="text" style="flex-grow: 1;"> 
+        <h4 class="product_text">{{puffer.brand}} {{puffer.model}}</h4>
+    </div>
+
+    <div class="container">
+        <div class="puffer_img_container">
+            <a href="{{pump.get_absolute_url}}"><img src="{{puffer.img.url}}" alt="{{puffer.model}}"></a>
+        </div>
+    
+        <p class="price_text">Prix:  <span style="color: #262626;">{{puffer.price}}</span></p>
+    
+
+    <div class="grid-container">
+        <a class="card_cart_btn" href="{{puffer.get_absolute_url}}"><i class="bi bi-cart-plus-fill"></i></a>
+        <a class="detail_btn" href="{{puffer.get_absolute_url}}"><i class="bi bi-three-dots"></i></a> 
+    </div>        
+</div>  
+
 </div>
                
 
