@@ -1,3 +1,5 @@
+
+
 /* footer section start */
 /* footer section start */
 
@@ -14,7 +16,7 @@
   padding: 2rem;
   width: 100%;
   float: left;
-  background-color: #252525;
+  background-image: linear-gradient(119deg, rgba(0, 0, 0, 0.8) 41%, rgba(255, 255, 255, 0) 70%), linear-gradient(157deg, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)), linear-gradient(340deg, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
   height: 100%;
   
   
@@ -24,8 +26,12 @@
   margin-top: 5rem;
   width: 100%;
   text-align: center;
-  border: 2px solid white;
+  border: 6px solid #383d42;
   border-radius: 5px;
+  box-shadow: inset 5px 5px 8px 1px rgba(0, 0, 0, 0.2),
+  inset -5px -5px 8px 0px rgba(77, 71, 100, 0.3),
+  inset -1px -2px 2px 0px rgba(77, 71, 100, 0.4);
+  transition: all 0.3s ease-in-out;
   padding: 2rem;
 }
 
@@ -34,8 +40,14 @@
 }
 
 .footer_logo:hover{
-  transform: scale(1.1);
-  background-color:#ace35f9c;
+  transform: scale(0.97);
+  background-color:#22a206;
+  box-shadow: inset 5px 5px 8px 1px rgba(0, 0, 0, 0.2),
+			  inset -5px -5px 8px 0px rgba(77, 71, 100, 0.3),
+			  inset -1px -2px 2px 0px rgba(77, 71, 100, 0.4),
+			  5px 5px 10px 2.5px rgba(0, 0, 0, 0.2),
+			  -5px -5px 10px 2.5px rgba(77, 71, 100, 0.4),
+			  -1px -1px 4px 2px rgba(77, 71, 100, 0.4);
 }
 
 .footer_logo button:hover {
@@ -103,7 +115,7 @@
 .copyright_section {
   width: 100%;
   float: left;
-  background-color: #252525;
+  background-color: transparent;
   height: auto;
 }
 
