@@ -1,0 +1,118 @@
+
+/*--------------------------
+ CUSTOM MAIN SLIDER BUTTONS 
+ --------------------------*/
+ #pumpSlider a.carousel-control-next {
+    margin-top: 2rem;
+    top: 105%;
+}
+
+#pumpSlider a.carousel-control-prev {
+    margin-top: 2rem;
+    top: 105%;
+}
+
+#pumpSlider .carousel-control-next,
+#pumpSlider .carousel-control-prev {
+    border-radius: 50%;
+    width:80px;
+	height:80px;
+    box-sizing: border-box;
+    opacity: 1;
+    font-size: 30px;
+    color: #171616;
+    box-shadow: 2px 2px 12px 4px rgba(0, 0, 0, 0.45),
+                0px 3px 4px 0px rgba(133, 255, 0, 1), 
+                0px 2px 2px 1px rgba(0, 0, 0, 1), 
+                0px 15px 18px 6px rgba(41, 40, 40, 0.309); 
+             
+    background-image: radial-gradient(circle at 51% 50%, rgba(255, 251, 251, 1) 27%, rgba(255, 252, 252, 1) 59%, rgba(154, 147, 147, 1) 60%, rgba(255, 255, 255, 1) 62%, rgba(0, 0, 0, 1) 83%);
+    transition: .9s;
+}
+
+/* hover and focus configurations !anchor tag! */
+#pumpSlider a.carousel-control-next:focus,
+#pumpSlider a.carousel-control-next:hover,
+#pumpSlider a.carousel-control-prev:focus,
+#pumpSlider a.carousel-control-prev:hover {
+	box-shadow: 0px 5px 10px 5px rgba(85, 85, 85, 0.271), 0px 2px 3px 3px rgba(85, 85, 85, 0.482);
+	text-decoration:none;
+	transform: scale(0.9);
+}
+
+/* hover and focus configurations */
+#pumpSlider .carousel-control-next:focus,
+#pumpSlider .carousel-control-next:hover,
+#pumpSlider .carousel-control-prev:focus,
+#pumpSlider .carousel-control-prev:hover {
+	color: rgb(108, 212, 4);
+    font-size: xx-large;
+}
+
+
+ 
+
+/*-------------------------------------------
+|CUSTOM PUFFER BUTTONS                       
+--------------------------------------------*/
+
+/* position */
+#pufferSlider a.carousel-control-next {
+    margin-top: 2rem;
+    top: 105%;
+}
+#pufferSlider a.carousel-control-prev {
+    margin-top: 2rem;
+    top: 105%;
+}
+
+
+/* main button configurations */
+#pufferSlider .carousel-control-next,
+#pufferSlider .carousel-control-prev {
+    border-radius: 50%;
+    width:80px;
+	height:80px;
+    padding: 15px;
+    box-sizing: border-box;
+    opacity: 1;
+    font-size: 30px;
+    color: #171616;
+    box-shadow: 2px 2px 12px 4px rgba(0, 0, 0, 0.45),
+                0px 3px 4px 0px rgba(133, 255, 0, 1), 
+                0px 2px 2px 1px rgba(0, 0, 0, 1), 
+                0px 15px 18px 6px rgba(41, 40, 40, 0.309); 
+             
+    background-image: radial-gradient(circle at 51% 50%, rgba(255, 251, 251, 1) 27%, rgba(255, 252, 252, 1) 59%, rgba(154, 147, 147, 1) 60%, rgba(255, 255, 255, 1) 62%, rgba(0, 0, 0, 1) 83%);
+    transition: .9s;
+}
+
+/* icon styling*/
+#pufferSlider .my-custom-buttons .bi-icon {
+    
+    width: 100%;
+    height:100%;
+    display:block;
+    background: transparent;
+    border-radius: 50%;
+    font-size:40px;
+    color: #070707;
+    transition: .5s;
+}
+
+/* hover and focus configurations !anchor tag! */
+#pufferSlider a.carousel-control-next:focus,
+#pufferSlider a.carousel-control-next:hover,
+#pufferSlider a.carousel-control-prev:focus,
+#pufferSlider a.carousel-control-prev:hover {
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	text-decoration:none;
+	transform: scale(0.9);
+}
+
+/* hover and focus configurations */
+#pufferSlider .bi-icon:focus,
+#pufferSlider .bi-icon:hover {
+	color: rgb(68, 162, 0);
+    
+}
