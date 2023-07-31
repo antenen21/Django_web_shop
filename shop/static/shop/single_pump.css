@@ -1,5 +1,7 @@
 
-
+/*---------------------------------------------
+			CARD ITEM
+---------------------------------------------*/
 .pump_box_main {
 	box-sizing: border-box;
 	display: flex;
@@ -17,7 +19,7 @@
 }
 
 .pump_box_main:hover {
-    transform: scale(1.02);
+    transform: scale(0.99);
 }
 
 
@@ -28,10 +30,12 @@
     color: #30302e;
     text-align: center;
     font-weight: bold;
-    padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
-
+/*---------------------------------------------
+			IMAGE
+---------------------------------------------*/
 .pump_img_container {
 	position: relative;
 	justify-content: center;
@@ -41,7 +45,6 @@
 	margin: 0 auto;
 	min-height: 270px;
 	max-height: 270px;
-	
 }
 
 .pump_img_container img{
@@ -50,6 +53,32 @@
 	height: 270px;
     width: 270px;
 }
+
+/* the image are to big otherwise */
+@media (max-width: 414px) {
+	.pump_img_container {
+		height: 220px;
+    	width: 220px;
+	}
+	.pump_img_container img{
+		height: 220px;
+		width: 220px;
+	}
+}
+
+
+.pump_img_container a:hover{
+	transform: scale(1.4);
+	translate: -20px -30px;
+	transition: .9s;
+}
+/* at those widths 1.4 is to big */
+@media (max-width: 750px) {
+    .pump_img_container img{
+        transform: scale(1.2);
+    }
+}
+
 
 
 .price_text {
@@ -66,7 +95,9 @@
 
 
 
-/* <----BUTTONS----> */
+/*---------------------------------------------
+			BUTTONS
+---------------------------------------------*/
 .grid-container {
 	display: grid;
 	grid-template-rows: auto;
@@ -79,7 +110,7 @@
 	
   }
 
-
+/* Cart button */
   .card_cart_btn {
 	place-items: start;
 	list-style: none;
@@ -120,6 +151,8 @@
   }
 
 
+
+/* Detail button */
   .detail_btn {
 	grid-column-end: end;
 	justify-self: right;
