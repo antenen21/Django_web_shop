@@ -34,7 +34,7 @@
                      items: 1,
                  },
 
-                // breakpoint from 2 up
+      /*           // breakpoint from 2 up
                  859: {
                     items: 1,
                 },
@@ -42,7 +42,7 @@
                  // breakpoint from 3 up
                  1254: {
                      items: 1,
-                 }
+                 } */
              }
      
          });
@@ -66,34 +66,40 @@
       
 $(document).ready(function() {
    
-      const shopSlider = $('#d');
+      const pufferSlider = $('#pufferSlider');
   
-      shopSlider.owlCarousel({
+      pufferSlider.owlCarousel({
           loop: true,
           dots: false,
-          margin: 2,
+          margin: 1,
           smartSpeed: 500,
           responsive: {
-              // breakpoint from 0 up
-              0: {
-                  items: 1,
-              },
-              // breakpoint from 3 up
-              1254: {
-                  items: 3,
-              }
+            // breakpoint from 0 up
+            0: {
+                items: 1,
+            },
+
+           // breakpoint from 2 up
+            859: {
+               items: 1,
+           },
+
+            // breakpoint from 3 up
+            1254: {
+                items: 1,
+            }
           }
   
       });
   
-      $('#pumpLeft').click(function() {
+      $('#pufferSliderLeft').click(function() {
           console.log('Left');
-          shopSlider.trigger('prev.owl.carousel');
+          pufferSlider.trigger('prev.owl.carousel');
       });
   
-      $('#pumpRight').click(function() {
+      $('#pufferSliderRight').click(function() {
           console.log('Right');
-          shopSlider.trigger('next.owl.carousel');
+          pufferSlider.trigger('next.owl.carousel');
       });
   
   });
