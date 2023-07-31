@@ -5,6 +5,7 @@
 
 {% block css_files %}
     <link rel="stylesheet" href="{% static 'shop/all-pumps.css' %}">
+    <link rel="stylesheet" href="{% static 'shop/single_pump.css' %}">
 {% endblock css_files %}
 
 
@@ -14,7 +15,7 @@
         <div class="row"> 
                 {% for pump in all_pumps  %}
                     <div class="col-lg-6 col-sm-6 col-xl-6 mg-5 mt-5">
-                    {% include 'shop/single_pump.html' %}
+                        {% include 'shop/single_pump.html' %}
                     </div>
                 {% endfor %} 
         </div>
