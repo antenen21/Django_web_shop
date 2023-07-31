@@ -5,14 +5,15 @@
 
 
 {% block css_files %}
+   <!-- static css -->
    <link rel="stylesheet" href="{% static 'shop/index.css' %}">
-
-
+   <!-- single pump css / needed for correct display in carousel -->
+   <link rel="stylesheet" href="{% static 'shop/single_pump.css' %}">
+   <!-- single puffer css / needed for correct display in carousel -->
+   <link rel="stylesheet" href="{% static 'shop/single_puffer.css' %}">
+   <!-- Owl Carousel -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="{% static 'shop/test.css' %}">
-   <link rel="stylesheet" href="{% static 'shop/index.css' %}">
-   <link rel="stylesheet" href="{% static 'shop/single_pump.css' %}">
 {% endblock css_files %}
 
 
@@ -20,129 +21,100 @@
 
 
 <!-- ======= Heat-pump carousel ======= -->
-<div class="container">
-   <div class="row">
+<div class="pump-body-container">
+   <div class="col-12">
+      <div class="row">
       
-      <h1 class="pump_title">Nos pompes à chaleurs</h1>
       
-      <!-- container that wraps the items -->
-      <div class="carousel-container owl-carousel" id="pumpSlider" style="display: flex;">
-         {% for pump in pumps %}
-            <div class="item m-3">
-               {% include 'shop/single_pump.html' %}
+      
+            <h1 class="pump_title">Nos pompes à chaleurs</h1>
+            
+            <!-- container that wraps the items -->
+            <div class="carousel-container-pump owl-carousel" id="pumpSlider" style="display: flex;">
+               {% for pump in pumps %}
+                  <div class="item m-3">
+                     {% include 'shop/single_pump.html' %}
+                  </div>
+               {% endfor %}
             </div>
-         {% endfor %}
-      </div>
 
-   </div>
-</div>
+            <!-- Buttons are outside of the container -->
+            <div class="container">
+               <div class="pumpSlider-controls">
+                  <div id="pumpSliderLeft" class="pumpSlider-arrow pumpSlider-arrow--left">
+                     <img src="https://res.cloudinary.com/dqdxca8sz/image/upload/v1577204832/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%BB%D0%B0%D0%B9%D0%B4%D0%B5%D1%80%D0%B0%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20owlcarousel2%20%D0%B4%D0%BB%D1%8F%20codepen%20%D0%B8%D0%B7%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%B0%20freelancetesting/boards-left_zhyxah.svg" alt="Prew">
+                  </div>
+                  <div id="pumpSliderRight" class="pumpSlider-arrow pumpSlider-arrow--right">
+                     <img src="https://res.cloudinary.com/dqdxca8sz/image/upload/v1577204832/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%BB%D0%B0%D0%B9%D0%B4%D0%B5%D1%80%D0%B0%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20owlcarousel2%20%D0%B4%D0%BB%D1%8F%20codepen%20%D0%B8%D0%B7%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%B0%20freelancetesting/boards-right_k0jkam.svg" alt="Next">
+                  </div>
+               </div>
+            </div>
 
-
-<!-- Buttons are outside of the container -->
-<div class="container">
-   <div class="pumpSlider-controls">
-      <div id="pumpSliderLeft" class="pumpSlider-arrow pumpSlider-arrow--left">
-         <img src="https://res.cloudinary.com/dqdxca8sz/image/upload/v1577204832/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%BB%D0%B0%D0%B9%D0%B4%D0%B5%D1%80%D0%B0%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20owlcarousel2%20%D0%B4%D0%BB%D1%8F%20codepen%20%D0%B8%D0%B7%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%B0%20freelancetesting/boards-left_zhyxah.svg" alt="Prew">
-      </div>
-      <div id="pumpSliderRight" class="pumpSlider-arrow pumpSlider-arrow--right">
-         <img src="https://res.cloudinary.com/dqdxca8sz/image/upload/v1577204832/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%BB%D0%B0%D0%B9%D0%B4%D0%B5%D1%80%D0%B0%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20owlcarousel2%20%D0%B4%D0%BB%D1%8F%20codepen%20%D0%B8%D0%B7%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%B0%20freelancetesting/boards-right_k0jkam.svg" alt="Next">
       </div>
    </div>
 </div>
-
 
 
 
 <!-- ======= Puffer carousel ======= -->
-<div class="container">
-   <div class="row">
+<div class="puffer-body-container">
+   <div class="col-12">
+      <div class="row">
       
-      <h1 class="puffer_title">Nos Accumulateurs pour votre système</h1>
-      
-      <!-- container that wraps the items -->
-      <div class="carousel-container owl-carousel" id="pufferSlider" style="display: flex;">
-         {% for puffer in puffers %}
-            <div class="item m-3">
-               {% include 'shop/single_puffer.html' %}
+          
+
+               <h1 class="puffer_title">Nos Accumulateurs pour votre système</h1>
+               
+               <!-- container that wraps the items -->
+               <div class="carousel-container-puffer owl-carousel" id="pufferSlider" style="display: flex;">
+                  {% for puffer in puffers %}
+                     <div class="item m-3">
+                        {% include 'shop/single_puffer.html' %}
+                     </div>
+                  {% endfor %}
+               </div>
+
             </div>
-         {% endfor %}
-      </div>
+         </div>
 
+         <!-- Buttons are outside of the container -->
+         <div class="container">
+            <div class="pufferSlider-controls">
+               <div id="pufferSliderLeft" class="pufferSlider-arrow pufferSlider-arrow--left">
+                  <img src="https://res.cloudinary.com/dqdxca8sz/image/upload/v1577204832/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%BB%D0%B0%D0%B9%D0%B4%D0%B5%D1%80%D0%B0%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20owlcarousel2%20%D0%B4%D0%BB%D1%8F%20codepen%20%D0%B8%D0%B7%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%B0%20freelancetesting/boards-left_zhyxah.svg" alt="Prew">
+               </div>
+               <div id="pufferSliderRight" class="pufferSlider-arrow pufferSlider-arrow--right">
+                  <img src="https://res.cloudinary.com/dqdxca8sz/image/upload/v1577204832/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%BB%D0%B0%D0%B9%D0%B4%D0%B5%D1%80%D0%B0%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20owlcarousel2%20%D0%B4%D0%BB%D1%8F%20codepen%20%D0%B8%D0%B7%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%B0%20freelancetesting/boards-right_k0jkam.svg" alt="Next">
+               </div>
+            </div>
+         </div>
+      
+      </div>
    </div>
 </div>
 
 
-<!-- Buttons are outside of the container -->
-<div class="container">
-   <div class="shopSlider-controls">
-      <div id="shopSliderLeft" class="shopSlider-arrow shopSlider-arrow--left">
-         <img src="https://res.cloudinary.com/dqdxca8sz/image/upload/v1577204832/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%BB%D0%B0%D0%B9%D0%B4%D0%B5%D1%80%D0%B0%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20owlcarousel2%20%D0%B4%D0%BB%D1%8F%20codepen%20%D0%B8%D0%B7%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%B0%20freelancetesting/boards-left_zhyxah.svg" alt="Prew">
-      </div>
-      <div id="shopSliderRight" class="shopSlider-arrow shopSlider-arrow--right">
-         <img src="https://res.cloudinary.com/dqdxca8sz/image/upload/v1577204832/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%BB%D0%B0%D0%B9%D0%B4%D0%B5%D1%80%D0%B0%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20owlcarousel2%20%D0%B4%D0%BB%D1%8F%20codepen%20%D0%B8%D0%B7%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%B0%20freelancetesting/boards-right_k0jkam.svg" alt="Next">
-      </div>
-   </div>
-</div>
 
 
 
 
+{% comment %} <section>
+   <div class="container">
+      <div class="row">
+         <div class="col">
 
-
-
-
-
-
+     
 
                <!-- slider buttons -->
-               <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+               <a class="carousel-control-prev" href="#pumpSlider" role="button" data-slide="prev">
                   <i class="fa fa-angle-left"></i>
                </a>
-               <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+               <a class="carousel-control-next" href="#pumpSlider" role="button" data-slide="next">
                   <i class="fa fa-angle-right"></i>
                </a>
 
 
-<!-- ======= Puffer section start ======= -->
-<div class="container">
-   <div class="row">
-      <div class="col-12">
 
-         <div class="pump_section">
-            <div id="puffer_main_slider" class="carousel slide" data-ride="carousel">
-
-               <div class="carousel-inner">
-                  <!--First part-->
-                  <div class="carousel-item active">
-                     <div class="container">
-                        <h1 class="pump_title">Nos Accumulateurs pour votre système</h1>
-                           <div class="pump_section_1">
-                              <div class="row">
-                                 {% for puffer in puffer_block_1 %}
-                                    <div class="col-12 col-sm-12 col-lg-6  col-xl-4">
-                                       {% include 'shop/single_puffer.html' %}
-                                    </div>
-                                 {% endfor %}
-                              </div> 
-                           </div>    
-                     </div>
-                  </div>
-                  <!--Second part-->
-                  <div class="carousel-item">
-                     <div class="container">
-                        <h1 class="pump_title">Nos Accumulateurs pour votre système</h1>
-                           <div class="pump_section_2" style="">
-                              <div class="row">
-                                 {% for puffer in puffer_block_2 %}
-                                    <div class="col-12 col-lg-12 col-sm-6 col-xl-4">
-                                       {% include 'shop/single_puffer.html' %}
-                                    </div>
-                                 {% endfor %}
-                              </div> 
-                           </div>    
-                     </div>
-                  </div>
-               </div>
 
 
                <!-- slider buttons -->
@@ -151,13 +123,11 @@
                </a>
                <a class="carousel-control-next my-custom-buttons" href="#puffer_main_slider" role="button" data-slide="next">
                   <i class="bi bi-shift-fill bi-icon" style="transform: rotate(90deg);"></i>
-               </a>
-            </div>
+               </a>    
          </div>
-
       </div>
    </div>
-</div>
+</section> {% endcomment %}
 
 
 {% endblock content %}
