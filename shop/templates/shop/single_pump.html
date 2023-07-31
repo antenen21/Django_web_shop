@@ -1,8 +1,8 @@
 {% load static %}
 
-
+{% block css_files %}
 <link rel="stylesheet" href="{% static 'shop/single_pump.css' %}">
-
+{% endblock css_files %}
 
     
               
@@ -13,20 +13,19 @@
                 <h4 class="product_text">{{pump.brand}} {{pump.model}}</h4>
             </div>
 
-            <div class="container">
+            
                 <div class="pump_img_container">
                     <a href="{{pump.get_absolute_url}}"><img src="{{pump.img.url}}" alt="{{pump.model}}"></a>
                 </div>
             
-
                 <p class="price_text">Prix:  <span style="color: #262626;">{{pump.price}}</span></p>
             
 
-            <div class="grid-container">
-                <a class="card_cart_btn" href="{{pump.get_absolute_url}}"><i class="bi bi-cart-plus-fill"></i></a>
-                <a class="detail_btn" href="{{pump.get_absolute_url}}"><i class="bi bi-three-dots"></i></a> 
-            </div>        
-        </div>  
+                <div class="grid-container">
+                    <a class="card_cart_btn" href="{{pump.get_absolute_url}}"><i class="bi bi-cart-plus-fill"></i></a>
+                    <a class="detail_btn" href="{{pump.get_absolute_url}}"><i class="bi bi-three-dots"></i></a> 
+                </div>        
+              
 
     </div>
   
