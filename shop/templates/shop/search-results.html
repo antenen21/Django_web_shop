@@ -2,12 +2,19 @@
 {% load static %}
 {% block title %}Results{% endblock title %}
 
-
+<!-- static css files -->
 {% block css_files %}
     <link rel="stylesheet" href="{% static 'shop/search-results.css' %}">
 {% endblock css_files %}
 
+<!-- restricted typed js-->
+{% block typed_js_in_navbar %}
+    <!-- extra margin to compensate the missing space -->
+    <div class="mb-5"></div>
+{% endblock typed_js_in_navbar %}
 
+
+<!-- Block content-->
 {% block content %}
 
     <div class="container results">

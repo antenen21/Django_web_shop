@@ -29,9 +29,12 @@
    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}" >
    <!-- Logo -->
    <link rel="shortcut icon" href="{% static 'images/favicon-32x32.png' %}"/>
-   <!-- Static CSS -->
+   <!-- Base static CSS -->
    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 
+   <!-- Navbar Static CSS -->
+   <link rel="stylesheet" href="{% static 'shop/navbar.css' %}">
+   <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
 
    <!-- CSS files -->
 {% block css_files %}{% endblock css_files %}
@@ -45,24 +48,199 @@
    <div class="wrapper no-gutters">
 
 
-            <!-- ======= Navbar ======= -->
-         {% include 'shop/includes/navbar.html' %}
 
-            <!-- ======= Content ======= -->
-         {% block content %}{% endblock content %}
+
+      <!-- ======= Header navbar ======= -->
+      <header class="main_navbar banner_bg_main">
+         <!-- header top section start -->
+         <div class="container">
+            <div class="header_section_top">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <div class="custom_menu">
+                        <ul>
+                           <li><a href="#">Les meilleurs vendus</a></li>
+                           <li><a href="#">Idées Cadeaux</a></li>
+                           <li><a href="#">Nouvautées</a></li>
+                           <li><a href="{% url 'about-us-path' %}">Sur nous</a></li>
+                           <li><a href="{% url 'contact-path' %}">Nous contacter</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- header top section start -->
+      
+         <!-- logo section start -->
+         <div class="logo_section">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <div class="logo"><a href="index.html"><img style="height: auto; width: 60%;"src="{% static 'shop/images/swiss heating white (1000 × 1000 px).png' %}"></a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- logo section end -->
+      
+         <!-- header section end -->
+         <div class="header_section">
+            <div class="container containt_main">
+               
+                  <!-- Sidenav menu Left offcanvas start-->
+                  <div id="mySidenav" class="sidenav">
+                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                     <a href="{% url 'index-path' %}">Home</a>
+                     <a href="{% url 'all-pumps-path' %}">Pompes à chaleurs</a>
+                     <a href="{% url 'all-puffer-path' %}">Accumulateurs</a>
+                     <a href="{% url 'index-path' %}">Nos services</a>
+                  </div>
+                  <span class="toggle_icon" onclick="openNav()"><img src="{% static 'shop/images/toggle-icon.png' %}"></span>
+                  <!-- Sidenav menu Left offcanvas end-->
+      
+                  <!-- Category dropdown start-->
+                  <div class="dropdown">
+                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Category 
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                     </div>
+                  </div>
+                  <!-- Category dropdown end-->
+      
+                  <!-- Search bar start -->
+                  <div class="main">
+                        <form method="POST" action="{% url 'search-results-path' %}">
+                        {% csrf_token %}
+                           <div class="input-group">
+                              <input type="text" name="search_field" class="form-control bg-dark text-white" placeholder="Recherchez ici">
+                                 <div class="input-group-append">
+                                    <button class="btn btn-secondary" type="submit" style="background-color: red; border-color:#f26522; z-index:0;">
+                                       <i class="fa fa-search"></i>
+                                    </button>
+                              </div>
+                           </div>
+                        </form>  
+                  </div>
+                  <!-- Search bar end -->
+      
+      
+                  <!-- header box - language and login start -->
+                  <div class="header_box">
+      
+                     <!-- language section start -->
+                     <div class="lang_box ">
+                        <a href="#" title="Language" class="nav-link" data-toggle="dropdown" aria-expanded="true">
+                           <img src="{% static 'shop/images/flag-uk.png' %}" alt="flag" class="mr-2 " title="United Kingdom"> English <i class="fa fa-angle-down ml-2" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu ">
+                           <a href="#" class="dropdown-item">
+                              <img src="{% static 'shop/images/flag-france.png' %}" class="mr-2" alt="flag">
+                                 French
+                           </a>
+                        </div>
+                     </div>
+                     <!-- language section end -->
+      
+                     <!-- login section start -->
+                     <div class="login_menu" style="z-index: 3;">
+                        <ul>
+                           <li><a href="{% url 'cart-path' %}">
+                              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                              <span class="padding_10">Pannier</span></a>
+                           </li>
+                           <li>
+      
+                              {% if user.is_authenticated %}
+      
+                           
+                              
+                              <div class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropdown_login">
+                                 <i class="fa fa-user" aria-hidden="true"></i>
+                                 <span class="padding_10" type="button">Compte</span>
+                              </div>
+                        
+      
+                              <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
+                                 <ul>
+                                    <li><a class="dropdown-item" href="#">informations personels</a></li>
+                                    <li><a class="dropdown-item" href="#">Commandes</a></li>
+                                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#logoutModal">Logout</a></li>
+                                 </ul>
+                              </div>
+                           
+                              {% else %} 
+                                 <a href="{% url 'login-path' %}"><i class="fa fa-user" aria-hidden="true"></i><span class="padding_10">Login</span></a>
+                              {% endif %}
+                           </li>
+                        </ul>
+                     </div>
+                     <!-- login section end -->
+                  </div>
+                  <!-- header box - language and login end -->
+      
+            </div>
+         </div>
+         <!-- header section end -->
+      
+      
+         <!-- Typed effect start-->
+         {% block typed_js_in_navbar %}
+         <div class="typed-container block-position al mt-5 mb-5" style="text-align: center; margin-bottom: 5rem;">
+            <h1 class="container text-light typed-text" style="width: 100%;">
+               <span class="typed-js-text-first" id="element" style="color: white;"></span>
+               <span class="typed-js-text-second">SUISSE</span>
+            </h1>
+         </div> 
+         {% endblock typed_js_in_navbar %}
+         <!-- Typed effect end -->
+      
+         <!--   Small modal POP-UP   -->
+         <div class="modal" id="logoutModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+         
+               <div class="modal-content">
+         
+                  <div class="modal-header" style="align-text: center;">
+                  <h4>Log Out <i class="fa fa-lock"></i></h4>
+                  </div>
+         
+                  <div class="modal-body">
+                  <p><i class="fa fa-logout"></i> Êtes-vous sûr(e) de vouloir vous désinscrire? <br /></p>
+         
+                  <div class="actionsBtns">
+                     <a href="{% url 'logout-path' %}"><button class="btn btn-default btn-primary" type="button">Logout</button></a>
+                     <button class="btn btn-default" data-dismiss="modal">Cancel</button>
+                  </div>
+         
+                  </div>
+         
+               </div>
+            </div>
+         </div>   
+         <!--   Small modal POP-UP end  -->
+
+      </header>         
+      <!-- ======= Header navbar end ======= -->   
+
+      <!-- ======= Content ======= -->
+      {% block content %}{% endblock content %}
 
 
    </div> <!--  End of Wrapper -->
 
    <!-- ======= Footer (not wrapped) ======= -->
-{% include 'shop/includes/footer.html' %}
+   {% include 'shop/includes/footer.html' %}
 
 
 
 
 
    <!-- ======= Scripts at the end of the body ======= -->
-{% block js_files %}{% endblock js_files %}
+   {% block js_files %}{% endblock js_files %}
 
 
 
