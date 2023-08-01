@@ -35,7 +35,7 @@ DEBUG = getenv("IS_DEVELOPEMENT", True)
 ALLOWED_HOSTS = [
     getenv("MY_APP_HOST"),
     'localhost',
-    'antenen21.pythonanywhere.com'
+    'antenen21.pythonanywhere.com',
 ]
 
 
