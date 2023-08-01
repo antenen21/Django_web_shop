@@ -44,8 +44,9 @@
 
    <!-- header section end -->
    <div class="header_section">
-      <div class="container">
-         <div class="containt_main">
+      <div class="container containt_main">
+         
+            <!-- Sidenav menu Left offcanvas start-->
             <div id="mySidenav" class="sidenav">
                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                <a href="{% url 'index-path' %}">Home</a>
@@ -53,16 +54,20 @@
                <a href="{% url 'all-puffer-path' %}">Accumulateurs</a>
                <a href="{% url 'index-path' %}">Nos services</a>
             </div>
-               <span class="toggle_icon" onclick="openNav()"><img src="{% static 'shop/images/toggle-icon.png' %}"></span>
-                  <div class="dropdown">
-                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Category 
-                     </button>
-                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                     </div>
-                  </div>
+            <span class="toggle_icon" onclick="openNav()"><img src="{% static 'shop/images/toggle-icon.png' %}"></span>
+            <!-- Sidenav menu Left offcanvas end-->
+
+            <!-- Category dropdown start-->
+            <div class="dropdown">
+               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Category 
+               </button>
+               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </div>
+            <!-- Category dropdown end-->
 
             <!-- Search bar start -->
             <div class="main">
@@ -83,18 +88,22 @@
 
             <!-- header box - language and login start -->
             <div class="header_box">
+
+               <!-- language section start -->
                <div class="lang_box ">
                   <a href="#" title="Language" class="nav-link" data-toggle="dropdown" aria-expanded="true">
                      <img src="{% static 'shop/images/flag-uk.png' %}" alt="flag" class="mr-2 " title="United Kingdom"> English <i class="fa fa-angle-down ml-2" aria-hidden="true"></i>
                   </a>
-                     <div class="dropdown-menu ">
-                        <a href="#" class="dropdown-item">
-                           <img src="{% static 'shop/images/flag-france.png' %}" class="mr-2" alt="flag">
-                              French
-                        </a>
-                     </div>
+                  <div class="dropdown-menu ">
+                     <a href="#" class="dropdown-item">
+                        <img src="{% static 'shop/images/flag-france.png' %}" class="mr-2" alt="flag">
+                           French
+                     </a>
+                  </div>
                </div>
+               <!-- language section end -->
 
+               <!-- login section start -->
                <div class="login_menu" style="z-index: 3;">
                   <ul>
                      <li><a href="{% url 'cart-path' %}">
@@ -121,20 +130,17 @@
                            </ul>
                         </div>
                       
-                        
-
-                        
-
-
                         {% else %} 
                            <a href="{% url 'login-path' %}"><i class="fa fa-user" aria-hidden="true"></i><span class="padding_10">Login</span></a>
                         {% endif %}
                      </li>
                   </ul>
                </div>
+               <!-- login section end -->
             </div>
             <!-- header box - language and login end -->
-         </div>
+
+         
       </div>
    </div>
    <!-- header section end -->
@@ -153,31 +159,29 @@
 
 
 
-  <!--   Small modal POP-UP   -->
-  <div class="modal" id="logoutModal" tabindex="-1" role="dialog" aria-hidden="true">
+<!--   Small modal POP-UP   -->
+<div class="modal" id="logoutModal" tabindex="-1" role="dialog" aria-hidden="true">
    <div class="modal-dialog modal-sm">
-     <div class="modal-content">
 
-       <div class="modal-header" style="align-text: center;">
-         
+      <div class="modal-content">
+
+         <div class="modal-header" style="align-text: center;">
          <h4>Log Out <i class="fa fa-lock"></i></h4>
-       </div>
+         </div>
 
-       <div class="modal-body">
+         <div class="modal-body">
          <p><i class="fa fa-logout"></i> Êtes-vous sûr(e) de vouloir vous désinscrire? <br /></p>
-         <div class="actionsBtns">
 
-             
-                 
-                     <a href="{% url 'logout-path' %}"><button class="btn btn-default btn-primary" type="button">Logout</button></a>
-                     <button class="btn btn-default" data-dismiss="modal">Cancel</button>
-             
+         <div class="actionsBtns">
+            <a href="{% url 'logout-path' %}"><button class="btn btn-default btn-primary" type="button">Logout</button></a>
+            <button class="btn btn-default" data-dismiss="modal">Cancel</button>
+         </div>
 
          </div>
-       </div>
-     </div>
+
+      </div>
    </div>
- </div>
+</div>
 
 
 
