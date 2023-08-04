@@ -7,7 +7,6 @@
 	display: flex;
 	flex-direction: column;
 	columns: 1;
-	height: 600px;
 	width: 100%;
     background-color: rgb(255, 255, 255);
     padding: 20px;
@@ -22,15 +21,19 @@
     transform: scale(0.99);
 }
 
+.text-container {
+	height: auto;
+	width: 100%;
+}
 
 .product_text {
+	height: 100%;
 	flex-grow: 1;
-    width: 100%;
-    font-size: 20px;
-    color: #30302e;
+	width: 100%;
     text-align: center;
     font-weight: bold;
     margin-bottom: 20px;
+	font-size: auto;
 }
 
 /*---------------------------------------------
@@ -38,45 +41,25 @@
 ---------------------------------------------*/
 .puffer_img_container {
 	position: relative;
+	object-fit: fill;
 	justify-content: center;
-	display: flex;
-	min-width: 270px;
-	max-width: 270px;
-	margin: 0 auto;
-	min-height: 270px;
-	max-height: 270px;
-}
+    width: 100%;
+	height: auto;
+	padding: 7%;
+} 
 
 .puffer_img_container img{
 	justify-content: center;
-	margin: 0 auto;
-	height: 270px;
-    width: 270px;
+	object-fit: fill;
+	width: 	100%;
+	height: auto;
 }
 
-/* the image are to big otherwise */
-@media (max-width: 750px) {
-	.puffer_img_container {
-		height: 220px;
-    	width: 220px;
-	}
-	.puffer_img_container img{
-		height: 220px;
-		width: 220px;
-	}
-}
 
 .puffer_img_container a:hover{
-	transform: scale(1.4);
+	transform: scale(1.2);
 	translate: -20px -30px;
 	transition: .9s;
-}
-
-/* at those widths 1.4 is to big */
-@media (max-width: 750px) {
-    .puffer_img_container img{
-        transform: scale(1.2);
-    }
 }
 
 
