@@ -4,11 +4,11 @@ BANNER MAIN SECTION
 
 .banner_bg_main {
   width: 100%;
+  height: 100%;
   float: left;
   background-image: url('/static/shop/images/background_house.png');
   background-size: 100%;
   background-repeat: no-repeat;
-  margin-bottom: 5rem;
 }
 
 
@@ -29,6 +29,7 @@ FORM CONTROLS FOR SEARCHBAR
   font-size: xx-large;
   
 }
+
 
 
 /* ------------------------
@@ -121,26 +122,26 @@ TYPED JS TEXT ANIMATION
 /* header top section end */
 
 
-/* logo section start */
-/* logo section start */
+/* ------------------------
+LOGO 
+--------------------------*/
 .logo_section {
   width: 100%;
-  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .logo {
   width: 100%;
-  float: left;
   text-align: center;
-  padding: 10px 0px;
 }
 
-/* logo section end */
-/* logo section end */
 
 
-/* header section start */
-/* header section start */
+
+/* ------------------------
+HEADER SECTION 
+--------------------------*/
 
 .header_section {
   width: 100%;
@@ -153,8 +154,9 @@ TYPED JS TEXT ANIMATION
 }
 
 
-/* opennav bar start */
-/* opennav bar start */
+/* ------------------------
+SIDE NAVIGATION 
+--------------------------*/
 .sidenav {
   height: 100%;
   width: 0;
@@ -246,11 +248,12 @@ transform: rotateY(20deg);
   box-shadow: none;
 }
 
-/* opennav bar end */
-/* opennav bar end */
 
 
-/* Styles for wrapping the search box start */
+/* ------------------------
+SEARCH BOX 
+--------------------------*/
+
 /* Styles for wrapping the search box start */
 .main {
   flex: 1;
@@ -260,7 +263,7 @@ transform: rotateY(20deg);
 }
 
 
-/* Bootstrap 4 text input with search icon */
+
 /* Bootstrap 4 text input with search icon */
 .has-search .form-control {
   padding-left: 2.375rem;
@@ -329,6 +332,14 @@ transform: rotateY(20deg);
   
 }
 
+@media (max-width: 321px) {
+  .login_menu li a{
+     color:black;
+      background-color:white;
+      border-radius: 4px;
+      padding: 5px 2px;
+  }
+}
 
 /*----------------------------
  LANGUAGE BOX
@@ -336,19 +347,14 @@ transform: rotateY(20deg);
 .lang_box {
   display: flex;
   float: right;
-  background: #fff;
+  background: transparent;
   border-radius: 5px;
   margin-right: 20px;
 }
 
-
-
-
-
-
 .nav-link {
   display: block;
-  padding: .4rem 1rem;
+  padding: .4rem 10px;
 }
 
 a:hover {
@@ -356,64 +362,34 @@ a:hover {
   text-decoration: underline;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* banner carrousel start */
-/* banner carrousel start */
-.banner_section {
-
-  position: relative;
-  width: 100%;
-  float: left;
-  padding-bottom: 60px;
-  margin-bottom: 60px;
+.nav-link {
+  font-weight: bolder;
+  color: white;
 }
 
-.banner_taital {
-  
-  margin-top: 2rem;
-  width: 100%;
-  font-size: 60px;
-  color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
+
+@media (max-width: 321px) {
+  .nav-link{
+    color:black;
+    background-color:white;
+    border-radius: 4px;
+    padding: 5px 2px;
+  }
 }
 
-.buynow_bt {
-  width: 170px;
-  margin: 0 auto;
-  padding-top: 30px;
-}
 
-.buynow_bt a {
-  width: 100%;
-  float: left;
-  font-size: 16px;
-  color: #ffffff;
-  background-color: #252525;
-  text-align: center;
-  padding: 10px 0px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
 
-.buynow_bt a:hover {
-  background-color: #f26522;
-  color: #ffffff;
-}
 
+
+
+
+
+
+/*----------------------------
+??????
+-----------------------------*/
+
+/* 
 #my_slider a.carousel-control-next {
   right: 0px;
   top: 40px;
@@ -429,7 +405,7 @@ a:hover {
   width: 45px;
   height: 45px;
   background: rgba(246, 2, 2, 0.8);
-  opacity: 1;
+  opacity: 1;ß
   font-size: 20px;
   color: #fdfbfb;
   border-radius: 100px;
@@ -440,10 +416,9 @@ a:hover {
 #my_slider .carousel-control-prev:focus,
 #my_slider .carousel-control-prev:hover {
   color: #060606;
-}
+} */
 
-/* banner carrousel end */
-/* banner carrousel end */
+
 
 
 
