@@ -73,14 +73,24 @@
          <!-- header top section start -->
       
          <!-- logo section start -->
-         <div class="logo_section">
-            <div class="container">
-               <div class="row">
-                  <div class="col-sm-12">
-                     <div class="logo"><a href="index.html"><img style="height: auto; width: 60%;"src="{% static 'shop/images/swiss heating white (1000 × 1000 px).png' %}"></a></div>
+         <div class="container logo_section">
+               <div class="col-sm-12">
+                  <div class="row">
+                     <div class="logo">
+
+
+                                                                                                   <!-- DataTime (Desktop mode)-->
+                                                                                                   <!-- Date format: lowercase = 23, uppercase = 2023 -->
+                        <div class="time_container">                                                                                 <!-- INFO: using Native Django {% now "H:i:s" %} the time doesnt run constantly -->
+                           <div class="time_and_date text-light" id="desk-datatime" style="font-size: 12px; margin-top: 5px;">{% now "l (m/d/Y)" %}&nbsp;
+                              <span style="color: red; font-weight: bold;" id="clock"></span>
+                           </div>
+                        </div>
+
+                        <img style="height: auto; width: 90%;"src="{% static 'shop/images/swiss heating white (1000 × 1000 px).png' %}">
+                     </div>
                   </div>
                </div>
-            </div>
          </div>
          <!-- logo section end -->
       
@@ -110,13 +120,14 @@
                      </div>
                   </div>
                   <!-- Category dropdown end-->
-      
+
+
                   <!-- Search bar start -->
                   <div class="main">
                         <form method="POST" action="{% url 'search-results-path' %}">
                         {% csrf_token %}
                            <div class="input-group">
-                              <input type="text" name="search_field" class="form-control bg-dark text-white" placeholder="Recherchez ici">
+                              <input type="text" name="search_field" class="form-control bg-dark text-white" placeholder="Recherchez ici...">
                                  <div class="input-group-append">
                                     <button class="btn btn-secondary" type="submit" style="background-color: red; border-color:#f26522; z-index:0;">
                                        <i class="fa fa-search"></i>
