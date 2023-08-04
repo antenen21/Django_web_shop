@@ -59,7 +59,7 @@ EMAIL_USE_SLL = EMAIL_USE_SLL
 
 # Application definition
 INSTALLED_APPS = [
-    'jazzmin',
+    
     'contact',
     'cart', 
     'members',
