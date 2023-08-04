@@ -1,16 +1,10 @@
 @media (min-width: 0px) and (max-width: 560px) {
 
     .banner_bg_main {
-        
-        padding-right: 5%;
+        padding-right: 2%;
     }
     .login_menu {
-    
         filter: invert(0);
-    }
-
-    .lang_box {
-        color: #fff;
     }
 
     /* inverts only the dropdown again back */
@@ -18,13 +12,10 @@
         filter: invert(1);
     }
 
-
     .toggle_icon img {
         filter: invert(1);
     }
 }
-
-
 
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -42,12 +33,6 @@
 
 /*  IPAD MINI CUT DISPLAY */
 @media only screen and (min-width: 280px) and (max-width: 599px) {
-    
-    .banner_bg_main {
-        background-size: 100%;
-    }
-
-
 
     .header_section_top {
         display: none;
@@ -83,15 +68,6 @@
         float: left;
         font-size: 14px;
     }
-    .nav-link {
-        padding: .4rem 0px;
-        color: #070707;
-    }
-    .lang_box {
-        background-color: transparent;
-        margin-top: 0rem;
-        
-    }
 
     .pump_title {
         font-size: 24px;
@@ -124,11 +100,6 @@
         padding: 10px 10px 0px 10px;
     }
 
-    .social {
-        transform: scale(0.5);
-        padding-bottom: 1rem;
-    }
-
     .location_main {
         padding: 30px 0px 30px 0px;
     }
@@ -140,12 +111,6 @@
 @media (min-width: 992px) and (max-width: 1400px) {
     .banner_bg_main {
         background-size: 100%;
-    }
-
-
-    .tshirt_img {
-        margin: 20px 0px;
-        min-height: 360px;
     }
     #main_slider a.carousel-control-next {
         right: 40px;
@@ -201,8 +166,8 @@
         /* IPAD mini 7.9" and IPHONE 8 HORIZONTAL */
 @media (min-width: 560px) and (max-width: 770px) {
     .banner_bg_main {
-        background-size: 140%;  
-        left: -10rem;
+        background-size: 100%;  
+        left: -0rem;
     }
 
     .header_section_top {
@@ -236,13 +201,7 @@
     .dropdown {
         display: none;
     }
-    .nav-link {
-        padding: .4rem 0px;
-        color: #fff;
-    }
-    .lang_box {
-        background-color: transparent;
-    }
+
     .pump_title {
         font-size: 24px;
     }
@@ -286,41 +245,11 @@
 
 
 
-
-
-/* IPHONE SE HORIZONTAL ONLY */
-@media (min-width: 560px) and (max-width: 570px) {
-    .header_box {
-        margin-top: -3rem;
-    }
-}
-
-/* IPHONE SE ONLY */
-@media (max-width: 390px) {
-    .logo img {
-        height: auto;
-        width: 90%;
-        padding: 1rem;
-      }
-}
-
-/* IPHONE 8 PLUS HORIZONTAL ONLY*/
-@media (min-width: 720px) and (max-width: 750px) {
-
-}
-
-
 /* IPHONE SE   and IPHONE 8 */
 @media (max-width: 415px) {
     .banner_bg_main {
         background-size: 100%;
     }
-
-    .logo img {
-        height: 95%;
-        width: 95%;
-        padding: 1rem;
-      }
 
     .header_section_top {
         display: none;
@@ -358,9 +287,6 @@
         font-size: 14px;
     }
 
-    .lang_box {
-        background-color: transparent; 
-    }
     .pump_title {
         font-size: 24px;
     }
@@ -392,10 +318,6 @@
         padding: 10px 10px 0px 10px;
     }
 
-    .social {
-        transform: scale(0.5);
-        padding-bottom: 1rem;
-    }
 
     .location_main {
         padding: 30px 0px 30px 0px;
@@ -403,7 +325,3 @@
 
 }
 
-
-@media (min-width: 989px) and (max-width: 1226px) {
-
-}
