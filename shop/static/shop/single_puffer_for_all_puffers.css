@@ -22,11 +22,13 @@
 }
 
 .text-container {
-	height: auto;
+	display: flex;
 	width: 100%;
+	justify-content: center;
 }
 
-.product_text {
+/* text -> size: auto */
+.product_text h4 {
 	height: 100%;
 	flex-grow: 1;
 	width: 100%;
