@@ -16,7 +16,7 @@
 
 
 /*----------------------------------------------
-|           TEST CAROUSEL         |
+|           PUMP CAROUSEL                       |
 -----------------------------------------------*/
       
       $(document).ready(function() {
@@ -61,7 +61,7 @@
 
 
 /*----------------------------------------------
-|           INDEX PUMP SLIDER                   |
+|           PUFFER CAROUSEL                    |
 -----------------------------------------------*/
       
 $(document).ready(function() {
@@ -106,9 +106,6 @@ $(document).ready(function() {
 
 
 
-
-
-
  /*----------------------------------------------
 |           TYPED JS - NAVBAR                   |
 -----------------------------------------------*/ 
@@ -124,3 +121,63 @@ $(document).ready(function() {
      backDelay: 3000,
      loop: true
   });
+
+
+
+
+ /*----------------------------------------------
+|    FUNCTION TO HIDE/SHOW PASSWORD             |
+-----------------------------------------------*/ 
+  
+    function showPassword() {
+      var p = document.getElementById('password_for_login');
+      if (p.type === 'password') {
+        p.type = 'text';
+      } 
+      else {
+        p.type = 'password';
+      }
+    }
+  
+
+
+/*------------------------------------------------------------------
+|    FUNCTION TO CLOSE OFFCANVAS WHEN BUTTON IS CLICKED             |
+-------------------------------------------------------------------*/ 
+    jQuery("#mySidenav, .sidenav a").click(function(){
+        console.log($(this).attr('href'));
+        jQuery('.sidenav').offcanvas('hide');
+    })
+
+
+
+
+
+/*------------------------------------------------------------------
+|    SCRIPT TO GET THE TIME AT REAL TIME CONSTANTLY                 |
+-------------------------------------------------------------------*/ 
+setInterval(function() {
+    var date = new Date();
+    $('#clock').html(
+        (date.getHours()<10?'0':'') + date.getHours() + ":" +
+        (date.getMinutes()<10?'0':'') + date.getMinutes() + ":" +
+        (date.getSeconds()<10?'0':'') + date.getSeconds()
+        );
+    
+}, 500);
+
+/*------------------------------------------------------------------
+|    SCRIPT TO UPDATE THE PAGE ALWAYS AT 00:00                      |
+-------------------------------------------------------------------*/ 
+function autoRefreshPage(hours, minutes, seconds) {
+  var now = new Date(); then = new Date();
+  then.setHours(hours, minutes, seconds, 0);
+  if (then.getTime() < now.getTime()) {
+    then.setDate(now.getDate() + 1);
+  } 
+  var timeout = (then.getTime() - now.getTime());
+  setTimeout(function() { 
+    window.location.reload(true); 
+  }, timeout);
+}
+autoRefreshPage(0, 0, 0);
