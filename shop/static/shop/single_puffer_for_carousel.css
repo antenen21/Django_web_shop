@@ -3,7 +3,6 @@
 			CARD ITEM
 ---------------------------------------------*/
 .puffer_box_main {
-	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	columns: 1;
@@ -19,7 +18,7 @@
 .product_text {
 	flex-grow: 1;
     width: 100%;
-    font-size: 20px;
+    font-size: auto;
     color: #30302e;
     text-align: center;
     font-weight: bold;
