@@ -2,7 +2,7 @@
 /*---------------------------------------------
 			CARD ITEM
 ---------------------------------------------*/
-.puffer_box_main {
+.puffer_main {
 	display: flex;
 	flex-direction: column;
 	height: 600px;
