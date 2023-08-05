@@ -52,6 +52,10 @@
 
 }
 
+.pump_img_container img:hover {
+	transform: translate(0px, -50px);
+	cursor: pointer;
+	filter: contrast(80%);
 }
 
 
