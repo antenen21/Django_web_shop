@@ -19,7 +19,7 @@
 .product_text {
 	flex-grow: 1;
     width: 100%;
-    font-size: 20px;
+    font-size: auto;
     color: #30302e;
     text-align: center;
     font-weight: bold;
