@@ -142,16 +142,7 @@
 /*------------------------------------------------------
         PUFFER CAROUSEL CONTAINER - WHICH WRAPS THE ITEMS
 --------------------------------------------------------*/
-.carousel-container-puffer {
-    overflow-x: hidden;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    display: flex;
-    height: 110%;
-    margin-top: 50px;
-    margin-bottom: 80px; 
-  }
+
 
 
 
@@ -273,7 +264,8 @@
 .puffer_title {
     padding: 1rem;
     width: 100%;
-    font-size: auto;
+    height: auto;
+    font-size: 100%;
     color: #30302e;
     text-align: center;
     font-weight: bolder;
