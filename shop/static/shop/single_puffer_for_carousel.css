@@ -17,11 +17,11 @@
 .product_text {
 	flex-grow: 1;
     width: 100%;
-    font-size:80%;
+    font-size: 80%;
     color: #30302e;
     text-align: center;
     font-weight: bold;
-    margin-bottom: 20px;
+ 
 }
 
 /*---------------------------------------------
