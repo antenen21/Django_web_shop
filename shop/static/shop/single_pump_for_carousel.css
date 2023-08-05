@@ -2,9 +2,8 @@
 /*---------------------------------------------
 			CARD ITEM
 ---------------------------------------------*/
-.pump_box_main {
+.pump_main {
 	height: auto; /* is making problem, 400px is ok.. */
-	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	columns: 1;
