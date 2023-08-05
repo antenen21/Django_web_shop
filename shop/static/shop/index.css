@@ -18,9 +18,6 @@
 .carousel-container-pump {
     overflow-x: hidden;
     justify-content: center;
-    border: black 1px solid;
-    border-radius: 20px;
-    background-color: rgb(255, 255, 255);
     position: relative;
     display: flex;
     height: 110%;
