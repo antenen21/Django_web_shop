@@ -294,6 +294,7 @@ SEARCH BOX
   display: flex;
   text-align: right;
   float: right;
+  margin-top: -20px;
 }
 
 .login_menu ul {
@@ -350,6 +351,7 @@ SEARCH BOX
   background: transparent;
   border-radius: 5px;
   margin-right: 20px;
+  margin-top: -20px;
 }
 
 .nav-link {
