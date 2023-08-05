@@ -70,26 +70,10 @@
 
 .puffer_img_container:hover {
 	transform: scale(1.3);
-	translate: -20px -30px;
+	translate: -10% -10%;
 	transition: .9s;
 }
 
-@media (max-width: 800px) {
-	.puffer_img_container:hover {
-		transform: scale(1.2);
-		translate: 0px 0px;
-	}
-
-}
-
-@media (max-width: 578px) {
-	.puffer_img_container:hover {
-		transform: scale(1.0);
-		translate: 0px 0px;
-
-	}
-
-}
 
 
 
