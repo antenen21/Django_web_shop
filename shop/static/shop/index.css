@@ -272,13 +272,8 @@
 .puffer_title {
     padding: 1rem;
     width: 100%;
-    font-size: 50px;
+    font-size: auto;
     color: #30302e;
     text-align: center;
     font-weight: bolder;
 }
-
-
-
-
-
