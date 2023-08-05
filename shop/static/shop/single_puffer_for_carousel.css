@@ -14,12 +14,6 @@
     box-shadow: 0px 0 30px 10px #f0f0f0;
     margin-bottom: 30px;
 	margin-top: 30px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-
-.puffer_box_main:hover {
-    transform: scale(0.99);
 }
 
 
@@ -39,12 +33,6 @@
 .puffer_img_container {
 	position: relative;
 	justify-content: center;
-	display: flex;
-	min-width: 270px;
-	max-width: 270px;
-	margin: 0 auto;
-	min-height: 270px;
-	max-height: 270px;
 	/* shadow stays when hover */
 	background: url(https://4.bp.blogspot.com/-SwBb_-GhxI4/W1NPTzc7coI/AAAAAAAABBw/Dri7V0algrEMayM55WDNSAWUAF9fFh9xwCLcBGAs/s320/alexa_pro_shadow.png);
 	background-repeat: no-repeat;
@@ -59,30 +47,9 @@
     width: 270px;
 }
 
-/* the image are to big otherwise */
-@media (max-width: 750px) {
-	.puffer_img_container {
-		height: 220px;
-    	width: 220px;
-	}
-	.puffer_img_container img{
-		height: 220px;
-		width: 220px;
-	}
 }
 
-.puffer_img_container a:hover{
-	transform: scale(1.4);
-	translate: -20px -30px;
-	transition: .9s;
-}
 
-/* at those widths 1.4 is to big */
-@media (max-width: 750px) {
-    .puffer_img_container img{
-        transform: scale(1.2);
-    }
-}
 
 
 .price_text {

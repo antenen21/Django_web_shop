@@ -18,11 +18,6 @@
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.pump_box_main:hover {
-    transform: scale(0.99);
-}
-
-
 .product_text {
 	flex-grow: 1;
     width: 100%;
@@ -40,11 +35,6 @@
 	position: relative;
 	justify-content: center;
 	display: flex;
-	min-width: 270px;
-	max-width: 270px;
-	margin: 0 auto;
-	min-height: 270px;
-	max-height: 270px;
 	/* shadow stays when hover */
 	background: url(https://4.bp.blogspot.com/-SwBb_-GhxI4/W1NPTzc7coI/AAAAAAAABBw/Dri7V0algrEMayM55WDNSAWUAF9fFh9xwCLcBGAs/s320/alexa_pro_shadow.png);
 	background-repeat: no-repeat;
@@ -60,40 +50,8 @@
 }
 
 
-/* the image are to big otherwise */
-@media (max-width: 310px) {
-	.pump_img_container {
-		height: 180px;
-    	width: 180px;
-	}
-	.pump_img_container img{
-		height: 180px;
-		width:180px;
-	}
-}
-/* the image are to big otherwise */
-@media (max-width: 414px) {
-	.pump_img_container {
-		height: 220px;
-    	width: 220px;
-	}
-	.pump_img_container img{
-		height: 220px;
-		width: 220px;
-	}
 }
 
-
-.pump_img_container a:hover{
-	transform: scale(1.4);
-	translate: -20px -30px;
-	transition: .9s;
-}
-/* at those widths 1.4 is to big */
-@media (max-width: 750px) {
-    .pump_img_container img{
-        transform: scale(1.2);
-    }
 }
 
 
