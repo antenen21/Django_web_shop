@@ -22,22 +22,40 @@
 }
 
 .text-container {
+	position: relative;
 	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	height: 100%;
 	width: 100%;
+	text-align: center;
 	justify-content: center;
 }
 
 /* text -> size: auto */
-.product_text h4{
-	height: 100%;
-	flex-grow: 1;
+.text-container .product_text {
 	width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-	font-size: auto;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	text-align: center;
+	font-size: inherit;
 }
 
+@media (max-width: 400px) {
+	.text-container .product_text {
+		font-size: 10px;
 
+	}
+}
+
+@media (max-width: 325px) {
+	.text-container .product_text {
+		font-size: 8px;
+
+	}
+}
 
 
 
