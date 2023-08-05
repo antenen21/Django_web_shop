@@ -45,6 +45,11 @@
 	margin: 0 auto;
 	min-height: 270px;
 	max-height: 270px;
+	/* shadow stays when hover */
+	background: url(https://4.bp.blogspot.com/-SwBb_-GhxI4/W1NPTzc7coI/AAAAAAAABBw/Dri7V0algrEMayM55WDNSAWUAF9fFh9xwCLcBGAs/s320/alexa_pro_shadow.png);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	background-position: 50% 122%;
 }
 
 .puffer_img_container img{
