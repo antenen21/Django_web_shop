@@ -88,14 +88,14 @@
 	grid-template-columns: auto auto;
   }
 
+
   .grid-container > div {
 	background-color: rgba(255, 255, 255, 0.8);
 	text-align: center;
-	
   }
 
 /* Cart button */
-  .card_cart_btn {
+.card_cart_btn {
 	place-items: start;
 	list-style: none;
 	height: 60px;
