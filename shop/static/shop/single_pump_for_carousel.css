@@ -33,6 +33,8 @@
 	position: relative;
 	justify-content: center;
 	display: flex;
+	height: 100%;
+	width: 100%;
 	/* shadow stays when hover */
 	background: url(https://4.bp.blogspot.com/-SwBb_-GhxI4/W1NPTzc7coI/AAAAAAAABBw/Dri7V0algrEMayM55WDNSAWUAF9fFh9xwCLcBGAs/s320/alexa_pro_shadow.png);
 	background-repeat: no-repeat;
