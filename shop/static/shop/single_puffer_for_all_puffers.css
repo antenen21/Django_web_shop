@@ -1,7 +1,7 @@
 /*---------------------------------------------
 			CARD ITEM
 ---------------------------------------------*/
-.puffer_box_main {
+.puffer_main {
 	box-sizing: border-box;
 	height: 100%;
 	display: flex;
