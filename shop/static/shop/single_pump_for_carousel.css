@@ -3,6 +3,7 @@
 			CARD ITEM
 ---------------------------------------------*/
 .pump_box_main {
+	height: 400px; /* is making problem */
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
