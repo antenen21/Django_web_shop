@@ -11,23 +11,7 @@
     border: 2px solid #000000;
 }
 
-
-
-/*------------------------------------------------------
-        PUMP CAROUSEL CONTAINER - WHICH WRAPS THE ITEMS
---------------------------------------------------------*/
-.carousel-container-pump {
-    overflow-x: hidden;
-    justify-content: center;
-    position: relative;
-    display: flex;
-    height: 110%;
-    margin-top: 50px; 
-    border: 2px solid #8c1e1e;
-  }
   
-  
-
 /*--------------------------------------------------------------
  PUMP CONTROL BUTTONS NORMAL SIZE 
  --------------------------------------------------------------*/
