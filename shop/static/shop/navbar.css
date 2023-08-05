@@ -35,6 +35,12 @@ FORM CONTROLS FOR SEARCHBAR
 /* ------------------------
 TYPED JS TEXT ANIMATION  
 --------------------------*/
+/* container for animated text -> don't push arround other stuff */
+.typed-container {
+  height: 140px!important;
+  width: 100%!important;
+}
+
 
 /* animated text */
 .typed-js-text-first,
@@ -48,11 +54,6 @@ TYPED JS TEXT ANIMATION
   word-spacing: 6.5px;
 }
 
-/* container for animated text -> don't push arround other stuff */
-.typed-container {
-  height: 140px;
-  width: 100%;
-}
 
 /* static text before "SWISS" */
 .typed-js-text-second {
