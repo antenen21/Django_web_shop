@@ -10,7 +10,14 @@
 	display:flex;
 	gap: 2rem;
   }
-  
+
+  @media (max-width: 416px) {
+	.social ul {
+		gap: 1rem;
+	}
+  }
+
+
  .social ul li {
 	list-style: none;
 	height: 60px;
