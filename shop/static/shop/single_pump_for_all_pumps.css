@@ -32,16 +32,6 @@
 	justify-content: center;
 }
 
-/* text -> size: auto */
-/* .text-container .product_text {
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	flex-grow: 1;
-	text-align: center;
-	font-size: inherit;
-} */
 
 @media (max-width: 416px) {
 	.text-container .product_text {
