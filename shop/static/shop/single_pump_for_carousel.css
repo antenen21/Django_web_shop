@@ -12,6 +12,7 @@
 	padding: 10%;
 }
 
+
 .text-container {
 	position: relative;
 	display: flex;
@@ -24,7 +25,7 @@
 	max-lines: 1;
 	font-size: 12px;
 	height: 80px;
-	margin-bottom: 1rem;
+	margin-bottom: 20%;
 }
 
 
@@ -45,6 +46,7 @@
 /*---------------------------------------------
 			IMAGE
 ---------------------------------------------*/
+/* container that wraps image */
 .pump_img_container {
 	position: relative;
 	display: flex;
@@ -59,6 +61,7 @@
 	background-position: 50% 122%;
 }
 
+/* image inside container */
 .pump_img_container img {
 	justify-content: center;
 	margin: 0 auto;
@@ -66,11 +69,8 @@
     width: 100%;
 }
 
-
-
-
 .pump_img_container img:hover {
-	transform: translate(0px, -50px);
+	transform: translate(0px, -15%);
 	cursor: pointer;
 	filter: contrast(80%);
 }
@@ -96,9 +96,9 @@
 
 
 
-/*---------------------------------------------
-	CARD BUTTONS - NORMAL SIZE
----------------------------------------------*/
+/*-----------------------------------------------------------------------
+	*** CARD BUTTONS ***  			 NORMAL SIZE 	-	[600px - 3000px]
+------------------------------------------------------------------------*/
 .grid-container {
 	display: grid;
 	grid-template-rows: auto;
@@ -195,9 +195,9 @@
   }
 
 
-/*---------------------------------------------
-	CARD BUTTONS - UNDER 416px SIZE!
----------------------------------------------*/
+/*-----------------------------------------------------------------------
+	*** CARD BUTTONS ***  			 SMALL SIZE 	-	[0px - 600px]
+------------------------------------------------------------------------*/
 
 	@media (max-width: 600px) {
 
