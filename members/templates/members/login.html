@@ -19,22 +19,23 @@
             <div class="row">
                           
                     {% comment %} registration block {% endcomment %}
-                    <div class="col-lg-6">
-                      <div class="box" style="height:100%;">
-                        <h1>Nouveau compte</h1>
-                        <p class="lead">Pas encore inscrit chez nous ?</p>
-                        <p>Avec votre inscription chez nous, un nouveau monde de la mode s'ouvre à vous avec des remises fantastiques et bien plus encore ! Tout le processus ne vous prendra pas plus d'une minute !</p>
-                        <p class="text-muted">Si vous avez des questions, n'hésitez pas à  <a href="contact.html">nous contacter</a>, Notre service client est à votre disposition 24/7.</p>
-                        <hr>
-                        <div class="text-center">
-                            <a href="{% url 'register-path' %}"><button type="submit" class="btn btn-primary"><i class="fa fa-user-md"></i> S'enregistrer</button></a>
+                    <div class="col-lg-6 mb-4">
+                        <div class="box">
+                          <h1>Nouveau compte</h1>
+                          <p class="lead">Pas encore inscrit chez nous ?</p>
+                          <p>Avec votre inscription chez nous, un nouveau monde de la mode s'ouvre à vous avec des remises fantastiques et bien plus encore ! Tout le processus ne vous prendra pas plus d'une minute !</p>
+                          <p class="text-muted">Si vous avez des questions, n'hésitez pas à  <a href="contact.html">nous contacter</a>, Notre service client est à votre disposition 24/7.</p>
+                          <hr>
+                          <div class="text-center">
+                              <a href="{% url 'register-path' %}"><button type="submit" class="btn btn-primary"><i class="fa fa-user-md"></i> S'enregistrer</button></a>
+                          </div>
                         </div>
-                      </div>
                     </div>
 
+
                     {% comment %} Login block {% endcomment %}
-                    <div class="col-lg-6" style="">
-                      <div class="box" class="" style="height:100%;">
+                    <div class="col-lg-6 mb-4">
+                      <div class="box">
                         <h1>Login</h1>
                         <p class="lead">Déjà client chez nous ?</p>
                         <p class="text-muted">On t'attendait! Vien voir nos nouveaux produits!.</p>
