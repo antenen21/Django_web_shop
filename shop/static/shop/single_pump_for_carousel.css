@@ -28,16 +28,20 @@
 	margin-bottom: 20%;
 }
 
+h4.product_text{
+	font-size: 16px;
+}
+
 
 @media (max-width: 416px) {
-	.text-container .product_text {
+	h4.product_text {
 		font-size: 10px;
 
 	}
 }
 
 @media (max-width: 325px) {
-	.text-container .product_text {
+	h4.product_text {
 		font-size: 8px;
 
 	}
