@@ -25,6 +25,7 @@
 	margin-bottom: 20%;
 }
 
+/* BUG: need find out why flex-grow isnt working on it */
 @media (max-width: 416px) {
 	.product_text {
 		font-size: 8px;
