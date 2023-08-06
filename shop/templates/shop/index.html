@@ -19,73 +19,78 @@
 
 {% block content %}
 
+<div class="main__container" style="padding: 20%;">
+   <div class="col-12">
+      <div class="row">
 
-<!-- ======= Heat-pump carousel ======= -->
-<div class="pump-body-container">
 
-      
-      
-      
-            <h1 class="pump_title">Nos pompes à chaleurs</h1>
+            <!-- ======= Heat-pump carousel ======= -->
+            <div class="pump__container">
+                  <div class="row">
             
-            <!-- container that wraps the items -->
-            <div class="carousel-container-pump owl-carousel" id="pumpSlider" style="display: flex;">
-               {% for pump in pumps %}
-                  <div class="item m-3">
-                     {% include 'shop/single_pump_for_carousel.html' %}
-                  </div>
-               {% endfor %}
-            </div>
-
-            <!-- Buttons are outside of the container -->
-            
-               <div class="pumpSlider-controls">
-                  <a id="pumpSliderLeft" class="carousel-control-prev my-custom-buttons"  data-slide="prev">
-                     <i class="bi bi-shift-fill bi-icon" style="transform: rotate(-90deg);"></i>
-                  </a>
-               
-                  <a id="pumpSliderRight" class="carousel-control-next my-custom-buttons"  data-slide="next">
-                     <i class="bi bi-shift-fill bi-icon" style="transform: rotate(90deg);"></i>
-                  </a>
-                  
-               </div>
-            
-</div>
-<hr>
-
-
-<!-- ======= Puffer carousel ======= -->
-<div class="puffer-body-container">
- 
-      
-          
-
-               <h1 class="puffer_title">Nos Accumulateurs pour votre système</h1>
-               <hr>
-
-               <!-- container that wraps the items -->
-               <div class="carousel-container-puffer owl-carousel" id="pufferSlider" style="display: flex;">
-                  {% for puffer in puffers %}
-                     <div class="item m-3">
-                        {% include 'shop/single_puffer_for_carousel.html' %}
+                     <h1 class="pump_title">Nos pompes à chaleurs</h1>
+                     
+                     <!-- container that wraps the items -->
+                     <div class="carousel-container-pump owl-carousel" id="pumpSlider">
+                        {% for pump in pumps %}
+                           <div class="">
+                              {% include 'shop/single_pump_for_carousel.html' %}
+                           </div>
+                        {% endfor %}
                      </div>
-                  {% endfor %}
-               </div>
 
-         
+                  <!-- Buttons are outside of the container -->
+                  
+                     <div class="pumpSlider-controls">
+                        <a id="pumpSliderLeft" class="carousel-control-prev my-custom-buttons"  data-slide="prev">
+                           <i class="bi bi-shift-fill bi-icon" style="transform: rotate(-90deg);"></i>
+                        </a>
+                     
+                        <a id="pumpSliderRight" class="carousel-control-next my-custom-buttons"  data-slide="next">
+                           <i class="bi bi-shift-fill bi-icon" style="transform: rotate(90deg);"></i>
+                        </a>
+                        
+                     </div>
 
-         <!-- Buttons are outside of the container -->
-         
-            <div class="pufferSlider-controls">
-               <a id="pufferSliderLeft" class="carousel-control-prev my-custom-buttons"  data-slide="prev">
-                  <i class="bi bi-shift-fill bi-icon" style="transform: rotate(-90deg);"></i>
-               </a>
-               <a id="pufferSliderRight" class="carousel-control-next my-custom-buttons"  data-slide="next">
-                  <i class="bi bi-shift-fill bi-icon" style="transform: rotate(90deg);"></i>
-               </a>
+                  </div>
             </div>
-         
 
+
+            <!-- ======= Puffer carousel ======= -->
+            <div class="puffer__container">
+                  <div class="row">
+      
+                     <h1 class="puffer_title">Nos Accumulateurs pour votre système</h1>
+                     <hr>
+
+                     <!-- container that wraps the items -->
+                     <div class="carousel-container-puffer owl-carousel" id="pufferSlider">
+                        {% for puffer in puffers %}
+                           <div class="">
+                              {% include 'shop/single_puffer_for_carousel.html' %}
+                           </div>
+                        {% endfor %}
+                     </div>
+
+      
+                     <!-- Buttons are outside of the container -->
+                  
+                     <div class="pufferSlider-controls">
+                        <a id="pufferSliderLeft" class="carousel-control-prev my-custom-buttons"  data-slide="prev">
+                           <i class="bi bi-shift-fill bi-icon" style="transform: rotate(-90deg);"></i>
+                        </a>
+                        <a id="pufferSliderRight" class="carousel-control-next my-custom-buttons"  data-slide="next">
+                           <i class="bi bi-shift-fill bi-icon" style="transform: rotate(90deg);"></i>
+                        </a>
+                     </div>
+                  
+
+                  </div>
+            </div>
+
+
+
+      </div>
+   </div>
 </div>
-
 {% endblock content %}

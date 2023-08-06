@@ -78,7 +78,7 @@ $(document).ready(function() {
             0: {
                 items: 1,
             },
-
+/* 
            // breakpoint from 2 up
             859: {
                items: 1,
@@ -87,7 +87,7 @@ $(document).ready(function() {
             // breakpoint from 3 up
             1254: {
                 items: 1,
-            }
+            } */
           }
   
       });
