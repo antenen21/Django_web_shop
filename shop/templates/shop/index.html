@@ -19,6 +19,10 @@
 
 {% block content %}
 
+<hr>
+   <h1 class="pump_title mb-5">Nos pompes à chaleurs</h1>
+<hr>
+
 <div class="main__container">
    <div class="col-12">
       <div class="row">
@@ -28,8 +32,7 @@
             <div class="pump__container">
                   <div class="row">
             
-                     <h1 class="pump_title">Nos pompes à chaleurs</h1>
-                     
+            
                      <!-- container that wraps the items -->
                      <div class="carousel-container-pump owl-carousel" id="pumpSlider">
                         {% for pump in pumps %}
@@ -54,15 +57,24 @@
 
                   </div>
             </div>
+      </div>
+   </div>
+</div>
 
 
-            <!-- ======= Puffer carousel ======= -->
+
+<hr>
+   <h1 class="puffer_title mb-5 mt-3">Nos Accumulateurs pour votre système</h1>
+<hr>
+
+<div class="main__container">
+   <div class="col-12">
+      <div class="row">
+
+         <!-- ======= Puffer carousel ======= -->
             <div class="puffer__container">
                   <div class="row">
       
-                     <h1 class="puffer_title">Nos Accumulateurs pour votre système</h1>
-                     <hr>
-
                      <!-- container that wraps the items -->
                      <div class="carousel-container-puffer owl-carousel" id="pufferSlider">
                         {% for puffer in puffers %}
