@@ -72,9 +72,9 @@
   }
 
 
-/*--------------------------------------------------------------
-          ***    PUMP BUTTONS - NORMAL SIZE ***
---------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------
+          ***    PUMP BUTTONS - NORMAL SIZE ***                  [416px - 30000px]
+--------------------------------------------------------------------------------*/
  .pumpSlider-controls {
     position: relative;
     margin-bottom: 120px;
@@ -82,6 +82,8 @@
     align-items: end;
 }
 
+
+/* Horizontal - all UNDER 768px */
 .pumpSlider-controls .carousel-control-next{
     right: -20%;
 }
@@ -89,6 +91,18 @@
 .pumpSlider-controls .carousel-control-prev {
     left: -20%;
 }
+
+/* Horizontal - all OVER 768px */
+@media (min-width: 768px){
+    .pumpSlider-controls .carousel-control-next{
+        right: -45%;
+    }
+    .pumpSlider-controls .carousel-control-prev {
+        left: -45%;
+    }
+}
+
+
 
 /* main button configurations */
 .pumpSlider-controls .carousel-control-next,
@@ -141,9 +155,9 @@
 }
 
 
-/*--------------------------------------------------------------
-          ***    PUMP BUTTONS - SMALL SIZE ***
---------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------
+          ***    PUMP CAROUSEL BUTTONS - SMALL SIZE ***               [0px - 416px]
+-----------------------------------------------------------------------------------*/
         @media (max-width: 416px) {
             /* main button configurations */
             .pumpSlider-controls .carousel-control-next,
@@ -191,9 +205,9 @@
 
 
 
-/*--------------------------------------------------------------
+/*------------------------------------------------------------------------
                   ***    PUFFER CONTAINER  ***
---------------------------------------------------------------*/
+------------------------------------------------------------------------*/
 /* carousel puffer container */
 .carousel-container-puffer {
     width: 100%;
@@ -201,15 +215,19 @@
     }
 
 
-/*--------------------------------------------------------------
-          ***    PUFFER BUTTONS - NORMAL SIZE ***
---------------------------------------------------------------*/
- .pufferSlider-controls {
+/*--------------------------------------------------------------------------------------
+          ***    PUFFER CAROUSEL BUTTONS - NORMAL SIZE ***           [416px - 30000px]
+--------------------------------------------------------------------------------------*/
+
+/* Vertical */
+.pufferSlider-controls {
     position: relative;
     margin-bottom: 120px;
     top: -120px;
 }
 
+
+/* Horizontal - all UNDER 768px */
 .pufferSlider-controls .carousel-control-next{
     right: -20%;
 }
@@ -217,6 +235,18 @@
 .pufferSlider-controls .carousel-control-prev {
     left: -20%;
 }
+
+/* Horizontal - all OVER 768px */
+@media (min-width: 768px){
+    .pufferSlider-controls .carousel-control-next{
+        right: -45%;
+    }
+    .pufferSlider-controls .carousel-control-prev {
+        left: -45%;
+    }
+}
+
+
 /* main button configurations */
 .pufferSlider-controls .carousel-control-next,
 .pufferSlider-controls .carousel-control-prev {
@@ -270,9 +300,9 @@
 
 
 
-/*--------------------------------------------------------------
-          ***    PUFFER BUTTONS - SMALL SIZE ***
---------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------
+          ***    PUFFER CAROUSEL BUTTONS - SMALL SIZE ***               [0px - 416px]
+-----------------------------------------------------------------------------------*/
  @media (max-width: 416px) {
     /* main button configurations */
     .pufferSlider-controls .carousel-control-next,
