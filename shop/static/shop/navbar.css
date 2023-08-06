@@ -303,7 +303,7 @@ SEARCH BOX
   padding: 0px;
 }
 
-.login_menu li {
+.login_menu li a{
   float: left;
   font-size: 16px;
   color: #ffffff;
@@ -312,13 +312,29 @@ SEARCH BOX
   padding-top: 4px;
 }
 
-.login_menu li a {
+ .login_menu li a {
   color: #ffffff;
-}
+} 
 
 .login_menu li a:hover {
   color: #f26522;
 }
+
+
+/* account drop down menu when logged */
+.account_drop_menu {
+  float: left;
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-top: 4px;
+}
+
+.account_drop_menu:hover {
+  color: #f26522;
+}
+
 
 .padding_10 {
   padding-left: 10px;
@@ -334,12 +350,19 @@ SEARCH BOX
   
 }
 
-@media (max-width: 321px) {
+/* put white background */
+@media (max-width: 416px) {
   .login_menu li a{
      color:black;
       background-color:white;
       border-radius: 4px;
       padding: 5px 2px;
+  }
+  .account_drop_menu{
+    color:black;
+    background-color:white;
+    border-radius: 4px;
+    padding: 5px 2px;
   }
 }
 
@@ -371,7 +394,7 @@ a:hover {
 }
 
 
-@media (max-width: 321px) {
+@media (max-width: 316px) {
   .nav-link{
     color:black;
     background-color:white;
