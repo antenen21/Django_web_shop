@@ -2,29 +2,55 @@
 {% load static %}
 
 
-{% block css_files %}<link rel="stylesheet" href="{% static 'members/logout.css' %}">{% endblock css_files %}
+{% block css_files %}
+<!-- Static css file -->
+<link rel="stylesheet" href="{% static 'members/logout.css' %}">
+{% endblock css_files %}
 
 {% block content %}
 
 
-<div class="container"  >
+<div class="main__logout__container ">
     <div class="row">
-        <div class="card">
-            <div class="container" style="display: grid; place-items: center;">
-                    <div class="col-12">
-                        <p class="">
-                            Merci d'avoir visité notre boutique en ligne ! Nous vous remercions de votre confiance et espérons que votre expérience d'achat a été agréable. Si vous avez des questions supplémentaires, n'hésitez pas à nous contacter. Au plaisir de vous revoir bientôt !
-                        </p>
+        <div class="col-12">
+
+
+            <div class="container box mt-1" style="display: grid; place-items: center;">
+
+                <div class="row">
+                    
+                    <h1 class="" style="text-align:center;">Aurevoir!</h1>
+                    <hr>
+                    <br>
+                    
+                    <h6 class="muted" style="text-align: center;">
+                        Merci d'avoir visité notre boutique en ligne !
+                        <br>
+                        <br>
+                        Nous vous remercions de votre confiance et espérons que votre expérience d'achat a été agréable.
+                        <br>
+                        <br>
+                        Si vous avez des questions supplémentaires, n'hésitez pas à nous contacter. 
+                        <br>
+                        <br>
+                        Au plaisir de vous revoir bientôt !
+                    </h6>
+                </div>        
+                
+                <div class="container mt-5" style="display: grid; place-items: center;">
+                    <div class="row">
+                        <h6 class="lead ">Connectez-vous à nouveau?</h6>
                     </div>
-            
-                    <div class="col-12">
-                        <div class="border-top pt-3"  style="min-height:65vh;">
-                            <small class="text-muted">
-                                <a href="{% url 'login-path' %}"><button type="button" class="btn btn-info">Connectez-vous à nouveau.</button></a>
-                            </small>
-                        </div>
+                </div>
+
+                <div class="container" style="display: grid; place-items: center;">
+                    <div class="row">
+                        <a href="{% url 'login-path' %}"><button type="button" class="btn btn-info">Login</button></a>
                     </div>
+                </div>
             </div>
+
+
         </div>
     </div>
 </div>    
