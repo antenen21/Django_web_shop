@@ -16,13 +16,14 @@
 }
 
 .product_text {
+	position: relative;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
 	flex-grow: 1;
-    width: 100%;
-    font-size: auto;
-    color: #30302e;
-    text-align: center;
-    font-weight: bold;
-	margin-bottom: 20%;
+	height: auto;
+	text-align: center;
+	margin-bottom: 15%;
 }
 
 /* BUG: need find out why flex-grow isnt working on it */
@@ -37,8 +38,8 @@
 ---------------------------------------------*/
 .pump_img_container {
 	position: relative;
-	justify-content: center;
 	display: flex;
+	justify-content: center;
 	height: 100%;
 	width: 100%;
 	padding: 6%;

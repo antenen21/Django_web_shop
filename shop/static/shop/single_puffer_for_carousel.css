@@ -16,37 +16,45 @@
 }
 
 .product_text {
+	position: relative;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
 	flex-grow: 1;
-    width: 100%;
-    font-size: auto;
-    color: #30302e;
-    text-align: center;
-    font-weight: bold;
+	height: auto;
+	text-align: center;
+	margin-bottom: 15%;
 }
 
 @media (max-width: 416px) {
 	.product_text {
 		font-size: 8px;
 	}
+}
+
+
 
 /*---------------------------------------------
 			IMAGE
 ---------------------------------------------*/
 .puffer_img_container {
 	position: relative;
-	justify-content: center;
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	height: 100%;
 	width: 100%;
 	padding: 6%;
 	/* shadow stays when hover */
 	background: url(https://4.bp.blogspot.com/-SwBb_-GhxI4/W1NPTzc7coI/AAAAAAAABBw/Dri7V0algrEMayM55WDNSAWUAF9fFh9xwCLcBGAs/s320/alexa_pro_shadow.png);
 	background-repeat: no-repeat;
-	background-size: 80%;
+	background-size:80%;
 	background-position: 50% 122%;
 }
 
+
 .puffer_img_container img {
+	display: flex;
 	justify-content: center;
 	margin: 0 auto;
 	height: auto;
