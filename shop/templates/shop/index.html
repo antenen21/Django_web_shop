@@ -8,9 +8,9 @@
    <!-- static css -->
    <link rel="stylesheet" href="{% static 'shop/index.css' %}">
    <!-- single pump css / needed for correct display in carousel -->
-   <link rel="stylesheet" href="{% static 'shop/single_pump.css' %}">
+   <link rel="stylesheet" href="{% static 'shop/single_pump_for_carousel.css' %}">
    <!-- single puffer css / needed for correct display in carousel -->
-   <link rel="stylesheet" href="{% static 'shop/single_puffer.css' %}">
+   <link rel="stylesheet" href="{% static 'shop/single_puffer_for_carousel.css' %}">
    <!-- Owl Carousel -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -70,8 +70,7 @@
                   {% endfor %}
                </div>
 
-            </div>
-         </div>
+         
 
          <!-- Buttons are outside of the container -->
          
@@ -87,51 +86,4 @@
 
 </div>
 
-
-{% comment %} <a id="pufferSliderLeft" class="carousel-control-prev my-custom-buttons"  data-slide="prev">
-   <i class="bi bi-shift-fill bi-icon" style="transform: rotate(-90deg);"></i>
-</a>
-<a id="pufferSliderRight" class="carousel-control-next my-custom-buttons"  data-slide="next">
-   <i class="bi bi-shift-fill bi-icon" style="transform: rotate(90deg);"></i>
-</a> {% endcomment %}
-
-
-
-
-
-
-
-{% comment %} <section>
-   <div class="container">
-      <div class="row">
-         <div class="col">
-
-     
-
-               <!-- slider buttons -->
-               <a class="carousel-control-prev" href="#pumpSlider" role="button" data-slide="prev">
-                  <i class="fa fa-angle-left"></i>
-               </a>
-               <a class="carousel-control-next" href="#pumpSlider" role="button" data-slide="next">
-                  <i class="fa fa-angle-right"></i>
-               </a>
-
-
-
-
-
-               <!-- slider buttons -->
-               <a class="carousel-control-prev my-custom-buttons" href="#puffer_main_slider" role="button" data-slide="prev">
-                  <i class="bi bi-shift-fill bi-icon" style="transform: rotate(-90deg);"></i>
-               </a>
-               <a class="carousel-control-next my-custom-buttons" href="#puffer_main_slider" role="button" data-slide="next">
-                  <i class="bi bi-shift-fill bi-icon" style="transform: rotate(90deg);"></i>
-               </a>    
-         </div>
-      </div>
-   </div>
-</section> {% endcomment %}
-
-
 {% endblock content %}
-
