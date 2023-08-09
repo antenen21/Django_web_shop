@@ -51,8 +51,12 @@
 
 
       <!-- ======= Header navbar ======= -->
+      {% block navbar %}
       <header class="main_navbar banner_bg_main">
+
+
          <!-- header top section start -->
+         {% block navbar_header_top %}
          <div class="container">
             <div class="header_section_top">
                <div class="row">
@@ -70,9 +74,11 @@
                </div>
             </div>
          </div>
+         {% endblock navbar_header_top %}
          <!-- header top section start -->
       
          <!-- logo section start -->
+         {% block navbar_logo_section %}
          <div class="container logo_section">
                <div class="col-sm-12">
                   <div class="row">
@@ -87,18 +93,23 @@
                            </div>
                         </div>
 
-                        <img style="height: auto; width: 90%;"src="{% static 'shop/images/swiss heating white (1000 × 1000 px).png' %}">
+                        <img style="height: auto; width: {% block logo_width %}50%;{% endblock logo_width %}"src="{% static 'shop/images/swiss heating white (1000 × 1000 px).png' %}">
                      </div>
                   </div>
                </div>
          </div>
+         {% endblock navbar_logo_section %}
          <!-- logo section end -->
       
+         
          <!-- header section end -->
+         {% block navbar_header_section %}
          <div class="header_section">
             <div class="container containt_main">
                
+
                   <!-- Sidenav menu Left offcanvas start-->
+                  {% block sidenav_menu_offcanvas %}
                   <div id="mySidenav" class="sidenav">
                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                      <a href="{% url 'index-path' %}">Home</a>
@@ -107,11 +118,13 @@
                      <a href="{% url 'index-path' %}">Nos services</a>
                   </div>
                   <span class="toggle_icon" onclick="openNav()"><img src="{% static 'shop/images/menu_icon.png' %}"></span>
+                  {% endblock sidenav_menu_offcanvas %}
                   <!-- Sidenav menu Left offcanvas end-->
       
 
                   
                   <!-- Category dropdown start-->
+                  {% block category_dropdown %}
                   <div class="dropdown">
                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Category 
                      </button>
@@ -121,10 +134,12 @@
                         <a class="dropdown-item" href="#">Something else here</a>
                      </div>
                   </div>
+                  {% endblock category_dropdown %}
                   <!-- Category dropdown end-->
 
 
                   <!-- Search bar start -->
+                  {% block searchbar %}
                   <div class="main">
                         <form method="POST" action="{% url 'search-results-path' %}">
                         {% csrf_token %}
@@ -138,6 +153,7 @@
                            </div>
                         </form>  
                   </div>
+                  {% endblock searchbar %}
                   <!-- Search bar end -->
       
       
@@ -197,8 +213,11 @@
       
             </div>
          </div>
+         {% endblock navbar_header_section %}
          <!-- header section end -->
       
+
+
       
          <!-- Typed effect start-->
          {% block typed_js_in_navbar %}
@@ -236,7 +255,8 @@
          </div>   
          <!--   Small modal POP-UP end  -->
 
-      </header>         
+      </header>    
+      {% endblock navbar %}     
       <!-- ======= Header navbar end ======= -->   
 
       <!-- ======= Content ======= -->
@@ -246,8 +266,9 @@
    </div> <!--  End of Wrapper -->
 
    <!-- ======= Footer (not wrapped) ======= -->
+   {% block footer_block %}
    {% include 'shop/includes/footer.html' %}
-
+   {% endblock footer_block %}
 
 
 
