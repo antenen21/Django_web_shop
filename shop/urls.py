@@ -26,6 +26,7 @@ urlpatterns = [
 
     # Pages
     path('about-us/', views.about_us, name='about-us-path'),
+    path('landing-page/', views.landing, name='landing-page-path'),
 
     # Testing
     path('test/', views.TestView.as_view(), name='test-path'),

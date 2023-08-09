@@ -168,6 +168,12 @@ def about_us(request):
     return render(request, 'shop/pages/page-about-us.html')
 
 
+#############################################
+# LANDING                                  #
+#############################################
+def landing(request):
+    return render(request, 'shop/landing.html')
+
 
 
 #############################################
