@@ -3,21 +3,50 @@
     {% block tiile %}404{% endblock tiile %}
 
     {% block css_files %}
-    <link rel="stylesheet" href="404.css">
+    <link rel="stylesheet" href=" {% static 'css/404.css' %}">
+    <link rel="stylesheet" href="{% static 'shop/search-results.css' %}">
     {% endblock css_files %}
 
 
     {% block content %}
-<section class="tv-error-404-tm" style="background-image: url(http://home.cern/sites/home.web.cern.ch/files/image/computing_page/2013/01/tier_0_servers.jpeg); background-position:top center; background-size:cover; height:800px;">
-    <div class="tv-dark-background-tm"></div>
-    <div class="container tv-error-content-tm">
-      <div class="col-md-12">
-        <h1>Page not Found</h1>
-        <h3>The page you are looking for does not exist or has changed.</h3>
+
+
+  
+    <div class="container results">
+        <div class="row">
+            
+            <div class="no_result_img col-12">
+                <img src="{% static 'shop/images/result.png' %}" alt="">
+            </div>
+
+            <div class="no_result_text" style="color:black;">
+                
+                Désolé, il semble que votre requête n'ait pas abouti cette fois-ci.
+                <br>
+                <br>
+                Nous n'avons trouvé aucun résultat ou page correspondant à votre recherche de page.
+                <br>
+                <br>
+                Si vous avez des questions ou besoin d'une assistance supplémentaire, n'hésitez pas à nous contacter. 
+                <br>
+                <br>
+                Nous sommes là pour vous aider dans votre recherche et trouver le produit idéal.
+            </div>
+            
+
+        </div>
+    </div>
+
+
+
+  
+   
+      <div class="text__404 col-md-12">
+
         <div class="tv-error-links-tm">
           <a href="#" class="btn">Home Page</a> 
           <a  class="btn"  onclick="window.history.go(-2);">Go Back</a>
         </div>
       </div>
-    </div>
+    
   </section>{% endblock content %}
