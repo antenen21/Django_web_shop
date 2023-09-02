@@ -143,7 +143,7 @@
                   <div class="main">
                         <form method="POST" action="{% url 'search-results-path' %}">
                         {% csrf_token %}
-                           <div class="input-group">
+                           <div class="input-group search__bar">
                               <input type="text" name="search_field" class="form-control bg-dark text-white" placeholder="Recherchez ici...">
                                  <div class="input-group-append">
                                     <button class="btn btn-secondary" type="submit" style="background-color: red; border-color:#f26522; z-index:0;">
