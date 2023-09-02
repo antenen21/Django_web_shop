@@ -69,7 +69,7 @@
 
 .footer_logo:hover{
   transform: scale(0.97);
-  background-color:#22a206;
+  background-color:#23a206a8;
   box-shadow: inset 5px 5px 8px 1px rgba(0, 0, 0, 0.2),
 			  inset -5px -5px 8px 0px rgba(77, 71, 100, 0.3),
 			  inset -1px -2px 2px 0px rgba(77, 71, 100, 0.4),
@@ -92,6 +92,37 @@
 .contact_email_container {
   margin-bottom: 2rem;
 }
+
+
+.contact_email_container .btn{
+  background-color: red;
+  color: white;
+  position: relative; 
+  border-top-left-radius: 0px; 
+  border-bottom-left-radius: 0px; border: 1px solid white; 
+  border-left: 2px solid white;
+}
+
+.contact_email_container .btn:hover{
+  transform: scale(1.05);
+  color: white;
+}
+
+
+/* Change from "Submit" to "+" on hover*/
+.contact_email_container .btn .span_2 {
+  display: none;
+}
+
+.contact_email_container .btn:hover .span_1 {
+  display: none;
+}
+
+.contact_email_container .btn:hover .span_2 {
+  display: inline;
+
+}
+
 
 
 /*------------------------------------
