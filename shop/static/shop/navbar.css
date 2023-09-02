@@ -252,15 +252,26 @@ transform: rotateY(20deg);
 
 
 /* ------------------------
-SEARCH BOX 
+SEARCH BAR 
 --------------------------*/
 
-/* Styles for wrapping the search box start */
+/* Styles for wrapping the search bar start */
 .main {
   flex: 1;
   margin: 0px 30px;
   display: inline-block;
   order: 2;
+}
+
+.search__bar .btn {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border: 1px solid white !important;
+  border-left: 3px solid white !important;
+}
+
+.search__bar .btn:hover {
+  transform: scale(1.05);
 }
 
 
@@ -383,9 +394,8 @@ SEARCH BOX
   padding: .4rem 10px;
 }
 
-a:hover {
+.lang_box a:hover {
   color: #f26522;
-  text-decoration: underline;
 }
 
 .nav-link {
