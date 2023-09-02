@@ -109,20 +109,6 @@
 }
 
 
-/* Change from "Submit" to "+" on hover*/
-.contact_email_container .btn .span_2 {
-  display: none;
-}
-
-.contact_email_container .btn:hover .span_1 {
-  display: none;
-}
-
-.contact_email_container .btn:hover .span_2 {
-  display: inline;
-
-}
-
 
 
 /*------------------------------------
