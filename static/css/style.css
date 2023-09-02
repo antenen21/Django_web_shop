@@ -14,7 +14,7 @@ html, body {
     height: 100%;
     max-width: 100%; 
     scroll-behavior: smooth;
-    color: #666666;
+    
     line-height: 1.80857;
     font-weight: normal;
     overflow-x: hidden;
@@ -27,7 +27,6 @@ html, body {
 
 a,
 .btn {
-    color: #1f1f1f;
     text-decoration: none !important;
     outline: none !important;
 }
@@ -77,7 +76,6 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-    color: #212121;
     text-decoration: none!important;
     
 }
