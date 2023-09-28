@@ -1,0 +1,1062 @@
+
+
+
+
+     ██╗ █████╗ ██╗   ██╗ █████╗ ███████╗ ██████╗██████╗ ██╗██████╗ ████████╗
+     ██║██╔══██╗██║   ██║██╔══██╗██╔════╝██╔════╝██╔══██╗██║██╔══██╗╚══██╔══╝
+     ██║███████║██║   ██║███████║███████╗██║     ██████╔╝██║██████╔╝   ██║   
+██   ██║██╔══██║╚██╗ ██╔╝██╔══██║╚════██║██║     ██╔══██╗██║██╔═══╝    ██║   
+╚█████╔╝██║  ██║ ╚████╔╝ ██║  ██║███████║╚██████╗██║  ██║██║██║        ██║   
+ ╚════╝ ╚═╝  ╚═╝  ╚═══╝  ╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝        ╚═╝               
+▄███▓▒░ SHIFT + CMD + P   - ASCII Decorator    ░▒▓█████▓▒░ ░▒▓████████████████▄                                     
+ ██                                                                          ██
+ ██                                                                          ██
+ ▒▒                                                                          ▒▒
+ ░░                                                                          ░░
+ ░                                                                            ░
+
+
+
+
+
+
+
+
+
+
+     ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+ ▄███▓▒░ Variables  ░▒████████████████████████████████████████████████▄                                     
+ ██                                                                          ██
+ ▓█                                                                          █▓
+ ▓▓                                                                          ▓▓
+ ▒▒                                                                          ▒▒
+ ░░                                                                          ░░
+ ░                                                                            ░
+   
+    NOTE :
+        The "var" keyword was used in all JavaScript code from 1995 to 2015.
+
+        The "let" and const keywords were added to JavaScript in 2015.
+
+        The "var" keyword should only be used in code written for older browsers.
+
+
+
+============================================================
+=======      LET         ===================================
+============================================================
+    The let keyword was introduced in ES6 (2015)
+
+        Variables defined with let cannot be Redeclared
+
+        Variables defined with let must be Declared before use
+
+        Variables defined with let have Block Scope
+
+
+                    With "let" you can not do this:
+
+                            let x = "John Doe";
+
+                            let x = 0;
+
+                    With "var" you can:
+
+                            var x = "John Doe";
+
+                            var x = 0;        
+
+
+
+
+
+
+================================================================================
+=======      BLOCK SCOPE  -  LET and CONST        ==============================
+================================================================================
+Before ES6 (2015), JavaScript had Global Scope and Function Scope.
+ES6 introduced two important new JavaScript keywords: let and const.
+These two keywords provide Block Scope in JavaScript.
+
+
+Variables declared inside a { } block with "let" cannot be accessed from outside the block:
+
+        Example:
+            {
+                let x = 2;
+            }
+            // x can NOT be used here
+
+
+
+
+
+==============================================================================
+=======      WITHOUT BLOCK SCOPE  -  var        ==============================
+==============================================================================
+
+Variables declared with the var keyword can NOT have block scope.
+
+Variables declared inside a { } block with "var" can be accessed from outside the block.
+
+        Example:
+            {
+                var x = 2;
+            }
+        // x CAN be used here
+
+
+
+========================================================================
+=======    Redeclaring Variables          ==============================
+========================================================================
+
+*** Redeclaring a variable using the "var" keyword can impose problems. ***
+
+    Redeclaring a variable inside a block will also redeclare the variable outside the block:
+
+            Example:
+                    var x = 10;
+                    // Here x is 10
+
+                    {
+                        var x = 2;              
+                        // Here x is 2
+                    }
+
+                    // Here x is 2
+
+
+
+*** Redeclaring a variable using the "let" keyword can solve this problem.
+
+    Redeclaring a variable inside a block will not redeclare the variable outside the block because of the
+    block scope of the "let":
+
+            Example:
+                    let x = 10;
+                    // Here x is 10
+
+                    {
+                        let x = 2;
+                        // Here x is 2
+                    }
+
+                    // Here x is 10                
+
+
+
+
+    When to Use var, let, or const?
+        1. Always declare variables
+
+        2. Always use const if the value should not be changed
+
+        3. Always use const if the type should not be changed (Arrays and Objects)
+
+        4. Only use let if you can't use const
+
+        5. Only use var if you MUST support old browsers.
+
+
+    When to use JavaScript const?
+    Always declare a variable with const when you know that the value should not be changed.
+
+    Use const when you declare:
+
+        A new Array
+        A new Object
+        A new Function
+        A new RegExp
+
+
+ ░                                                                            ░
+ ░░                                                                          ░░
+ ▒▒                                                                          ▒▒
+ ▓▓                                                                          ▓▓
+ ██                                                                          ██
+ ▀████████████████████████████████████████████████████████████████████████████▀
+
+
+
+
+
+
+
+
+
+
+
+
+     ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+ ▄███▓▒░ Get/Select items - DOM Manipulation  ░▒████████████████████████████████████████▄                                     
+ ██                                                                                    ██
+ ▓█                                                                                    █▓
+ ▓▓                                                                                    ▓▓
+ ▒▒                                                                                    ▒▒
+ ░░                                                                                    ░░
+ ░                                                                                      ░
+   
+// DOM Manipulation
+// Getting or Select Items in the html by JS
+
+====================================
+======= html =======================
+====================================
+        <div class="outer-container">
+            <div class="first-test container">
+                <h1 id="main-heading">Testing DOM Manipulation</h1>
+                    <ul>
+                        <li class="list-items">The Matrix</li>
+                        <li class="list-items">Thunder-Storm</li>
+                        <li class="list-items">Lava-Flow Terra</li>
+                        <li class="list-items">Rednex</li>
+                        <li class="list-items">Earthlings</li>
+                    </ul>
+            </div>
+        </div>
+
+
+====================================
+======= Script =====================
+====================================
+            // getElementsByid()
+
+                        const title = document.getElementById('main-heading');
+                        console.log(title);
+
+
+
+            // getElementsByClassName()
+
+                        const listItems = document.getElementsByClassName('list-items');
+                        console.log(listItems); 
+
+
+            // getElementsByTagName()
+
+                        const listItems = document.getElementsByTagName('li');
+                        console.log(listItems); 
+
+
+            // querySelector()   *** with query selector we can select anything ***
+
+                        const container = document.querySelector('div');
+                        console.log(container); 
+
+                        or
+                                                                *** use . for classname or # for id
+                        const container = document.querySelector('.list-items');
+                        console.log(container);
+
+                        
+
+                
+            // querySelectorAll()
+
+                        const allContainer = document.querySelectorAll('div');
+                        console.log(allContainer);
+
+ ░                                                                                          ░
+ ░░                                                                                        ░░
+ ▒▒                                                                                        ▒▒
+ ▓▓                                                                                        ▓▓
+ ██                                                                                        ██
+ ▀██████████████████████████████████████████████████████████████████████████████████████████▀
+
+
+
+
+
+
+
+
+
+
+
+
+
+     ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+ ▄███▓▒░ Styling elements INLINE - DOM Manipulation  ░▒███████████████████████▄                                     
+ ██                                                                          ██
+ ▓█                                                                          █▓
+ ▓▓                                                                          ▓▓
+ ▒▒                                                                          ▒▒
+ ░░                                                                          ░░
+ ░                                                                            ░
+ ====================================
+======= html =======================
+====================================
+        <div class="outer-container">
+            <div class="first-test container">
+                <h1 id="main-heading">Testing DOM Manipulation</h1>
+                    <ul>
+                        <li class="list-items">The Matrix</li>
+                        <li class="list-items">Thunder-Storm</li>
+                        <li class="list-items">Lava-Flow Terra</li>
+                        <li class="list-items">Rednex</li>
+                        <li class="list-items">Earthlings</li>
+                    </ul>
+            </div>
+        </div>
+
+
+====================================
+======= Script =====================
+====================================  
+            
+const title = document.querySelector("#main-heading");
+console.log(title);
+
+
+// Change attribute of one SINGLE element
+        title.style.color = "red";
+        title.style.fontSize = "50px";  
+        
+        /* NOTE : in JavaScript CSS propertys are written "camelCase" and not in the normal "snake-case" which
+                    would be "font-size" for example */
+        /* NOTE : This is only for inline styling and actualy works only for one single element */
+
+
+
+// change attribute of MULTIPLE elements    
+        const listItems = document.querySelectorAll("li");
+        console.log(listItems);
+
+        /* listItems.style.color = "blue"; */ // this will not work because we have to loop through all elements
+
+        for (i = 0; i < listItems.length; i++) {
+            listItems[i].style.color = "red";
+        }
+
+        console.log(listItems);
+
+ ░                                                                            ░
+ ░░                                                                          ░░
+ ▒▒                                                                          ▒▒
+ ▓▓                                                                          ▓▓
+ ██                                                                          ██
+ ▀████████████████████████████████████████████████████████████████████████████▀
+
+
+
+
+
+
+
+
+
+
+     ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+ ▄███▓▒░ Creating/Remove a new element - DOM Manipulation  ░▒█████████████████▄                                     
+ ██                                                                          ██
+ ▓█                                                                          █▓
+ ▓▓                                                                          ▓▓
+ ▒▒                                                                          ▒▒
+ ░░                                                                          ░░
+ ░
+ ====================================
+======= html =======================
+====================================
+        <div class="outer-container">
+            <div class="first-test container">
+                <h1 id="main-heading">Testing DOM Manipulation</h1>
+                    <ul>
+                        <li class="list-items">The Matrix</li>
+                        <li class="list-items">Thunder-Storm</li>
+                        <li class="list-items">Lava-Flow Terra</li>
+                        <li class="list-items">Rednex</li>
+                        <li class="list-items">Earthlings</li>
+                    </ul>
+            </div>
+        </div>
+
+
+====================================
+======= Script =====================
+====================================                                                                          ░
+   
+// Selecting and Creating a new element
+
+const ul = document.querySelector('ul'); /* select the already available ul */
+const li = document.createElement('li'); /* create a new list-item using the Tag element name <li> */
+
+
+
+
+
+
+// Adding the new element
+
+ul.append(li); /* append the new list-item to the ul */
+/* Note: go check in the web inspectopr in elements under <ul></ul>,
+there should be an new empty <li> </li> */
+
+
+
+
+
+// Modifying the new Text
+
+li.innerText = 'Jamaican Extras'; /* add text to the new list-item */
+/* Note: the Classes and attributes didn't get added to the new list-item */
+
+
+
+
+// Adding Attributes from other Classes or ID's
+
+        
+            EXAMPLE with "ID":
+
+            (we chose to give to the "li" the new attributes of an "id" which's id-name is "main-heading")
+            /* li.setAttribute('id', 'id-name'); */ 
+
+            /* li.setAttribute('id', 'main-heading'); */
+
+
+            EXAMPLE with "CLASS":
+
+            we chose to give to the "li" the new attributes of an "class" which's class-name is "list-items")
+            /* li.setAttribute('class', 'id-name'); */ 
+
+            /* li.setAttribute('class', 'main-heading'); */
+            /* li.setAttribute('class', 'list-items'); */
+
+
+            REMOVE an attributes from an element 
+
+            /* li.removeAttribute('class'); */        /* removes the "class" attribute from the li element */
+            /* li.removeAttribute('id'); */         /* removes the "id" attribute from the li element */
+
+
+
+
+
+// Simple way to adding class to an element
+
+            Adding class:
+
+            li.classList.add('list-items'); /* add a class to the new list-item */
+
+
+            Removing class:
+
+            li.classList.remove('list-items'); /* remove a class from the new list-item */
+
+
+
+
+// Removing an new element
+
+            li.remove(); /* remove the new list-item from the ul */
+
+
+
+
+
+
+
+
+
+
+
+        INFO:
+        // Console.log
+        // Just to see what possibilities we have when we want to modify the new element
+        const firstListItem = document.querySelector('.list-items'); /* selects the first list-item because of querySelector */
+
+        console.log(firstListItem); /* prints the first element list-item in the console */
+
+        console.log(firstListItem.innerText);   /*   The Matrix Neo   */
+        console.log(firstListItem.textContent); /*   The Matrix Neo   */
+        /* DON'T DISPLAY .innerHTML online!!!! */
+        console.log(firstListItem.innerHTML);   /*   The Matrix <span>Neo</span>   */
+
+
+ ░                                                                            ░
+ ░░                                                                          ░░
+ ▒▒                                                                          ▒▒
+ ▓▓                                                                          ▓▓
+ ██                                                                          ██
+ ▀████████████████████████████████████████████████████████████████████████████▀
+
+
+
+
+
+
+
+
+
+     ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+ ▄███▓▒░ Event Listeners - DOM Manipulation  ░▒██████████████████████████████▄                                     
+ ██                                                                          ██
+ ▓█                                                                          █▓
+ ▓▓                                                                          ▓▓
+ ▒▒                                                                          ▒▒
+ ░░                                                                          ░░
+ ░                                                                            ░
+   ====================================
+======= html =======================
+==================================== 
+            <div class="outer-container">
+
+            <h1 id="main-heading">Event Listeners</h1>
+            
+                <div class="first-test container">
+                
+                    <div class="boxes box-1">
+                        <h1 class="heading">Example 1</h1>
+                        <button onclick="alert('i love javascript')">Enter</button>
+                    </div>
+                    <div class="boxes box-2">
+                        <h1 class="heading">Example 2</h1>
+                        <button class="btn-2">Enter</button>
+                    </div>
+                    <div class="boxes box-3">
+                        <h1 class="heading">Example 3</h1>
+                        <button class="btn-3">Enter</button>
+                    </div>
+                </div>
+
+====================================
+======= script =====================
+====================================
+
+
+/*---------------------------------------------------------------------
+|                                                                     |
+
+|     element.addEventListener(type, functionToCall);                 |
+
+|                                                                     |
+---------------------------------------------------------------------*/
+
+
+
+
+
+
+/*---------------------------------------------------------------------
+|       Click                                                         |
+---------------------------------------------------------------------*/
+
+const buttonTwo = document.querySelector(".btn-2");
+
+function alertFunction() {
+    alert("YAY! YOU DID YOUR FIRST JS FUNCTION!");
+}
+
+buttonTwo.addEventListener("click", alertFunction);
+
+
+
+
+
+
+/*---------------------------------------------------------------------
+|       Mouseover                                                     |
+---------------------------------------------------------------------*/
+
+select an element and store it in a variable:
+
+            const boxColor = document.querySelector(".box-3");
+
+create a function:
+
+            function changeBackgroundColor() {
+                boxColor.style.backgroundColor = "red";
+}
+
+function originBgColor() {
+    boxColor.style.backgroundColor = "transparent";
+}
+
+
+Add listener:
+boxColor.addEventListener("mouseover", changeBackgroundColor); /* BUG: does not work in dev mode with round mouse */
+boxColor.addEventListener("mouseout", originBgColor);
+
+
+ ░                                                                            ░
+ ░░                                                                          ░░
+ ▒▒                                                                          ▒▒
+ ▓▓                                                                          ▓▓
+ ██                                                                          ██
+ ▀████████████████████████████████████████████████████████████████████████████▀ 
+ 
+ 
+ 
+     ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+ ▄███▓▒░ Event Listeners - DOM Manipulation  ░▒███████████████████████████████▄                                     
+ ██                                                                          ██
+ ▓█       Reveal Button                                                      █▓
+ ▓▓                                                                          ▓▓
+ ▒▒                                                                          ▒▒
+ ░░                                                                          ░░
+ ░                                                                            ░
+
+README:
+        The JS function checks on click if the const hiddenContent contains the class
+        "reveal-btn" which actualy it does not, because in the html we never added that
+        class.
+
+        looking at the CSS file, we can see that the first css code block tells
+        that the ".hidden-content" is not displayed which is actually the case.
+
+        The function says that if there is no such class in the object, the ELSE
+        statement adds the class to the object. 
+
+        The second block has the class .reveal-btn in it and would then overwrite the
+        first code block, which leads to display the hidden-content.
+
+        Now the .reveal-btn class was added and the .hidden-content is
+        displayed as block:
+
+                                .hidden-content {
+                                    display: none;
+                                }
+
+                                .hidden-content.reveal-btn {
+                                    display: block;
+                                }
+
+
+        If we click again on the button we call again the function, and the function
+        checks again if the .hidden-content object has the class .reveal-btn.
+
+        Now it has, so the function says that it has to be removed, looking again at the CSS.
+        This leads to first code block again above to display the .hidden-content to "none" and the
+        .reveal-btn will expand again taking the space of the hidden-content object.                       
+
+
+====================================
+======= html =======================
+==================================== 
+        <div class="outer-container">
+
+            <h1 id="main-heading">Event Listeners</h1>
+            
+                <div class="first-test container">
+
+                    <button class="reveal-btn boxes container">Reveal More</button>
+
+                    <div class="hidden-content boxes container">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Inventore ab reprehenderit, molestias nostrum cumque quaerat 
+                        suscipit sequi sint atque dolore nisi similique repellat officiis possimus ad,
+                        eum blanditiis amet iusto.
+                    </div>
+                    
+                </div>
+
+        </div>
+
+====================================
+======= CSS ========================
+==================================== 
+body, html {
+    background: linear-gradient(90deg, #21466b 20%, #182848 100%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background: transparent;
+    margin-top: 50px;
+}
+
+.boxes {
+    border: 4px solid whitesmoke;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    min-height: 250px;
+    flex-grow: 1;
+    width: auto;
+}
+
+.reveal-btn{
+    background: transparent;
+    color: whitesmoke;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s; 
+}
+
+.hidden-content {
+    display: none;
+}
+
+.hidden-content.reveal-btn {
+    display: block;
+}
+
+
+
+
+
+
+====================================
+======= script =====================
+====================================   
+select documents:
+
+        const revealBtn = document.querySelector('.reveal-btn');
+
+        const hiddenContent = document.querySelector(".hidden-content");
+
+
+
+create function:
+
+        function revealContent() {
+            if( hiddenContent.classList.contains('reveal-btn')
+            ) { 
+                hiddenContent.classList.remove('reveal-btn')
+            } else {
+                hiddenContent.classList.add('reveal-btn')
+            }
+        };  
+
+
+add eventListener:
+
+        revealBtn.addEventListener("click", revealContent);
+
+ ░                                                                            ░
+ ░░                                                                          ░░
+ ▒▒                                                                          ▒▒
+ ▓▓                                                                          ▓▓
+ ██                                                                          ██
+ ▀████████████████████████████████████████████████████████████████████████████▀
+
+
+
+     ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+ ▄███▓▒░ Product Adidas - JavaScript  ░▒██████████████████████████████████████▄                                     
+ ██                                                                          ██
+ ▓█                                                                          █▓
+ ▓▓                                                                          ▓▓
+ ▒▒                                                                          ▒▒
+ ░░                                                                          ░░
+====================================
+======= HTML =======================
+====================================       
+        
+        
+        <div class="container">
+        <div class="card">
+            <div class="heatpump">
+                <div class="circle"></div>
+                <img src="media/products/liebi.png" alt="heat-pump-product">               
+            </div>
+            <div class="info">
+                <h1 class="title">Panasonic</h1>
+                <h3>THIS PANASONIC HIGH TECH HEAT-PUMP IS GONNA HEAT YOUR HOUSE UP IN THE WORST WINTER TEMPERATURES.</h3>
+                <div class="sizes">
+                    <button class="btn-1">7 Kw</button>
+                    <button class="btn-2">9 Kw</button>
+                    <button class="btn-3">13 Kw</button>
+                </div>
+                <div class="purchase">
+                    <button>Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>                                                                    
+   
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+====================================
+======= HTML =======================
+====================================
+
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px; /* BUG: on Chrome it doesn'twork, */
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card {
+    transform-style: preserve-3d; /* BUG: on Chrome it doesn'twork, necessary to have clean movement */
+    min-height: 80vh;
+    width: 35rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.heatpump {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heatpump img {
+    width: 15rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+
+
+
+.circle {
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(
+        to left,
+      rgba(251, 3, 23, 0.914),
+      rgba(241, 241, 235, 0.801)
+    );
+    position: absolute;
+    border: -4px solid rgba(251, 247, 247, 0.2);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    /* animation */  
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+
+
+.info h1 {
+    font-size: 2rem;
+    transition: all 0.75s ease-out;
+}
+
+.info h3 {
+    font-size: 1rem;
+    padding: 2rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+.sizes {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+
+.sizes button {
+    padding: 0.5rem 2rem;
+    background: none;
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color:#585858;
+    transition: all 0.75s ease-out;
+}
+button.active {
+    background: rgb(150, 150, 150);
+    color: white;
+}
+.purchase {
+    margin-top: 2rem;
+}
+.purchase button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background: rgb(238, 60, 60);
+    border-radius: 30px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 0.75s ease-out;
+}
+
+
+====================================
+======= JavaScript =======================
+====================================
+
+// Main elements for mouse movement animation 
+const card = document.querySelector('.card');
+const container = document.querySelector('.container');
+
+
+// Items to popout or animate on the moving card
+const title = document.querySelector('.title');
+const circle = document.querySelector('.circle');
+const heatpump = document.querySelector('.heatpump img');
+const purchase = document.querySelector('.purchase button');
+const info = document.querySelector('.info h3');
+const sizes = document.querySelector('.sizes');
+
+
+
+
+
+         /* Moving animation event and add an event (e) to the function
+
+            making a variable xAxis, storing inside the whole innerWidth of the window
+            and dividing it by 2 to get the center of the window.
+
+            making a variable yAxis, storing inside the whole innerHeight of the window
+            and dividing it by 2 to get the center of the window.
+
+            minus the e.pageX to get the center of the card
+            minus the e.pageY to get the center of the card
+
+            The effect is to strong so we divide the wrapped math (window.innerWidth / 2 - e.pageX) by 25 or less. (the less it's divided by the more the effect is strong) */
+
+
+container.addEventListener('mousemove', (e) => {
+    /* console.log(e.pageX, e.pageY); */
+    let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+    let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+    card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+});
+
+        /* It looks  weird so we need to add a transform-style: preserve-3d to the   card class in the css file */
+
+
+
+
+         /* When we leave the card we want to animate it back to the center
+            Normaly we would do this with transition: ease 0.3s; in css but it's not working because it's apllied all the time because of the mousemove event and we want it to be applied only when we leave the card
+
+
+
+            So we basically gona add an event listener and put the transition to the container class when we enter to "NONE" and add it when we leave the container.
+            So we leave, animate it, when we enter, not animate it. */
+
+
+
+// ANIMATIONS when IN and OUT
+//Animation in
+container.addEventListener('mouseenter', (e) => {
+    // For transition ease-out when entering container
+    card.style.transition = 'none';
+    // Popout when entering
+    heatpump.style.transform = 'translateZ(150px) rotatex(0deg)';
+    title.style.transform = 'translateZ(120px)';
+    info.style.transform = 'translateZ(140px)';
+    sizes.style.transform = 'translateZ(120px)';
+    purchase.style.transform = 'translateZ(100px)';
+});
+
+// Animate Out
+container.addEventListener('mouseleave', (e) => {
+    // For transition ease-out when leaving the container
+    card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+    card.style.transition = 'ease 0.5s';
+
+    // Popback when leaving
+    heatpump.style.transform = 'translateZ(0px)';
+    title.style.transform = 'translateZ(0px)';
+    info.style.transform = 'translateZ(0px)';
+    sizes.style.transform = 'translateZ(0px)';
+    purchase.style.transform = 'translateZ(0px)';
+});
+
+
+
+// Button active animation
+const buttons = document.querySelector('.sizes button');
+const sizeButton1 = document.querySelector('.btn-1');
+const sizeButton2 = document.querySelector('.btn-2');
+const sizeButton3 = document.querySelector('.btn-3');
+
+console.log(sizeButton1, sizeButton2, sizeButton3);
+
+
+
+// add/remove  class with added event
+// Button 1
+sizeButton1.addEventListener('mouseover', (e) => {
+    sizeButton1.classList.add('active');
+});
+sizeButton1.addEventListener('mouseout', (e) => {
+    sizeButton1.classList.remove('active');
+});
+
+// Button 2
+sizeButton2.addEventListener('mouseover', (e) => {
+    sizeButton2.classList.add('active');
+});
+sizeButton2.addEventListener('mouseout', (e) => {
+    sizeButton2.classList.remove('active');
+});
+
+// Button 3
+sizeButton3.addEventListener('mouseover', (e) => {
+    sizeButton3.classList.add('active');
+});
+sizeButton3.addEventListener('mouseout', (e) => {
+    sizeButton3.classList.remove('active');
+});
+
+      
+
+ ░                                                                            ░
+ ░░                                                                          ░░
+ ▒▒                                                                          ▒▒
+ ▓▓                                                                          ▓▓
+ ██                                                                          ██
+ ▀████████████████████████████████████████████████████████████████████████████▀
+
+     ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+ ▄███▓▒░ EXAMPLE - EXAMPLE  ░▒████████████████████████████████████████████████▄                                     
+ ██                                                                          ██
+ ▓█                                                                          █▓
+ ▓▓                                                                          ▓▓
+ ▒▒                                                                          ▒▒
+ ░░                                                                          ░░
+ ░                                                                            ░
+   
+            COPY THIS - DO NOT CHANGE
+
+ ░                                                                            ░
+ ░░                                                                          ░░
+ ▒▒                                                                          ▒▒
+ ▓▓                                                                          ▓▓
+ ██                                                                          ██
+ ▀████████████████████████████████████████████████████████████████████████████▀

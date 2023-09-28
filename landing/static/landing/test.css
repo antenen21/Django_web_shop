@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px; /* BUG: on Chrome it doesn'twork, */
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card {
+    transform-style: preserve-3d; /* BUG: on Chrome it doesn'twork, necessary to have clean movement */
+    min-height: 80vh;
+    width: 35rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.heatpump {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heatpump img {
+    width: 15rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+
+
+
+.circle {
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(
+        to left,
+      rgba(251, 3, 23, 0.914),
+      rgba(241, 241, 235, 0.801)
+    );
+    position: absolute;
+    border: -4px solid rgba(251, 247, 247, 0.2);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    /* animation */  
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+
+
+.info h1 {
+    font-size: 2rem;
+    transition: all 0.75s ease-out;
+}
+
+.info h3 {
+    font-size: 1rem;
+    padding: 2rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+.sizes {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+
+.sizes button {
+    padding: 0.5rem 2rem;
+    background: none;
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color:#585858;
+    transition: all 0.75s ease-out;
+}
+button.active {
+    background: rgb(150, 150, 150);
+    color: white;
+}
+.purchase {
+    margin-top: 2rem;
+}
+.purchase button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background: rgb(238, 60, 60);
+    border-radius: 30px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 0.75s ease-out;
+}
+
+
+
+

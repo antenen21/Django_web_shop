@@ -1,0 +1,47 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{% static 'landing/test.css' %}">
+</head>
+
+
+
+
+<body>
+    
+    <div class="container">
+        <div class="card">
+            <div class="heatpump">
+                <div class="circle"></div>
+                <img src="media/products/liebi.png" alt="heat-pump-product">               
+            </div>
+            <div class="info">
+                <h1 class="title">Panasonic</h1>
+                <h3>THIS PANASONIC HIGH TECH HEAT-PUMP IS GONNA HEAT YOUR HOUSE UP IN THE WORST WINTER TEMPERATURES.</h3>
+                <div class="sizes">
+                    <button class="btn-1">7 Kw</button>
+                    <button class="btn-2">9 Kw</button>
+                    <button class="btn-3">13 Kw</button>
+                </div>
+                <div class="purchase">
+                    <button>Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script rel="script" src="{% static 'js/test.js' %}"></script>
+    </body>
+</html>

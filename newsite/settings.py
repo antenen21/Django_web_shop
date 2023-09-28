@@ -62,7 +62,7 @@ EMAIL_USE_SLL = EMAIL_USE_SLL
 
 # Application definition
 INSTALLED_APPS = [
-    
+    'landing',
     'contact',
     'cart', 
     'members',
@@ -149,7 +149,13 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
+USE_L10N = True
+
 USE_TZ = True
+""" Make sure at least USE_I18N and USE_L10N are set to True. We need both to make multi-language work. """
+
+
+
 
 
 # Static files (CSS, JavaScript, Images)

@@ -181,3 +181,16 @@ function autoRefreshPage(hours, minutes, seconds) {
   }, timeout);
 }
 autoRefreshPage(0, 0, 0);
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------TESTING PURPOSES------------------------------------------------*/
+

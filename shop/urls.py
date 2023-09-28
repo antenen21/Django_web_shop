@@ -7,7 +7,7 @@ urlpatterns = [
 
 
     # Index                                                                 
-    path('', views.IndexView.as_view(),  name='index-path'),
+    path('index', views.IndexView.as_view(),  name='index-path'),
 
     # Rating
     path('thank-you-for-rating', views.ThankYouRatingView.as_view(), name="thank-you-rating-path"),

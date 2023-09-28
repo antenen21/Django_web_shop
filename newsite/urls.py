@@ -25,7 +25,8 @@ from django.contrib.auth import views as auth_views
 #  as document_root, so the first place to look for.
 
 urlpatterns = [
-    
+    path('', include('landing.urls')),
+
     path('', include('cart.urls')),
     path('', include('members.urls')),
     path('', include('shop.urls')),

@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}Landing{% endblock title %}
+
+{% block css_files %}
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow&display=swap" rel="stylesheet"> 
+    <!--Static CSS files-->
+    <link rel="stylesheet" href="{% static 'landing/landing.css' %}">
+{% endblock css_files %}
+
+<!-- Navbar denied -->
+{% block navbar %}{% endblock navbar %}
+
+
+
+{% block content %}
+<div id="main-container">
+    <!-- background image-->
+    <img src="{% static "shop/images/pump-background.jpg" %}" alt="heat-pump" class="bg-img">
+            
+    
+ 
+    <!-- ======= Header and Navbar ======= -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+
+            <!-- Logo and title -->
+            <div class="col-12">
+            <a class="navbar-brand flex-grow-1" style="color: white; margin-left: 25px">             
+                <img style="height: auto; width: {% block logo_width %}300px;{% endblock logo_width %}"src="{% static 'shop/images/swiss heating white (1000 × 1000 px).png' %}">
+            </a>
+            </div>
+
+        </nav>
+    </header>
+
+
+
+
+
+    <!-- ======= Main Section ======= -->
+    <div class="main-container align-text">
+
+                <!-- Language buttons -->
+                <div class="language-buttons hidden">
+                    <button  class="french-button box">
+                        <div class="button-text">
+                            <text>FRANCAIS</text>
+                        </div>  
+                    </button>
+
+                    <button  class="german-button box">
+                        <div class="button-text">
+                            <text>DEUTSCH</text>
+                        </div>
+                    </button>
+                </div>
+                
+            
+                <!-- First info -->
+                <div class="first-info container hidden">
+                    
+                    <h1>{% trans "Ton expert en pompe à chaleur!" %}</h1>
+                    <br>
+                    <h1>Demande une <span>Offre</span> ou achète le matériel direct sur notre <span rel="">Shop.</span></h1>
+                </div>
+
+
+                <!-- Shop or Offer buttons -->
+                <div class="container">
+                        <div class="shop-or-offer-buttons hidden">                                   
+                            <a href="{% url "index-path" %}"><button  class="offer-button box"><b>&nbsp;&nbsp;Je veut une Offre&nbsp;&nbsp;</b></button></a>
+                            <a href="{% url "index-path" %}"><button  class="shop-button box">                       <b>Je veut voir le Shop</b></button></a>                             
+                        </div>
+                    </div> 
+                </div>
+
+
+                <!-- Scroll down -->
+                <div class="scroll-down container hidden">
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <span class="text">Scroll down</span>
+                    <a class="text" href="https://naegele.it">See it in action</a>
+                </div>
+
+                <!-- Overlay Van-->
+                <div class="van-container hidden">       
+                    <img class="overlay-van" src="{% static "shop/images/Dark Gray & Blue Illustration Mountain Desktop Wallpaper.png" %}" alt="">
+                </div>
+
+                <!-- Main text -->
+                <div class="text-container">
+                    <div class="hidden">
+                        <h1 class="mt-5" style="color: white; text-align: center;">{% block sub_text %}
+                            Nous sommes une entreprise Suisse spécialisée dans l'installation et la vente de systèmes de chauffage,
+                             <br>
+                             présente dans toutes les régions de Suisse. Une entreprise qui ne pose pas de barrières entre l'allemand et le français.
+                             <br>
+                             <br>
+                              Nos installateurs professionnels certifiés, titulaires d'un CFC, sont là pour vous fournir un système d'une qualité absolue,
+                              <br>
+                               en assurant un travail propre et ce, à un prix imbattable.{% endblock sub_text %}</h1>
+                    </div>
+                </div>
+
+
+            
+    </div>
+    <!-- ======= End of Main Section ======= -->
+
+</div>
+
+{% block js_files %}
+<script src="{% static "landing/landingApp.js" %}"></script>
+{% endblock js_files %}
+
+{% endblock content %}
+
