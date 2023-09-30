@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
 
 
 
@@ -14,9 +15,10 @@
 body,
 html {
     height: 100%;
-    /* font-family: "Archivo Black", sans-serif; */
+    /* font-family: "Archivo Black", sans-serif; 
 
-    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;*/
+    font-family: "Rowdies", cursive;
     line-height: 1.5;
     display: flex-box;
     flex-direction: column;
@@ -25,24 +27,25 @@ html {
 }
 
 
+
+
+
+/*--------------------------------------
+|         BACKGROUND IMAGE             |
+--------------------------------------*/
 .bg-img {
     z-index: -99;
     position: absolute;
-    height: 100%;
-    width: 100vw;
+    width: 100%;
+    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(0.4) blur(2px) grayscale(0.5) contrast(1.2);
+    filter: brightness(0.8) blur(0px) grayscale(0) contrast(1);
     
 }
 
-.overlay-van {
-    height: auto;
-    width: 60vw;
-    background-repeat: no-repeat;
-    left: 25%;
-    top: 35vw; 
-}
+
+
 
 
 /*--------------------------------
@@ -51,6 +54,10 @@ html {
 
 .navbar {
     background-color: #040000;
+    position: relative;
+    
+    width: 100%;
+    top: 0;
 }
 
 /*--------------------------------
@@ -63,6 +70,10 @@ html {
         height: auto;
     }
 }   
+
+
+
+
 
 
 /*--------------------------------------
@@ -166,13 +177,20 @@ html {
 .first-info {
     padding-left: 10%;
     padding-right: 10%;
-    border: 2px solid white;
+    
     border-radius: 30px;
     margin-bottom: 2rem;
 }
-.first-info h1 {
+.first-info h1, .first-info h6 {
     font-size: 4vh; 
     font-weight: bolder;
+    color: #fcf9f9;
+    text-align: center;
+}
+
+.first-info h6 {
+    font-size: 3vh;
+    font-weight: bold;
     color: #fcf9f9;
     text-align: center;
 }
@@ -320,6 +338,10 @@ html {
   }
 
 
+
+
+
+
 /*--------------------------------------------  
 |        Van Overlay                         |
 --------------------------------------------*/
@@ -327,6 +349,14 @@ html {
 .van-container {
   display: flex;
   justify-content: center;
+}
+
+.overlay-van {
+  height: auto;
+  width: 60vw;
+  background-repeat: no-repeat;
+  left: 25%;
+  top: 35vw; 
 }
 
 .van-container.move {
@@ -344,6 +374,10 @@ html {
       justify-content: center;
   }
 }
+
+
+
+
 
 
 

@@ -1,133 +1,317 @@
-* {
-    margin: 0;
+/* RESET RULES & HELPER CLASSES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+:root {
+    --lightblue: #f6f9fc;
+    --red: #d64041;
+  }
+    
+  a:hover{
+    border-bottom: 1px solid #ffffff;
+    text-decoration: none;
+  } 
+
+  h1{
+    font-size: 2em; padding: 20px 0;
+  }
+
+  p{
+    font-size: .75em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 20px 0;
+  }
+
+  .bg-lightblue {
+    background: var(--lightblue);
+  }
+  
+  .bg-red {
+    background: var(--red);
+  }
+  
+  .text-red {
+    color: var(--red);
+  }
+  
+  .container-fluid-max {
+    max-width: 1440px;
+  }
+  
+  .cover {
+    background: no-repeat center/cover;
+  }
+  
+  .p-15 {
+    padding: 15px;
+  }
+
+
+
+  
+/* SCROLL ANIMATIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.scroll .page-header {
+  background: var(--red);
+}
+
+.scroll .hero {
+  transform: scale(0.98);
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 3s;
+}
+
+.show {
+  opacity: 1;
+  transition: all 2s ease-in-out;
+}
+  
+
+
+
+
+  /* HEADER -> NAVBAR
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .page-header {
+    transition: background 0.5s ease-in-out;
+  }
+  
+  .page-header .navbar {
+    padding: 1rem 0;
+    z-index: 3000;
+  }
+  
+  .page-header .navbar-toggler {
+    /* the variable is inherited from BS4 built-in variables */
+    border-color: var(--white); 
+  }
+  
+
+
+
+    /* NAVBAR NORMAL MENU
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  a.nav-link {
+    font-weight: 400;
+    letter-spacing: 15xp;
+  }
+
+
+
+
+  /* NAVBAR LOGIN BUTTON RIGHT SIDE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .login-btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: transparent;
+    border: none;
     padding: 0;
-    box-sizing: border-box;
-}
+  }
 
-body {
-    font-family: "Poppins", sans-serif;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    perspective: 1000px; /* BUG: on Chrome it doesn'twork, */
-}
+  .login-btn span {
+    font-size: 1em;
+    font-weight: 600;
+  }
 
-.container {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.card {
-    transform-style: preserve-3d; /* BUG: on Chrome it doesn'twork, necessary to have clean movement */
-    min-height: 80vh;
-    width: 35rem;
-    border-radius: 30px;
-    padding: 0rem 5rem;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
-}
+  .login-btn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
 
 
 
-.heatpump {
-    min-height: 35vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.heatpump img {
-    width: 15rem;
-    z-index: 2;
-    transition: all 0.75s ease-out;
-}
-
-
-
-
-.circle {
-    width: 15rem;
-    height: 15rem;
-    background: linear-gradient(
-        to left,
-      rgba(251, 3, 23, 0.914),
-      rgba(241, 241, 235, 0.801)
-    );
+  /* BANNER SECTION
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .hero {
+    padding-left: 5%;
+    background-attachment: fixed;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .hero::after {
+    content: "";
     position: absolute;
-    border: -4px solid rgba(251, 247, 247, 0.2);
-    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    /* animation */  
-    animation-name: spin;
-    animation-duration: 10000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5) 0,
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(0, 0, 0, 0.1) 100%
+    );
+  }
+  
+  .hero .container-fluid {
+    z-index: 10;
+  }
+
+
+/* –––– Apply filter only on the background-image –––––––––––––––––––––––––––––––– */
+/* pseudo-element that is simply pretending to be a background. */
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-image: url('/static/shop/images/Untitled design (2).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(0.5) blur(0px) grayscale(0) contrast(1.1);
+}
+  
+#home-inside {
+    /* This will make it stack on top of the ::before */
+    position: relative;
 }
 
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
 
 
-
-
-.info h1 {
-    font-size: 2rem;
-    transition: all 0.75s ease-out;
-}
-
-.info h3 {
-    font-size: 1rem;
-    padding: 2rem 0rem;
-    color: #585858;
-    font-weight: lighter;
-    transition: all 0.75s ease-out;
-}
-
-.sizes {
+  /* HERO TEXT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .hero-text {
     display: flex;
-    justify-content: space-between;
-    transition: all 0.75s ease-out;
-}
+  }
 
-.sizes button {
-    padding: 0.5rem 2rem;
-    background: none;
-    border: none;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
-    cursor: pointer;
-    font-weight: bold;
-    color:#585858;
-    transition: all 0.75s ease-out;
-}
-button.active {
-    background: rgb(150, 150, 150);
-    color: white;
-}
-.purchase {
+  .hero-text h1{
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+  }
+
+
+
+
+
+
+  /* HERO BUTTONS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .hero-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
     margin-top: 2rem;
-}
-.purchase button {
-    width: 100%;
-    padding: 1rem 0rem;
-    background: rgb(238, 60, 60);
-    border-radius: 30px;
-    border: none;
-    color: white;
+  }
+  @media screen and (max-width: 991px) {
+    .hero-buttons {
+      flex-direction: column;
+      width: max-content;
+    }
+  }
+
+  .hero-buttons button {
+    background: transparent; outline: none;
+    position: relative;
+    letter-spacing: 3px;
+    font-weight: 900;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    border: 3px solid #ffffff;
+    padding: 15px 50px;
+    overflow: hidden;
+  }
+
+  .hero-buttons button:hover {
     cursor: pointer;
-    font-weight: bolder;
-    transition: all 0.75s ease-out;
+    border: 4px solid red;
+    font-weight: 900;
+  }
+
+
+
+ 
+
+/*    Van Overlay                         
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.van-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.overlay-van:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 0.1rem white);
+  transition: ease 0.5s;
+}
+
+.overlay-van {
+  position: absolute;
+  height: auto;
+  width: 60vw;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+  margin-top: -25%;
+  z-index: 2;
+}
+
+.van-container.move {
+    /* animation */
+    animation-name: moveit;
+    animation-duration: 2000ms;
+    animation-iteration-count: 1;
+}
+
+@keyframes moveit {
+  from {
+      translate: -600px;
+  }
+  to {
+      justify-content: flex-end;
+  }
 }
 
 
 
 
+  /* POPULAR DESTINATIONS SECTION
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .popular-destinations figure {
+    margin-bottom: 30px;
+  }
+  
+  .popular-destinations figcaption {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .popular-destinations img {
+    filter: grayscale(100%) blur(3px);
+    transition: transform 0.5s, filter 0.75s;
+  }
+  
+  .popular-destinations a:hover img {
+    transform: scale(1.25);
+    filter: none;
+  }
+  
+  /* PAGE FOOTER
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .page-footer .footer-links {
+    text-align: right;
+  }
+  
+  /* MEDIA QUERIES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  /* MEDIUM SCREENS */
+  @media screen and (max-width: 991px) {
+    .page-header {
+      background: var(--red);
+    }
+  }
+  
+  /* SMALL SCREENS */
+  @media screen and (max-width: 767px) {
+    .page-footer .footer-child {
+      text-align: center;
+    }
+  }
