@@ -2,27 +2,10 @@
 # START CONFIGURATIONS
 -------------------------------------*/
 
-*, *:before, *:after{
-    box-sizing: border-box;
-    /* font-family: 'Open Sans', sans-serif; BUG:is blocking the FA-icons!!! */ 
-    font-weight: 300;
-    line-height: 1.5;
-    color: #ffffff;
-    transition: all 0.5s ease-in-out;
-    margin: 0;
-    padding: 0;
-  }
-
-
-/* html, body {
-    height: 100%;
-    max-width: 100%; 
+ html, body { 
     scroll-behavior: smooth;
     line-height: 1.80857;
-    font-weight: normal;
-    overflow-x: hidden;
-    font-family: 'Poppins', sans-serif;
-}    */ 
+}      
 
 /*------------------------------------*
 # DECORATIONS SETTINGS 

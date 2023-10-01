@@ -12,17 +12,17 @@
 
 
 
-{% block navbar %}
+
 {% block body_attributes %}data-spy="scroll" data-target="#navbar" data-offset="72" class="position-relative"{% endblock body_attributes %}
 
-
+{% block navbar %}
         <!-- Header -->
         <header class="fixed-top page-header">
           <div class="container-fluid container-fluid-max">
             <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
 
               <!-- Logo-->
-              <a class="navbar-brand" href="#home"><img style="height: auto; width: {% block logo_width %}300px;{% endblock logo_width %}"src="{% static 'shop/images/swiss heating white (1000 × 1000 px).png' %}">
+              <a class="navbar-brand" href="#home"><img style="height: auto; width: {% block logo_width %}50vw;{% endblock logo_width %}"src="{% static 'shop/images/swiss heating white (1000 × 1000 px).png' %}">
               </a>
               <!-- End Logo-->
 
@@ -44,7 +44,7 @@
                     <a class="nav-link" href="#featured-destinations">Notre Shop</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#popular-destinations">Nos Services</a>
+                    <a class="nav-link" href="#popular-destinations">Nos Qualitys</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#request-quote">Demander Un Devis</a>
@@ -60,107 +60,193 @@
                     <i class="fa-solid fa-user"></i><span class="padding_10">Login</span>
                   </div> 
                 <!-- login Button in Navbar end -->
-
-
-
-
               </div>
+
             </nav>
           </div>
         </header>
         <!-- End Header -->
 {% endblock navbar %}
 
+
 {% block content %}
 
-        <!-- ======= Main ======= -->
-        <main>
-        
-          <!-- Hero -->
-          <div id="home" class="d-flex align-items-center position-relative vh-100 cover hero" style="">
-            <div class="container-fluid container-fluid-max">
-              <div class="row">
-                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-   
+  <!-- ======= Main ======= -->
+  <main>
 
 
-                  <!-- Hero Text -->
-                  <div class="hero-text">
-                    <h1>Ton expert en chauffage et refroidissement</h1>
-                  </div>
-                  <!-- End Hero Text -->
 
 
-                  <!-- Hero Buttons-->
-                  <div class="hero-buttons">
-                    <button>Je veut une offre!&nbsp;</button>
-                    <button>online-shop</button>
-                  </div>
-                  <!-- End Hero Buttons-->
-                  
-                  
-                </div>
+      <!-- ======= Hero Outer Container ======= -->
+      <div class="hero-outer-container">
+            
+            <!-- Hero Inner Double Container-->
+            <div class="hero-inner-double">
+
+                        <!-- Left Attack Container -->
+                        <div class="left-container">
+                            <!-- Hero Text -->
+                            <div class="hero-text hidden">
+                              <h1>Prêt à Passer à un Chauffage Moderne et Écologique ?</h1>
+                              <hr style="color:white; border: 2px solid white;">
+                              <h5>Votre Expert en chauffage de confiance, installation et vente.</h5>
+                            </div>
+                            <!-- End Hero Text -->
+                            <!-- Hero Buttons-->
+                            <div class="hero-buttons hidden">
+                              <button class="offer-btn">Je veut une offre!&nbsp;</button>
+                              <button class="shop-btn">online-shop</button>
+                            </div>
+                            <!-- End Hero Buttons-->
+                        </div>
+                        <!-- End Left Attack Container -->
+
+                        <!-- Right Image Container -->
+                        <div class="right-container">
+                          <img src="{% static "shop/images/pump11.png" %}" alt="">
+                        </div>
+                        <!-- End Right Image Container -->
+
               </div>
-            </div>
-          </div>
-          <!-- End Hero -->
+              <!-- End Hero Inner Double Container-->
+
+
+              <!-- Hero Inner Single Container-->
+              <div class="hero-inner-single">
+
+                        <!-- Last Hero Text-->
+                        <div class="last-hero-text">
+                            <h4>Pourquoi Nous Choisir Nous?</h4>
+                        </div>
+                        <!-- End Last Hero Text-->
+
+                        <!-- Scroll down -->
+                        <div class="scroll-down container hidden">
+                            <div class="chevron"></div>
+                            <div class="chevron"></div>
+                            <div class="chevron"></div>
+                            <span class="text">Scroll</span>   
+                        </div>
+                        <!-- End Scroll down -->
+              </div>
+              <!-- End Hero Inner Single Container-->
+
+
+      </div>
+      <!-- ======= End Hero ======= -->
       
 
+
+
+
+
+
+{% comment %} 
           <!-- Overlay Van-->
           <a href="{% url "about-us-path" %}">
             <div class="van-container hidden">       
-              <img class="overlay-van" src="{% static "shop/images/Dark Gray & Blue Illustration Mountain Desktop Wallpaper.png" %}" alt="">
-          </div>
-        </a>
-          <!-- End Overlay Van-->
+                <img class="overlay-van" src="{% static "shop/images/Dark Gray & Blue Illustration Mountain Desktop Wallpaper.png" %}" alt="">
+            </div>
+          </a>
+          <!-- End Overlay Van--> {% endcomment %}
 
 
 
-          <section id="process" class="process">
+
+
+          <!-- Our Qualitys Section -->
+          <section id="benefits" class="benefits">
             <div class="container-fluid container-fluid-max">
               <div class="row text-center py-5">
-                <div class="col-12 pb-4">
-                  <h2 class="text-red">Comment ca fonctione</h2>
+
+                 <!-- Title -->
+                <div class="col-12 pb-4">               
+                      <h5 class="title">Trop souvent, de nos jours, nous constatons que de nombreuses
+                        entreprises ne respectent plus les délais, ignorent les appels téléphoniques
+                          et laissent derrière elles un véritable chaos sur les chantiers.
+                          <br><br>
+                            Chez Swiss-Heating,
+                            <br>
+                              nous croyons en une approche différente: 
+                      </h5>                  
                 </div>
+                <!-- End Title -->
+
+
+
+                <!-- First Quality -->
+                <div class="col-12 col-sm-6 col-lg-3">                 
+                  <img src="{% static "shop/images/reactive_call.png" %}" alt="">
+                  <h3 class="mt-3">Disponibilité Réactive</h3>
+                  <p>Notre entreprise se distingue par sa disponibilité réactive,
+                     répondant promptement aux besoins de nos clients, que ce soit par téléphone,
+                      par e-mail ou par d'autres moyens de communication.
+                       Cette réactivité assure une communication fluide et un service client efficace,
+                        ce qui est essentiel pour garantir la satisfaction de nos clients.</p>
+                </div>
+                <!-- End First Quality -->
+
+
+
+
+                <!-- Second Quality -->
                 <div class="col-12 col-sm-6 col-lg-3">
-                  <span class="fa-stack fa-2x">
-                    <i class="fas fa-circle fa-stack-2x text-red"></i>
-                    <i class="fas fa-map-marked fa-stack-1x text-white"></i>
-                  </span>
-                  <h3 class="mt-3 text-red h4">Choose a destination</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed repudiandae.</p>
+                  <img src="{% static "shop/images/calendar.png" %}" alt="">
+                  <h3 class="mt-3">L'Engagement de Fiabilité</h3>
+                  <p>Notre engagement envers la fiabilité se traduit par notre
+                     capacité à respecter scrupuleusement les délais,
+                      les engagements et les promesses que nous faisons à nos clients.
+                       Pour nous, la fiabilité est synonyme de confiance.
+                        Quand nous disons que nous ferons quelque chose, nous le faisons,
+                         sans détour ni hésitation.
+                     Cette approche solide renforce la confiance mutuelle entre nous et nos clients.</p>
                 </div>
+                <!-- End Second Quality -->
+
+
+
+
+                <!-- Third Quality -->
                 <div class="col-12 col-sm-6 col-lg-3">
-                  <span class="fa-stack fa-2x">
-                    <i class="fas fa-circle fa-stack-2x text-red"></i>
-                    <i class="fas fa-plane fa-stack-1x text-white"></i>
-                  </span>
-                  <h3 class="mt-3 text-red h4">Book a flight</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed repudiandae.</p>
+                    <img src="{% static "shop/images/cleaning.png" %}" alt="">
+                    <h3 class="mt-3">Protection et Propreté Inégalées</h3>
+
+                    <p>Nous accordons une priorité absolue à la propreté chez nos clients. Nous utilisons des floor-liners de haute qualité pour protéger vos sols et surfaces pendant que nous travaillons.
+                      Cette attention aux détails garantit que votre espace reste impeccable, sans traces ni dégâts, tout en nous permettant de réaliser un travail de la plus haute qualité.
+                      Votre satisfaction et la préservation de votre espace sont au cœur de notre approche de travail.</p>
                 </div>
+                <!-- End Third Quality -->
+
+
+
+
+
+                <!-- Fourth Quality -->
                 <div class="col-12 col-sm-6 col-lg-3">
-                  <span class="fa-stack fa-2x">
-                    <i class="fas fa-circle fa-stack-2x text-red"></i>
-                    <i class="fas fa-car fa-stack-1x text-white"></i>
-                  </span>
-                  <h3 class="mt-3 text-red h4">Rent a car</h3>
-                  <p>Nor again is there anyone who loves or pursues or desires to obtain pain.</p>
+                    <img src="{% static "shop/images/piggybank.png"%}" alt="">
+                    <h3 class="mt-3">Prix Imbattables en Suisse</h3>
+
+                    <p>Nous sommes fiers de proposer des pompes à chaleur
+                      de haute qualité à des prix qui défient toute concurrence en Suisse.
+                        Contrairement à de nombreux artisans, nous nous engageons à offrir à nos clients un excellent rapport qualité-prix.
+                        Notre objectif est de rendre les pompes à chaleur accessibles à tous,
+                          tout en maintenant des normes de qualité élevées.</p>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-3">
-                  <span class="fa-stack fa-2x">
-                    <i class="fas fa-circle fa-stack-2x text-red"></i>
-                    <i class="fas fa-home fa-stack-1x text-white"></i>
-                  </span>
-                  <h3 class="mt-3 text-red h4">Rent an appartment</h3>
-                  <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+                <!-- End Fourth Quality -->
+
+                <div class="quality-button">
+                  <button>Je veut une offre!&nbsp;</button>
                 </div>
-                <div class="col-12 pt-3">
-                  <a class="btn bg-red text-white" target="_blank" href="https://en.wikipedia.org/wiki/Neuschwanstein_Castle" role="button">Learn More →</a>
-                </div>
+
               </div>
             </div>
           </section>
-      
+          <!-- End Our Qualitys Section -->
+
+
+
+
+
           <section id="featured-destinations" class="featured-destinations bg-lightblue">
             <div class="row no-gutters">
               <div class="col-12 col-md-6 d-flex align-items-center order-1 order-md-0">

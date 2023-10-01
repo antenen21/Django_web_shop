@@ -2,62 +2,46 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 :root {
+    /* BUG:can't be deleted, otherwise under width 991px, scrolling down there is no color anymore */
     --lightblue: #f6f9fc;
-    --red: #d64041;
+    --red: #e30a0a;
   }
-    
-  a:hover{
-    border-bottom: 1px solid #ffffff;
-    text-decoration: none;
+  
+  body,
+  html {
+    background: linear-gradient(90deg ,#6a6a6a 0%, #ffffff 100%);
   } 
-
-  h1{
-    font-size: 2em; padding: 20px 0;
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    letter-spacing: 4px;
+    word-spacing: 5px;
   }
-
   p{
-    font-size: .75em;
-    text-transform: uppercase;
+    font-size: 1;
     letter-spacing: 2px;
     padding: 20px 0;
+    color: #ffffff;
   }
-
+  button {
+    color: #ffffff;
+  }
   .bg-lightblue {
     background: var(--lightblue);
   }
-  
-  .bg-red {
-    background: var(--red);
-  }
-  
-  .text-red {
-    color: var(--red);
-  }
-  
-  .container-fluid-max {
-    max-width: 1440px;
-  }
-  
   .cover {
     background: no-repeat center/cover;
   }
-  
-  .p-15 {
-    padding: 15px;
-  }
 
+  
 
 
   
 /* SCROLL ANIMATIONS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .scroll .page-header {
-  background: var(--red);
+  background: rgba(160, 160, 160, 0.973);
 }
 
-.scroll .hero {
-  transform: scale(0.98);
-}
 
 .hidden {
   opacity: 0;
@@ -73,159 +57,358 @@
 
 
 
+
+
   /* HEADER -> NAVBAR
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .page-header {
     transition: background 0.5s ease-in-out;
+    width: 100vw;
+    height: fit-content;
   }
-  
   .page-header .navbar {
-    padding: 1rem 0;
-    z-index: 3000;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  
   .page-header .navbar-toggler {
     /* the variable is inherited from BS4 built-in variables */
-    border-color: var(--white); 
+    border-color: white; 
   }
-  
-
-
-
+    /* NAVBAR LOGO
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .navbar-brand:hover {
+    /* sizes in html */
+    cursor: pointer;
+    transform: scale(1.01);
+  }
+  .navbar-brand img {
+    max-width: 20vw;
+    min-width: 150px;
+  }
     /* NAVBAR NORMAL MENU
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   a.nav-link {
+    color: rgb(227, 220, 220);
     font-weight: 400;
     letter-spacing: 15xp;
   }
 
+  a.nav-link:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    text-decoration: none;
+  }
+/* NAVBAR LOGIN BUTTON RIGHT SIDE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.login-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: transparent;
+  border: none;
+  padding-right: 2%;
+}
+.login-btn span,
+.login-btn i {
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 600;
+}
+.login-btn:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+}
 
 
 
-  /* NAVBAR LOGIN BUTTON RIGHT SIDE
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .login-btn {
+
+
+
+
+
+  /*            HERO SECTION            HERO SECTION            HERO SECTION            HERO SECTION                        
+  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* HERO MAIN OUTER CONTAINER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hero-outer-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+  /* HERO INNER DOUBLE CONTAINER
+  ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .hero-inner-double {
+    height: 100%;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    background: transparent;
-    border: none;
-    padding: 0;
   }
 
-  .login-btn span {
-    font-size: 1em;
-    font-weight: 600;
+      /* HERO LEFT ATTACK CONTAINER
+      ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+      .left-container {
+        width: 50vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+            /* HERO TEXT CONTAINER - IN LEFT CONTAINER
+            –––––––––––––––––––––––––––––––––––––––––––– */
+            .hero-text {
+              padding-left: 5%;
+              margin-top: 4rem;
+              width: 100%;
+              max-width: 50vw;
+              position:relative;
+              text-align: center;
+            }
+
+            /* HERO MAIN TITLE TEXT  
+            –––––––––––––––––––––––– */
+            .hero-text h1{
+              font-weight: 700;
+              text-transform: uppercase;
+              letter-spacing: 4px;
+              word-spacing: 12px;
+              margin-top: 5vh;
+              margin-bottom: -5px;
+              color: rgb(255, 255, 255);
+              text-shadow: 0px 0px 1px rgb(15, 15, 15);
+            }
+            /* HERO SUB TITLE TEXT  
+            –––––––––––––––––––––––– */
+            .hero-text h5 {
+              letter-spacing: 6px;
+              word-spacing: 12px;
+              font-weight: light;
+              margin-bottom: 10vh;
+              text-transform: uppercase;
+              color: rgb(255, 255, 255);
+              text-shadow: 0px 0px 1px rgb(15, 15, 15);
+            }
+            @media screen and (max-width: 991px) {
+              .hero-text {
+                width: 95vw;
+              }
+              .hero-text h1 {
+                font-size: 1.5em;
+              }
+              .hero-text h5 {
+                font-size: 0.8em;
+              }
+            }
+
+      /* HERO BUTTONS - IN LEFT CONTAINER
+      ––––––––––––––––––––––––––––––––––– */
+      .hero-buttons {
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+        margin-top: 1.5rem;
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+      @media screen and (max-width: 991px) {
+        .hero-buttons {
+          flex-direction: column;
+          width: max-content;
+          margin-top: 0.5rem;
+          gap: 1rem;
+        }
+      }
+
+      .hero-buttons button { 
+        outline: none;
+        position: relative;
+        letter-spacing: 3px;
+        font-weight: 900;
+        font-size: 0.9em;
+        border-radius: 25px;
+        text-transform: uppercase;
+        transition: all .3s ease-in-out;
+        border: 4px solid #ffffffe3;
+        padding: 10px 30px;
+        max-width: 100vw;
+        overflow: hidden;
+        text-shadow: 0px 0px 1px rgb(15, 15, 15);
+      }
+
+      .hero-buttons button:hover {
+        cursor: pointer;
+        border: 5px solid rgb(255, 255, 255);
+        font-weight: 900;
+        background: linear-gradient(90deg ,#4d4c4c 0%, #c0bebe 100%);
+      }
+
+      .offer-btn {
+        background-color: rgb(161, 159, 159);
+      }
+      .shop-btn {
+        background-color: rgb(133, 126, 126);
+      }
+
+
+    /* HERO RIGHT IMAGE CONTAINER
+  ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .right-container {
+    width: 50vw;
+    height: 100%;
+    background-color: transparent;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+    /* HERO RIGHT SIDE IMAGE
+  ––––––––––––––––––––––––––– */
+  .right-container img {
+    width: 80%;
+    height: auto;
+    min-width: 300px;
   }
 
-  .login-btn:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-  }
 
 
-
-  /* BANNER SECTION
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .hero {
-    padding-left: 5%;
-    background-attachment: fixed;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .hero::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.5) 0,
-      rgba(0, 0, 0, 0.3) 50%,
-      rgba(0, 0, 0, 0.1) 100%
-    );
-  }
-  
-  .hero .container-fluid {
-    z-index: 10;
-  }
-
-
-/* –––– Apply filter only on the background-image –––––––––––––––––––––––––––––––– */
-/* pseudo-element that is simply pretending to be a background. */
-#home::before {
-    content: "";
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    background-image: url('/static/shop/images/Untitled design (2).png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: brightness(0.5) blur(0px) grayscale(0) contrast(1.1);
-}
-  
-#home-inside {
-    /* This will make it stack on top of the ::before */
-    position: relative;
-}
-
-
-
-  /* HERO TEXT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .hero-text {
+    /* HERO INNER SINGLE CONTAINER
+  ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .hero-inner-single {
+    height: auto;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-
-  .hero-text h1{
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    word-spacing: 10px;
-  }
-
-
-
-
-
-
-  /* HERO BUTTONS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .hero-buttons {
-    display: flex;
-    justify-content: space-around;
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-  @media screen and (max-width: 991px) {
-    .hero-buttons {
-      flex-direction: column;
-      width: max-content;
+        /* HERO LAST TEXT
+      ––––––––––––––––––– */
+      .last-hero-text h4 {
+        text-shadow: 0px 0px 1px rgb(15, 15, 15);
+        letter-spacing: 6px;
+        word-spacing: 12px;
+        font-weight: bold;
+        margin-top: 5rem;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+        text-align: center;
+      }
+      @media screen and (max-width: 991px) {
+        .hero .last-hero-text h4 {
+          font-size: 0.9em;
+          font-weight: bold;
+          letter-spacing: 4px;
+          word-spacing: 1px;
+        }
+      }
+    /*    HERO - SCROLL DOWN ARROW                         
+    –––––––––––––––––––––––––––––––*/
+    .scroll-down.container {
+      margin-top: 1rem;
+      margin-bottom: 55px;
+      position: relative;
+      width: 24px;
+      height: 24px;
+      transform: scale(1.2);
+      display: flex;
+      justify-content: center;
     }
-  }
 
-  .hero-buttons button {
-    background: transparent; outline: none;
-    position: relative;
-    letter-spacing: 3px;
-    font-weight: 900;
-    font-size: 1em;
-    text-transform: uppercase;
-    transition: all .3s ease-in-out;
-    border: 3px solid #ffffff;
-    padding: 15px 50px;
-    overflow: hidden;
-  }
+    .chevron {
+      position: absolute;
+      width: 28px;
+      height: 8px;
+      opacity: 0;
+      transform: scale3d(0.5, 0.5, 0.5);
+      animation: move 3s ease-out infinite;
+    }
 
-  .hero-buttons button:hover {
-    cursor: pointer;
-    border: 4px solid red;
-    font-weight: 900;
-  }
+    .chevron:first-child {
+      animation: move 3s ease-out 1s infinite;
+    }
+
+    .chevron:nth-child(2) {
+      animation: move 3s ease-out 2s infinite;
+    }
+
+    .chevron:before,
+    .chevron:after {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 51%;
+      background: #e3e3e3cb;
+    }
+
+    .chevron:before {
+      left: 0;
+      transform: skew(0deg, 30deg);
+    }
+
+    .chevron:after {
+      right: 0;
+      width: 50%;
+      transform: skew(0deg, -30deg);
+    }
+
+    @keyframes move {
+      25% {
+        opacity: 1;
+
+      }
+      33% {
+        opacity: 1;
+        transform: translateY(30px);
+      }
+      67% {
+        opacity: 1;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+      }
+    }
+
+    .text {
+      display: block;
+      text-align: center;
+      font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+      font-size: 12px;
+      color: #ffffff;
+      text-transform: uppercase;
+      white-space: nowrap;
+      opacity: .25;
+      animation: pulse 2s linear alternate infinite;
+    }
+
+    @keyframes pulse {
+      to {
+        opacity: 1;
+      }
+    }
+
+            
 
 
 
- 
+
+
+
+
+
+
+
+
+
 
 /*    Van Overlay                         
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -247,12 +430,12 @@
   width: 60vw;
   background-repeat: no-repeat;
   justify-content: flex-end;
-  margin-top: -25%;
+  margin-top: 50%;
   z-index: 2;
 }
 
 .van-container.move {
-    /* animation */
+    
     animation-name: moveit;
     animation-duration: 2000ms;
     animation-iteration-count: 1;
@@ -270,10 +453,107 @@
 
 
 
-  /* POPULAR DESTINATIONS SECTION
+
+
+  /* BENEFITS SECTION
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  #benefits {
+    background-color: rgb(255, 255, 255);
+    border-top: 16px double rgba(212, 207, 207, 0.1);
+  }
+
+  .benefits .title {
+    padding:2% 2%;
+    margin: 0 10%;
+    margin-top: 0px;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    word-spacing: normal;
+    color: #050505;
+    border: 1px solid rgb(46, 37, 37);
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255)
+  }
+
+
+  .benefits h3 {
+    position: relative;
+    color: rgb(58, 57, 57);
+    text-shadow: 0px 0px 1px rgb(162, 160, 160);
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+  }
+  .benefits p {
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 1px rgb(162, 160, 160);
+    font-weight: 5;
+    margin-bottom: 7rem;
+  }
+ 
+
+  .benefits img{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    z-index: 9;
+    box-shadow: #ffffff 0px 0px 0px 8px, #000000 0px 0px 0px 20px ;
+    background-color: #d43b3b;
+    z-index: 7;
+  }
+
+
+
+  /* BENEFITS SECTION - END BUTTON
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .quality-button button {
+    background-color: rgb(252, 45, 45); 
+    outline: none;
+    position: relative;
+    letter-spacing: 3px;
+    font-weight: 900;
+    font-size: 0.8em;
+    border-radius: 25px;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    box-shadow: #ffffff 0px 0px 0px 2px, #000000 0px 0px 0px 4px;
+    padding: 10px 20px;
+    overflow: hidden;
+    text-shadow: 3px 3px 5px rgb(15, 15, 15),
+    -10px 10px 25px rgba(9, 9, 9, 0.555),
+    -6px -6px 25px rgba(6, 6, 6, 0.458),
+    8px -8px 25px rgba(11, 11, 11, 0.26);
+  }
+
+  .quality-button button:hover {
+    font-size: 0.9em;
+    cursor: pointer;
+    box-shadow: #ffffff 0px 0px 0px 4px, #000000 0px 0px 0px 6px;
+    font-weight: 900;
+    background-color: rgba(249, 3, 3, 0.915);
+  }
+
+
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––              
+–––––––––––            <<<< END BENEFITS SECTION >>>>>>                 –––––––––––––––––––––
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */ 
+
+
+
+
+
+
+
+
+
+
+
+
   .popular-destinations figure {
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
   }
   
   .popular-destinations figcaption {
@@ -293,6 +573,10 @@
     transform: scale(1.25);
     filter: none;
   }
+
+
+
+
   
   /* PAGE FOOTER
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
