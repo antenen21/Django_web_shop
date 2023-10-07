@@ -10,11 +10,6 @@
       }
 
 
-
-
-
-
-
 /*----------------------------------------------
 |           PUMP CAROUSEL                       |
 -----------------------------------------------*/
@@ -228,8 +223,11 @@ $(".page-header .nav-link, .navbar-brand").on("click", function(e) {
 /*-----------------------------------------------------------
 |     LANDIN PAGE  -   SCROLL ANIMATIONS   ORIGINAL          |
 ------------------------------------------------------------*/
+/* for pump animation */
+const pump = document.querySelector('.overlay-pump')
+const pumpContainer = document.querySelector('.pump-container')
 
-
+/* for van animation */
 const van = document.querySelector('.overlay-van')
 const vanContainer = document.querySelector('.van-container')
 

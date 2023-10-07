@@ -1,58 +1,111 @@
 
-/*------------------------------------------------------------------
-|    LANDING PAGE SCRIPTS                                             |
--------------------------------------------------------------------*/ 
+/* ALL ELEMENTS
+----------------------------------------------  */
+const navbar = document.querySelector('.navbar-container');
+const hamburger = document.querySelector('.hamburger-container');
+const links = document.querySelector('.navbar-list');
+const login = document.querySelector('.login-btn');
 
-const $body = $("body");
-const $header = $(".page-header");
-const $navCollapse = $(".navbar-collapse");
-const scrollClass = "scroll";
+const menu = document.querySelector('.menu');
+console.log(menu);
 
-$(window).on("scroll", () => {
-  if (this.matchMedia("(min-width: 992px)").matches) {
-    const scrollY = $(this).scrollTop();
-    scrollY > 0
-      ? $body.addClass(scrollClass)
-      : $body.removeClass(scrollClass);
+
+
+
+/* HIDE/SHOW  NAVBAR HAMBURGER
+----------------------------------------------  */
+
+
+/* break-point for show the hamburger menu */
+let hamburgerPoint = 768;
+
+
+/* create function */
+function showHamburger() {
+  hamburger.style.display = 'flex';
+  links.style.display = 'none';
+  login.style.display = 'none';
+};
+
+function hideHamburger() {
+  hamburger.style.display = 'none';
+  links.style.display = 'flex';
+  login.style.display = 'flex';
+};
+
+/* add eventListener  (BUG:is not triggered when reloaded!) */
+window.addEventListener("resize", function() {
+  /* get width of the window */
+  width = window.innerWidth;
+  if (width < hamburgerPoint) {
+    showHamburger();
   } else {
-    $body.removeClass(scrollClass);
+    hideHamburger();
   }
 });
 
-$(".page-header .nav-link, .navbar-brand").on("click", function(e) {
-  e.preventDefault();
-  const href = $(this).attr("href");
-  $("html, body").animate({
-    scrollTop: $(href).offset().top - 71
-  }, 600);
+/* add eventListener for reloading */
+window.addEventListener("load", function() {
+  width = window.innerWidth;
+  if (width < hamburgerPoint) {
+    showHamburger();
+  } else {
+    hideHamburger();
+  }
 });
 
 
 
 
 
+/* COLLAPSE MENU FROM HAMBURGER ON CLICK
+----------------------------------------------  */
+  
+function openMenu() {
+  if (menu.style.display === 'flex') {
+    menu.style.display = 'none';
+  } else {
+    menu.style.display = 'flex';
+  }
+}; 
 
-/*-----------------------------------------------
-|         SCROLL ANIMATIONS   ORIGINAL           |
-------------------------------------------------*/
+
+hamburger.addEventListener('onclick', function() {
+  openMenu();
+});   
 
 
-const van = document.querySelector('.overlay-van')
-const vanContainer = document.querySelector('.van-container')
 
-const observer = new IntersectionObserver((entries)=> {
-    entries.forEach((entry) => {
-        console.log(entry)
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show'),
-            entry.target.classList.add('move');
-        } else {
-            entry.target.classList.remove('show');
-            
-        }
-    });
+
+/* HIDE OFF-CANVAS WHEN BIGGER SIZE 
+-----------------------------------------------*/
+
+window.addEventListener("resize", function() {
+  width = window.innerWidth;
+  console.log("width: " + width);
+  if (width > hamburgerPoint) {
+    menu.style.display = 'none';
+  }
+});
+
+/* add eventListener  (BUG:is not triggered when reloaded!) */
+window.addEventListener("resize", (e) =>{
+  width = window.innerWidth;
+  if (width > hamburgerPoint) {
+    
+  }
 });
 
 
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
+/* Function to close the Offcanvas when the button is clicked 
+-----------------------------------------------------------------*/
+main = document.querySelector('#main');
+header = document.querySelector('.header');
+
+function closeOffcanvas() {
+  menu.style.display = 'none';
+}
+
+main.addEventListener('click', function() {
+  closeOffcanvas();
+});
