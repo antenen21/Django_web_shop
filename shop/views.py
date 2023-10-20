@@ -43,7 +43,6 @@ class SearchResultView(View):
                 "no_result": True
             })
 
-
 class NoResultView(TemplateView):
     template_name = "shop/no-search-results.html"
 
