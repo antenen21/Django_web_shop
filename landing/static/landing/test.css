@@ -4,13 +4,15 @@
   /*********************************************************************************/
   
 
-  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@900&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
   body,
   html {
     padding: 0;
     margin: 0;
+    width: 100%;
+    overflow-x: hidden;
   } 
 
   * {
@@ -157,6 +159,8 @@
 
 
 
+
+
   /* Hamburger drop down menu  - Off-canvas
   –––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
   /* Hamburger drop down menu container */
@@ -164,7 +168,7 @@
     position: absolute;
     top: 100%;
     right: 0;
-    width: 200px;
+    width: 65vw;
     height: 50vh;
     border-bottom-left-radius: 20px;
     background-color: rgba(255, 255, 255, 0.991);
@@ -173,8 +177,6 @@
     display: none;
     z-index: 100;
   }
-
-
 
 
 
@@ -257,16 +259,15 @@
   /* HERO MAIN OUTER CONTAINER
   –––––––––––––––––––––––––––––––––––––––– */
   .hero-outer-container {
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     width: 100vw;
     background: conic-gradient(from 0deg at 55% 50%, white 40%, #96C2DB, #E5EDF1);
-    /* background: conic-gradient(from 0deg at 55% 50%, #F0F0F0 40%, rgb(245, 56, 56),#E7473C ); */
-
- 
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  /* changing degress from conic-gradient background */
   @media screen and (max-width: 576px) {
     .hero-outer-container {
       background: conic-gradient(from 0deg at 80% 50%, white 40%, #96C2DB, #E5EDF1);
@@ -334,15 +335,16 @@
   }
   /* Middle-line */
   .middle-line {
-    border: 3px solid black;
+    border: 3px solid rgba(0, 0, 0, 0);
     margin: 10px 0px;
   }
   /* Hero sub title text */
   .hero-text h5 {
-    font-family: 'kanit', sans-serif;
+    font-family: 'montserrat', sans-serif;
     text-align: center; 
-    font-style: italic;
-    font-size: 1.7em;
+    font-style: normal;
+    font-size: 2.2em;
+    font-weight: bold;
     color: rgb(255, 255, 255);
     letter-spacing: 1px;
     word-spacing: 3px;
@@ -352,6 +354,9 @@
     1px 1px 1px #454545,
     1px -1px 0px #454545,
     -1px -1px 0px #454545;
+    /* background-color: rgba(120, 162, 179, 0.195); */
+    border-radius: 20px;
+    padding: 10px 10px;
   } 
 
   @media screen and (max-width: 991px),(max-height: 850px) {
@@ -370,16 +375,25 @@
       padding-right: 2%;
     }
   }
+  @media screen and (max-width: 480px) {
+    .hero-text h1 {
+      font-size: 1.5em;
+    }
+  }
+    
+  
 
   /* buttons container */
   .hero-buttons {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     gap: 2rem;
     margin-top: 1.5rem;
     padding-left: 5%;
     padding-right: 5%;
   }
+
   @media screen and (max-width: 960px) {
     .hero-buttons {
       flex-direction: column;
@@ -397,49 +411,68 @@
   /* Single Hero buttons */
   .hero-buttons button { 
     position: relative;
-    border: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
     font-weight: 900;
-    font-size: 1.2em;
+    font-size: 2em;
     border-radius: 30px;
-    text-transform: uppercase;
     transition: all .3s ease-in-out;
-    padding: 10px 15px;
-    max-width: 60vw;
+    padding: 3px 10px;
+    max-width: 70vw;
+    min-width: 50%;
+  }
+  @media screen and (max-width: 1400px) {
+    .hero-buttons button {
+      font-size: 1.6em; 
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .hero-buttons button {
+      font-size: 1.4em; 
+    }
+  }
+  @media screen and (max-width: 960px) {
+    .hero-buttons button{
+      font-size: 1.3em;
+    }
   }
   @media screen and (max-width: 576px) {
     .hero-buttons button{
       max-width: 90vw;
-      font-size: 0.9em;
+      min-width: 60vw;
+      font-size: 1.1em;
     }
   }
 
   /* Button Background */
-  .offer-btn {
-    color: white;
-    background-color: rgb(247, 71, 71);
-    box-shadow: inset 0px 1px 1px 0px #ffffff;
+  .hero-buttons .offer-btn {
+    color: rgb(106, 209, 253);
+    background-color: white;
+    border: 4px solid rgb(255, 255, 255);
   }
-  .shop-btn {
-    color: rgb(245, 56, 56);
-    background-color: rgb(244, 243, 243);
-    box-shadow: inset 0px 1px 1px 0px #ffffff;
+  .hero-buttons .shop-btn {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 4px solid rgb(255, 255, 255);
   }
-
 
   /* button hover */
-  .offer-btn:hover {
-    cursor: pointer;
-    color: white;
-    background-color: rgb(249, 50, 50);
-    box-shadow: inset 0px 1px 1px 0px #ffffff;
-  }
-
-  .shop-btn:hover {
+  .hero-buttons .offer-btn:hover {
     cursor: pointer;
     color: rgb(247, 2, 2);
     background-color: white;
-    box-shadow: inset 0px 1px 1px 0px #ffffff;
+    transform: scale(1.1);
   }
+  .hero-buttons .shop-btn:hover {
+    cursor: pointer;
+    color: rgb(247, 2, 2);
+    background-color: white;
+    transform: scale(1.1);
+  }
+
+
+
 
   /* HERO RIGHT IMAGE CONTAINER
   ––––––––––––––––––––––––––––––– */
@@ -460,21 +493,23 @@
 
   /* Hero Image */
   .right-container img {
-    min-width: 22vw;
+    min-width: 17vw;
     width: 100%;
     height: auto;
     max-height: 70vh;
-    z-index: 8; 
+    z-index: 2; 
   }
   @media screen and (max-width: 576px) {
     .right-container img {
       max-width: 40vw;
+      min-height: 10vh;
       margin-top: 2rem;
+
     }
   }
   @media screen and (max-width: 380px) {
     .right-container img {
-      max-width: 25vw;
+      max-height: 17vh;
       margin-top: 2rem;
     }
   }
@@ -484,11 +519,11 @@
     display: flex;
   }
   .pump-container.move {
-      animation-name: moveit;
+      animation-name: movepump;
       animation-duration: 2000ms;
       animation-iteration-count: 1;
   }
-  @keyframes moveit {
+  @keyframes movepump {
     from {
         translate: 600px 600px;
     }
@@ -523,6 +558,10 @@
     margin-top: 5rem;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
+    background-color: rgba(120, 162, 179, 0.195);
+    border-radius: 20px;
+    width: 90vw;
+    padding: 10px 20px;
   }
   @media screen and (max-width: 991px) {
     .last-hero-text h1 {
@@ -633,33 +672,39 @@
   /********** Start Benefits Section ************************/
   /**********************************************************/
     #benefits {
-      background: linear-gradient(180deg ,rgba(128, 128, 128, 0) 0%, #fcfbfb 20%);
+      font-family: 'Kanit', sans-serif;
+      background: white;
+      display: flex;
+      justify-content: center;
     }
 
     .benefits .title {
-      font-weight: 600;
+      font-weight: light;
+      font-style: italic;
       margin-left: 10%;
       margin-right: 10%;
       margin-top: 0px;
       word-spacing: normal;
       color: #050505;
-      z-index: 12;
-      display: flex;
-      flex-direction: column;
+      z-index: 200;
       text-align: center;
-      
+      background-color: transparent;
     }
 
     .benefits .sub-title {
+      color: aliceblue;
+      font-weight: bold;
+      text-transform: uppercase;
       word-spacing: 1px;
       display: flex;
       justify-content: center;
-    }
-    .benefits .sub-title li{
-      text-align: start;
-      list-style: bullet;
-      color: black;
-      
+      padding-left: 8%;
+      padding-right: 8%;
+      margin-top: 1rem;
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      background: linear-gradient(90deg, white -5%, #1e91d3 50%, #ffffff 105%);
     }
 
     
@@ -672,76 +717,104 @@
     font-weight: 600;
   }
   .benefits p {
+    font-family: 'montserrat', sans-serif;
     color: rgb(7, 7, 7);
     text-shadow: 0px 0px 1px rgb(162, 160, 160);
     font-size: 1.2em;
     font-weight: 500;
-    margin-bottom: 5em;
+    margin-bottom: 2em;
   }
+  /* benefits "Icons" */
   .benefits img{
     height: 100px;
     width: 100px;
     border-radius: 12%;
     box-shadow: #02a4f4 0px 0px 9px 15px, #000000 0px 0px 1px 20px ;
     background-color: #ffffff;
+    margin-top: 3rem;
     margin-bottom: 1em;
   }
+  .benefits img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
 
   /* buttons container */
   .benefits-buttons {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 4rem;
-    margin-top: 1.5rem;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-top: 3rem;
   }
+
   @media screen and (max-width: 576px) {
     .benefits-buttons {
       flex-direction: column;
       justify-content: center;
       width: 100%;
       margin-top: 0.5rem;
-      gap: 1rem;
-      max-width: 90vw;
+      gap: 3rem;
+      min-width: 70vw;
     }
   }
+
+
 
 
   /* Single Benefits buttons */
   .benefits-buttons button { 
     color: rgb(0, 0, 0);
     position: relative;
-    border: none;
+    display: flex;
+    justify-content: space-around;
     font-weight: 900;
-    font-size: 1.2em;
+    font-size: 1.8em;
     border-radius: 30px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     transition: all .3s ease-in-out;
-    padding: 10px 15px;
-    max-width: 60vw;
+    padding: 3px 20px;
+    min-width: 40%;
+    max-width: 50vw;
+  }
+  @media screen and (max-width: 768px) {
+    .benefits-buttons button{
+      font-size: 1.2em;
+    }
   }
   @media screen and (max-width: 576px) {
     .benefits-buttons button{
       max-width: 90vw;
-      font-size: 0.9em;
     }
   }
 
+
+
+
+
   /* Button Background */
   .benefits .offer-btn {
-    background:#e0e0e0;
-    box-shadow: inset 0px 1px 1px 0px #ffffff;
+    color: white;
+    background-color: rgb(22, 109, 156);
+    border: 4px solid rgb(22, 109, 156);
   }
   .benefits .shop-btn {
-    background:#c0c0c0;
-    box-shadow: inset 0px 1px 1px 0px #ffffff;
+    color: rgb(22, 109, 156);
+    background-color: white;
+    border: 4px solid rgb(22, 109, 156);
   }
+  
   /* button hover */
-  .benefits-buttons button:hover {
+  .benefits .offer-btn:hover {
     cursor: pointer;
-    background: linear-gradient(320deg ,#eae6e6 0%, #737373 100%);
-    box-shadow: inset 0px 0px 2px 2px #ffffff;  
+    transform: scale(1.1);
+  }
+  .benefits .shop-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
   }
   
   /*********** End Benefits Section *****************************/           
@@ -756,56 +829,100 @@
 
 
 
+/****************************************************************/
+/********** Start Work Place Section ****************************/
+/****************************************************************/
+
+.work-place {
+  height: 600px;
+  width: 100vw;
+  background: radial-gradient( circle farthest-corner at 50% 105%, rgb(248, 249, 251) 0%,
+   rgb(7, 68, 101)) 95%,
+     rgba(255,255,255,0.5) 100.2% ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.work-place .title1 {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 900;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 3rem;
+}
+/* Title animation which moves the title from up */
+.work-place .title1.move-from-right {
+  animation-name: movefromright;
+  animation-duration: 3000ms;
+  animation-iteration-count: 1;
+}
+@keyframes movefromright {
+  from {
+    translate: 2000px 0px;
+  }
+  to {
+    justify-content: center;
+  }
+}
+
+
+
+/*    Van Overlay                         
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.work-place .van-container {
+  display: flex;
+  justify-content: center;
+}
+
+.overlay-van:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 0.1rem white);
+}
+
+.work-place .overlay-van {
+  height: auto;
+  width: 60vw;
+  background-repeat: no-repeat;
+  justify-content: center;
+  z-index: 2;
+}
+
+
+/* Van animation which moves the van inside the screen */
+.work-place .van-container.move-from-left {
+    animation-name: movefromleft;
+    animation-duration: 2000ms;
+    animation-iteration-count: 1;
+}
+@keyframes movefromleft {
+  from {
+      translate: -2000px;
+  }
+  to {
+      justify-content: center;
+  }
+}
 
 
 
 
-    .popular-destinations figure {
-      margin-bottom: 30px;
-      display: flex;
-      align-items: center;
-    }
+
+
+
+
+
+
+
+  
+  /********** End Work Place Section ****************************/
+  /****************************************************************/
+
+
+
+
     
-    .popular-destinations figcaption {
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: rgba(0, 0, 0, 0.3);
-    }
-    
-    .popular-destinations img {
-      filter: grayscale(100%) blur(3px);
-      transition: transform 0.5s, filter 0.75s;
-    }
-    
-    .popular-destinations a:hover img {
-      transform: scale(1.25);
-      filter: none;
-    }
-
-
-
-
-    
-    /* PAGE FOOTER
-    –––––––––––––––––––––––––––––––––––––––––––––––––– */
-    .page-footer .footer-links {
-      text-align: right;
-    }
-    
-    /* MEDIA QUERIES
-    –––––––––––––––––––––––––––––––––––––––––––––––––– */
-    /* MEDIUM SCREENS */
-    @media screen and (max-width: 991px) {
-      .page-header {
-        background: var(--red);
-      }
-    }
-    
-    /* SMALL SCREENS */
-    @media screen and (max-width: 767px) {
-      .page-footer .footer-child {
-        text-align: center;
-      }
-    }
