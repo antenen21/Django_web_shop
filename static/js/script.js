@@ -102,25 +102,6 @@ $(document).ready(function() {
 
 
  /*----------------------------------------------
-|           TYPED JS - NAVBAR                   |
------------------------------------------------*/ 
-/*   var typed = new Typed('#element', {
-     strings: [
-     'LES MEILLEURS PRIX DE TOUTE LA ',
-     'NOS SERVICES DE QUALITÉ ',
-     'LES POMPES À CHALEUR POUR LES ',
-     'ON EST FIERS DE NOTRE',
-     ],
-     typeSpeed: 8,
-     backSpeed: 15,
-     backDelay: 3000,
-     loop: true
-  }); */
-
-
-
-
- /*----------------------------------------------
 |    FUNCTION TO HIDE/SHOW PASSWORD             |
 -----------------------------------------------*/ 
   
@@ -178,74 +159,5 @@ function autoRefreshPage(hours, minutes, seconds) {
 autoRefreshPage(0, 0, 0);
 
 
-
-
-
-
-
-
-
-
-
-/*------------------------------------------------------------------
-|    LANDING PAGE - NAVBAR ON SCROLL CHANGE COLOR                  |
--------------------------------------------------------------------*/ 
-
-const $body = $("body");
-const $header = $(".page-header");
-const $navCollapse = $(".navbar-collapse");
-const scrollClass = "scroll";
-
-$(window).on("scroll", () => {
-  if (this.matchMedia("(min-width: 992px)").matches) {
-    const scrollY = $(this).scrollTop();
-    scrollY > 0
-      ? $body.addClass(scrollClass)
-      : $body.removeClass(scrollClass);
-  } else {
-    $body.removeClass(scrollClass);
-  }
-});
-
-$(".page-header .nav-link, .navbar-brand").on("click", function(e) {
-  e.preventDefault();
-  const href = $(this).attr("href");
-  $("html, body").animate({
-    scrollTop: $(href).offset().top - 71
-  }, 600);
-});
-
-
-
-
-
-
-/*-----------------------------------------------------------
-|     LANDIN PAGE  -   SCROLL ANIMATIONS   ORIGINAL          |
-------------------------------------------------------------*/
-/* for pump animation */
-const pump = document.querySelector('.overlay-pump')
-const pumpContainer = document.querySelector('.pump-container')
-
-/* for van animation */
-const van = document.querySelector('.overlay-van')
-const vanContainer = document.querySelector('.van-container')
-
-const observer = new IntersectionObserver((entries)=> {
-    entries.forEach((entry) => {
-        console.log(entry)
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show'),
-            entry.target.classList.add('move');
-        } else {
-            entry.target.classList.remove('show');
-            
-        }
-    });
-});
-
-
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
 
 
