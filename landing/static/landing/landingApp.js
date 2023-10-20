@@ -7,14 +7,15 @@ const links = document.querySelector('.navbar-list');
 const login = document.querySelector('.login-btn');
 
 const menu = document.querySelector('.menu');
+const main = document.querySelector('#main');
+const header = document.querySelector('.header');
 console.log(menu);
 
 
 
 
-/* HIDE/SHOW  NAVBAR HAMBURGER
+/* HIDE/SHOW  Hamburger Button
 ----------------------------------------------  */
-
 
 /* break-point for show the hamburger menu */
 let hamburgerPoint = 768;
@@ -33,8 +34,8 @@ function hideHamburger() {
   login.style.display = 'flex';
 };
 
-/* add eventListener  (BUG:is not triggered when reloaded!) */
-window.addEventListener("resize", function() {
+
+ function showHideHamburger() {
   /* get width of the window */
   width = window.innerWidth;
   if (width < hamburgerPoint) {
@@ -42,24 +43,22 @@ window.addEventListener("resize", function() {
   } else {
     hideHamburger();
   }
-});
+}
+/* add eventListener  (BUG:is not triggered when reloaded!) */
+window.addEventListener("resize", showHideHamburger);
 
 /* add eventListener for reloading */
-window.addEventListener("load", function() {
-  width = window.innerWidth;
-  if (width < hamburgerPoint) {
-    showHamburger();
-  } else {
-    hideHamburger();
-  }
-});
+window.addEventListener("load", showHideHamburger);
 
 
 
 
 
-/* COLLAPSE MENU FROM HAMBURGER ON CLICK
-----------------------------------------------  */
+
+
+
+/* Open/Close the Offcanvas Menu when the button is clicked
+----------------------------------------------------------  */
   
 function openMenu() {
   if (menu.style.display === 'flex') {
@@ -69,43 +68,48 @@ function openMenu() {
   }
 }; 
 
-
-hamburger.addEventListener('onclick', function() {
-  openMenu();
-});   
+hamburger.addEventListener('onclick', openMenu);
 
 
 
-
-/* HIDE OFF-CANVAS WHEN BIGGER SIZE 
------------------------------------------------*/
-
-window.addEventListener("resize", function() {
-  width = window.innerWidth;
-  console.log("width: " + width);
-  if (width > hamburgerPoint) {
-    menu.style.display = 'none';
-  }
-});
-
-/* add eventListener  (BUG:is not triggered when reloaded!) */
-window.addEventListener("resize", (e) =>{
-  width = window.innerWidth;
-  if (width > hamburgerPoint) {
-    
-  }
-});
-
-
-/* Function to close the Offcanvas when the button is clicked 
------------------------------------------------------------------*/
-main = document.querySelector('#main');
-header = document.querySelector('.header');
+/* Function to close the Offcanvas when the button is clicked or the window is resized 
+-------------------------------------------------------------------------------------*/
 
 function closeOffcanvas() {
   menu.style.display = 'none';
 }
 
-main.addEventListener('click', function() {
-  closeOffcanvas();
+main.addEventListener('click', closeOffcanvas);
+window.addEventListener('resize', closeOffcanvas);
+
+
+/* All Scroll animation 
+------------------------------------------------------------*/
+/* for pump animation */
+const pump = document.querySelector('.overlay-pump')
+const pumpContainer = document.querySelector('.pump-container')
+
+/* for van animation */
+const van = document.querySelector('.overlay-van')
+const vanContainer = document.querySelector('.van-container')
+const title = document.querySelector('.title')
+console.log(title)
+
+const observer = new IntersectionObserver((entries)=> {
+    entries.forEach((entry) => {
+        //console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show'),
+            entry.target.classList.add('move-from-left');
+            entry.target.classList.add('move-from-right');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
 });
+
+
+
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
