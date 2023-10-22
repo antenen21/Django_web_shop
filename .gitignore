@@ -96,6 +96,9 @@ coverage.xml
 # celery 
 celerybeat-schedule.* 
 
+# Node.JS
+node_modules/
+
 # SageMath parsed files 
 *.sage.py 
 
@@ -143,3 +146,5 @@ GitHub.sublime-settings
 mywiki.txt
 todolist.txt
 problems.txt
+local_cdn
+```
